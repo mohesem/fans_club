@@ -1,0 +1,3 @@
+TODO: populating like and suggest and dislike after user signin or on getting info
+
+TODO: on like and dislike model fid should be number. fuck

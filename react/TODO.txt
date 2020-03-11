@@ -1,0 +1,11 @@
+DONE: map state total likes must be refereshed if new team
+DONE: numbers of legend help must be relevent
+DONE: colors of legend help must be relevent
+DONE: get total likes and female, male on one request
+DONE: share button
+DONE: add virtualization layer
+DONE: change paint property of boundry layer on move and etc
+DONE: set _totalLikes to null after a ne team is on search
+DONE: delete coutum layer features on zooms over 8
+
+DONE: set max zoom in for map
