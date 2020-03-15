@@ -6,7 +6,7 @@ const log = debug('log:searchClubsApi');
 export default function searchClubs(str) {
   return new Promise((resolve, reject) => {
     axios
-      .post('http://http://185.8.175.15/api/v1/POST/searchClubs', { str })
+      .post('http://185.8.175.15/api/v1/POST/searchClubs', { str })
       .then(res => {
         // log('res', res);
         resolve({
