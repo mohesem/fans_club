@@ -121,7 +121,7 @@ function Map(props) {
               ['feature-state', 'fans'],
               0,
               'rgb(236, 225, 203)',
-              _totalLikes / 600,
+              _totalLikes / 200,
               'rgba(211,47,47,1.0)',
             ],
             'rgba(255,255,255,1.0)',
@@ -138,7 +138,7 @@ function Map(props) {
               ['feature-state', 'fans'],
               0,
               'rgb(236, 225, 203)',
-              _totalLikes / 5000,
+              _totalLikes / 2000,
               'rgba(211,47,47,1.0)',
             ],
             'rgba(255,255,255,1.0)',
@@ -155,7 +155,7 @@ function Map(props) {
             ['feature-state', 'fans'],
             0,
             'rgb(236, 225, 203)',
-            _totalLikes / 50000,
+            _totalLikes / 20000,
             'rgba(211,47,47,1.0)',
           ],
           'rgba(255,255,255,1.0)',
@@ -182,7 +182,6 @@ function Map(props) {
   });
 
   function getColorCode(firstColorStr, secondColorStr, cb) {
-    // console.log(firstColorStr, secondColorStr);
     let value;
     if (firstColorStr === 'white') {
       switch (secondColorStr) {
@@ -202,13 +201,12 @@ function Map(props) {
       }
     }
 
-    return cb(value);
+    return cb({ r: 183, g: 28, b: 28 });
+    // return cb(value);
   }
 
   function calCulauteColors(firstColorStr, secondColorStr, cb) {
     getColorCode(firstColorStr, secondColorStr, color => {
-      // console.log(color);
-
       const factorR = Math.round((255 - color.r) / 3);
       const factorG = Math.round((255 - color.g) / 3);
       const factorB = Math.round((255 - color.b) / 3);
@@ -447,7 +445,6 @@ function Map(props) {
   }
 
   function handleLegendsVisibility() {
-    console.log('clickeeeeeed');
     if (state.legends === 0) return setState({ ...state, legends: 1 });
     return setState({ ...state, legends: 0 });
   }
@@ -461,7 +458,6 @@ function Map(props) {
 
       // log('bbox is ', bbox);
       if (map.getZoom() > 8) {
-        console.log('current zool level is ', map.getZoom());
         getMembersFromPoly(bbox, val, id)
           .then(res => {
             geojson.features = [];
@@ -498,7 +494,6 @@ function Map(props) {
           }
 
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
-            // console.log('sending request for getting likes ');
             axios
               .post('http://localhost:4000/api/v1/POST/getLikesForPolys', {
                 teamId: state.teamId,
@@ -519,7 +514,6 @@ function Map(props) {
               })
               .catch(error => {
                 // TODO: check this out
-                console.log('............................', error);
               });
           }
         });
@@ -549,9 +543,8 @@ function Map(props) {
           }
 
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
-            console.log('sending request for getting likes ');
             axios
-              .post('http://localhost:4000/api/POST/getLikesForPolys', {
+              .post('http://localhost:4000/api/v1/POST/getLikesForPolys', {
                 teamId: state.teamId,
                 reducedDuplicates,
               })
@@ -570,7 +563,6 @@ function Map(props) {
               })
               .catch(error => {
                 // TODO: check this out
-                console.log('............................', error);
               });
           }
         });
@@ -586,7 +578,6 @@ function Map(props) {
   }
 
   function addOnMove() {
-    console.log('move finished right now');
     // const pathnameSplit = pathname.split('/');
     // const id = pathnameSplit[2];
     // const val = isLike === true ? 'like' : 'dislike';
@@ -599,7 +590,6 @@ function Map(props) {
   }
 
   function onClick(e) {
-    console.log(state);
     getAddress(e.lngLat.wrap(), (err, address) => {
       if (address) {
         dispatch(signupActions.updateLocation(e.lngLat.wrap()));
@@ -668,7 +658,6 @@ function Map(props) {
         type: 'FeatureCollection',
         features: [],
       });
-      console.log('clear nodes');
     }
   }
 
@@ -821,7 +810,7 @@ function Map(props) {
         if (!map.getSource('boundary-source')) {
           map.addSource('boundary-source', {
             type: 'vector',
-            tiles: ['http://localhost:4000/v1/GET/tiles/{z}/{x}/{y}'],
+            tiles: ['http://localhost:4000/api/v1/GET/tiles/{z}/{x}/{y}'],
             minzoom: 0,
             maxzoom: 18,
           });

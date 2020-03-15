@@ -35,7 +35,7 @@ function findPointsForLikes(within, teamId, gender) {
 
 export default function getTotalLikes(body, cb) {
   log('get total likes', body);
-  const teamId = '5e1c496829f2674320b0bc2e';
+  const teamId = '5e6aa5e6075d200d2a9d7530';
 
   const startDate = 1580114579000;
   const endDate = 1590568979000;
@@ -87,11 +87,13 @@ export default function getTotalLikes(body, cb) {
         return [females1, females2, females3, females4, females5, females6];
       })();
 
-      const team = await Team.findById('5e1c496829f2674320b0bc2e', (error, res) => {
-        log(error, res);
+      const team = await Team.findById('5e6aa5e6075d200d2a9d7530', (error, res) => {
+        // log(error, res);
         if (error) return cb(500, { msg: 'Internal Serever Error' });
         return res;
       });
+
+      // log(males, females, team);
 
       return cb(200, { males, females, team });
     })();

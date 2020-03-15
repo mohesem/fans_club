@@ -31,10 +31,11 @@
     "morgan": "^1.9.1",
     "passport": "^0.4.0",
     "random-int": "^2.0.1",
+    "regenerator-runtime": "^0.13.3",
     "supports-color": "^7.1.0",
     "swagger-jsdoc": "^3.4.0",
     "swagger-ui-express": "^4.1.2",
-    "regenerator-runtime": "^0.13.3"
+    "webpack": "^4.41.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -51,7 +52,6 @@
     "nodemon": "^1.19.4",
     "prettier": "^1.18.2",
     "pretty-quick": "^2.0.0",
-    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.11",
     "webpack-node-externals": "^1.7.2"
   }

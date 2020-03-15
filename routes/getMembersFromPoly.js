@@ -15,7 +15,7 @@ export default function getMembersFromPoly(swlng, swlat, nelng, nelat, val, team
 
   Like.find(
     {
-      team_id: '5e1c496829f2674320b0bc2e',
+      team_id: '5e6aa5e6075d200d2a9d7530',
       geo: {
         $geoWithin: {
           $geometry: requestedPoly.geometry,
@@ -23,6 +23,7 @@ export default function getMembersFromPoly(swlng, swlat, nelng, nelat, val, team
       },
     },
     (err, res) => {
+      console.log(res);
       if (err) return cb(500, { msg: 'Inernal Server Error' });
       return cb(200, { likes: res });
     }

@@ -581,7 +581,7 @@ function Map(props) {
         setState({ ...state, teamId: pathnameSplit[2] });
 
         axios
-          .get(`http://localhost:4000/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
+          .get(`http://localhost:4000/api/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
           .then(response => {
             const firstColorStr = response.data.team.primary_color;
             const secondColorStr = response.data.team.secondary_color;
@@ -642,7 +642,7 @@ function Map(props) {
           if (!map.getSource('boundary-source')) {
             map.addSource('boundary-source', {
               type: 'vector',
-              tiles: ['http://localhost:4000/v1/GET/tiles/{z}/{x}/{y}'],
+              tiles: ['http://localhost:4000/api/v1/GET/tiles/{z}/{x}/{y}'],
               minzoom: 0,
               maxzoom: 18,
             });

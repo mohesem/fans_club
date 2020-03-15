@@ -5,18 +5,21 @@ import City from '../DB/models/cityModel';
 
 const log = debug('log:v1');
 
+// 5e6aa5e6075d200d2a9d7530
+
 export default function getClub(teamId, cb) {
   Teams.findById(teamId, (err, club) => {
     if (err) {
       log(`error on finding club \n ${err}`);
       return cb(500, 'error on finding club');
     }
+    // log('club ==> ', club);
     const { city, group, country, name } = club;
     // city.trim();
     // country.trim();
     // name.trim();
 
-    log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
+    // log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
     if (group === 'AFC' && country && city) {
       fs.readFile(
         `/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_back_last/routes/logo/${country +

@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import Cors from 'cors';
 import path from 'path';
-// import logger from 'morgan';
+import logger from 'morgan';
 import debug from 'debug';
 import mongoose from 'mongoose';
 import 'dotenv/config';
@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 4000;
 //     log(`worker ${worker.process.pid} died`);
 //   });
 // } else {
-mongoose.connect('mongodb://@localhost:27017/fansclub', {
+mongoose.connect('mongodb://localhost:27017/fansclub', {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true,
@@ -58,7 +58,7 @@ app.use(Cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-// app.use(logger('dev'));
+app.use(logger('dev'));
 
 app.use(Cors());
 app.use(bodyParser.json());
@@ -70,6 +70,13 @@ app.get('/', (req, res) => {
   console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
   res.sendFile(path.resolve('react', 'build', 'index.html'));
 });
+
+app.get('/v/*', (req, res) => {
+  console.log(__dirname);
+  console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
+  res.sendFile(path.resolve('react', 'build', 'index.html'));
+});
+
 app.use('/api/v1', routes.v1);
 
 // app.use('/user', routes.user);

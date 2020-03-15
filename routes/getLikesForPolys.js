@@ -11,7 +11,7 @@ function getLikeNumbers(body) {
       reducedDuplicates.forEach(async (fid, index) => {
         // console.log(reducedDuplicates.length - 1, index);
         await Like.countDocuments(
-          { fid: String(fid), team_id: '5e1c496829f2674320b0bc2e' },
+          { fid: String(fid), team_id: '5e6aa5e6075d200d2a9d7530' },
           (err, res) => {
             if (err) console.log(err);
             // console.log(res);
