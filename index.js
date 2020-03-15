@@ -29,7 +29,7 @@ const PORT = process.env.PORT || 4000;
 //     log(`worker ${worker.process.pid} died`);
 //   });
 // } else {
-mongoose.connect('mongodb://emad:mohesem1368@localhost:27017/test', {
+mongoose.connect('mongodb://@localhost:27017/fansclub', {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true,
