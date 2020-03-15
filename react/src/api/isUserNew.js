@@ -7,7 +7,7 @@ const log = debug('log:isUserNew');
 export default function isUserNew(email) {
   return new Promise((resolve, reject) => {
     axios
-      .post('http://localhost:4000/api/v1/POST/isUserNew', { email })
+      .post('http://http://185.8.175.15//api/v1/POST/isUserNew', { email })
       .then(res => {
         log('res', res);
         resolve({

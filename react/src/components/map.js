@@ -495,7 +495,7 @@ function Map(props) {
 
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
             axios
-              .post('http://localhost:4000/api/v1/POST/getLikesForPolys', {
+              .post('http://http://185.8.175.15//api/v1/POST/getLikesForPolys', {
                 teamId: state.teamId,
                 reducedDuplicates,
               })
@@ -544,7 +544,7 @@ function Map(props) {
 
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
             axios
-              .post('http://localhost:4000/api/v1/POST/getLikesForPolys', {
+              .post('http://http://185.8.175.15//api/v1/POST/getLikesForPolys', {
                 teamId: state.teamId,
                 reducedDuplicates,
               })
@@ -695,7 +695,7 @@ function Map(props) {
       _totalLikes = null;
 
       axios
-        .get(`http://localhost:4000/api/v1/GET/club/${pathnameSplit[2]}`)
+        .get(`http://http://185.8.175.15//api/v1/GET/club/${pathnameSplit[2]}`)
         .then(res => {
           // log('............................. club has been found', res);
           if (res.data.base64Image) {
@@ -747,7 +747,7 @@ function Map(props) {
         });
 
       axios
-        .get(`http://localhost:4000/api/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
+        .get(`http://http://185.8.175.15//api/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
         .then(response => {
           const firstColorStr = response.data.team.primary_color;
           const secondColorStr = response.data.team.secondary_color;
@@ -810,7 +810,7 @@ function Map(props) {
         if (!map.getSource('boundary-source')) {
           map.addSource('boundary-source', {
             type: 'vector',
-            tiles: ['http://localhost:4000/api/v1/GET/tiles/{z}/{x}/{y}'],
+            tiles: ['http://http://185.8.175.15//api/v1/GET/tiles/{z}/{x}/{y}'],
             minzoom: 0,
             maxzoom: 18,
           });

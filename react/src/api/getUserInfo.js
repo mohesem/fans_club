@@ -9,7 +9,7 @@ export default token => {
     // NOTE: looping 4 times in case of connection error
     (function loop() {
       axios
-        .get(`http://localhost:4000/api/v1/GET/getUserInfo/${token}`)
+        .get(`http://http://185.8.175.15//api/v1/GET/getUserInfo/${token}`)
         .then(res => {
           log('is user valid response', res);
           resolve({

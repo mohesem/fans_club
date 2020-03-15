@@ -7,7 +7,10 @@ const log = debug('log:isUserNew');
 export default function likeClub(club) {
   return new Promise((resolve, reject) => {
     axios
-      .post('http://localhost:4000/api/v1/POST/likeClub', { token: localStorage.fans_club, club })
+      .post('http://http://185.8.175.15//api/v1/POST/likeClub', {
+        token: localStorage.fans_club,
+        club,
+      })
       .then(res => {
         log('res', res);
         resolve({
