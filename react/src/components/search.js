@@ -141,7 +141,7 @@ export default function Search() {
         }
       });
     // axios
-    //   .post(`http://http://185.8.175.15//club/search`, { str })
+    //   .post(`http://http://185.8.175.15/club/search`, { str })
     //   .then(response => {
     //     const { clubs } = response.data;
     //     console.log(clubs);
