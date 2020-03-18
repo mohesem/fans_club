@@ -8,7 +8,7 @@ export default function signin(user) {
   log('====================== user is : ', user);
   return new Promise((resolve, reject) => {
     axios
-      .post('http://185.8.175.15/api/v1/POST/signin', user)
+      .post('https://www.fansclub.app/api/v1/POST/signin', user)
       .then(res => {
         log('res', res);
         resolve({

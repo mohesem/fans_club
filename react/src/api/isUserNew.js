@@ -7,7 +7,7 @@ const log = debug('log:isUserNew');
 export default function isUserNew(email) {
   return new Promise((resolve, reject) => {
     axios
-      .post('http://185.8.175.15/api/v1/POST/isUserNew', { email })
+      .post('https://www.fansclub.app/api/v1/POST/isUserNew', { email })
       .then(res => {
         log('res', res);
         resolve({

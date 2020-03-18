@@ -8,7 +8,7 @@ export default function getMembersFromPoly(bounds, val, teamId) {
   return new Promise((resolve, reject) => {
     axios
       .get(
-        `http://185.8.175.15/api/v1/GET/membersFromPoly/${bounds._sw.lng}/${bounds._sw.lat}/${bounds._ne.lng}/${bounds._ne.lat}/${val}/${teamId}`
+        `https://www.fansclub.app/api/v1/GET/membersFromPoly/${bounds._sw.lng}/${bounds._sw.lat}/${bounds._ne.lng}/${bounds._ne.lat}/${val}/${teamId}`
       )
       .then(response => {
         resolve(response);

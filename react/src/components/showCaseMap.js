@@ -397,7 +397,7 @@ function Map(props) {
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
             console.log('sending request for getting likes ');
             axios
-              .post('http://185.8.175.15/api/v1/POST/getLikesForPolys', {
+              .post('https://www.fansclub.app/api/v1/POST/getLikesForPolys', {
                 teamId: state.teamId,
                 reducedDuplicates,
               })
@@ -459,7 +459,7 @@ function Map(props) {
         // if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
         //   console.log('sending request for getting likes ');
         //   axios
-        //     .post('http://185.8.175.15/v1/POST/getLikesForPolys', {
+        //     .post('https://www.fansclub.app/v1/POST/getLikesForPolys', {
         //       teamId: state.teamId,
         //       reducedDuplicates,
         //     })
@@ -581,7 +581,7 @@ function Map(props) {
         setState({ ...state, teamId: pathnameSplit[2] });
 
         axios
-          .get(`http://185.8.175.15/api/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
+          .get(`https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
           .then(response => {
             const firstColorStr = response.data.team.primary_color;
             const secondColorStr = response.data.team.secondary_color;
@@ -642,7 +642,7 @@ function Map(props) {
           if (!map.getSource('boundary-source')) {
             map.addSource('boundary-source', {
               type: 'vector',
-              tiles: ['http://185.8.175.15/api/v1/GET/tiles/{z}/{x}/{y}'],
+              tiles: ['https://www.fansclub.app/api/v1/GET/tiles/{z}/{x}/{y}'],
               minzoom: 0,
               maxzoom: 18,
             });
