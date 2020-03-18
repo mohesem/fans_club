@@ -77,6 +77,12 @@ app.get('/v/*', (req, res) => {
   res.sendFile(path.resolve('react', 'build', 'index.html'));
 });
 
+app.get('/auth/*', (req, res) => {
+  console.log(__dirname);
+  console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
+  res.sendFile(path.resolve('react', 'build', 'index.html'));
+});
+
 app.use('/api/v1', routes.v1);
 
 // app.use('/user', routes.user);
