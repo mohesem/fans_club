@@ -71,6 +71,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve('react', 'build', 'index.html'));
 });
 
+app.get('/club', (req, res) => {
+  console.log(__dirname);
+  console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
+  res.sendFile(path.resolve('react', 'build', 'index.html'));
+});
+
 app.get('/v/*', (req, res) => {
   console.log(__dirname);
   console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));

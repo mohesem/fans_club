@@ -13,7 +13,9 @@ export default function getClub(teamId, cb) {
       log(`error on finding club \n ${err}`);
       return cb(500, 'error on finding club');
     }
-    // log('club ==> ', club);
+    console.log('club ==> ', club);
+
+    log('club ==> ', club);
     const { city, group, country, name } = club;
     // city.trim();
     // country.trim();
@@ -22,7 +24,7 @@ export default function getClub(teamId, cb) {
     // log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
     if (group === 'AFC' && country && city) {
       fs.readFile(
-        `/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_back_last/routes/logo/${country +
+        `/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/routes/logo/${country +
           city +
           name}.png`,
         (errRead, img) => {
