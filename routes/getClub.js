@@ -37,24 +37,22 @@ export default function getClub(teamId, cb) {
               name: city.trim(),
             },
             async (errCity, cityObj) => {
-              return cb(200, { city: cityObj, club });
+              if (errCity) {
+                console.log('--------------- finding City', errCity);
+                return cb(200, { club, errCity });
+              }
+              if (!cityObj) {
+                console.log('--------------- no city has been found', cityObj);
+                return cb(200, { club, errCity: null });
+              }
+              const base64Image = Buffer.from(img).toString('base64');
 
-              //   if (errCity) {
-              //     console.log('--------------- finding City', errCity);
-              //     return cb(200, { club, errCity });
-              //   }
-              //   if (!cityObj) {
-              //     console.log('--------------- no city has been found', cityObj);
-              //     return cb(200, { club, errCity: null });
-              //   }
-              //   const base64Image = Buffer.from(img).toString('base64');
+              // Buffer.from(img, 'binary').toString('base64');
 
-              //   // Buffer.from(img, 'binary').toString('base64');
+              console.log('-----------------', cityObj);
+              return cb(200, { city: cityObj, club, base64Image });
 
-              //   console.log('-----------------', cityObj);
-              //   return cb(200, { city: cityObj, club, base64Image });
-
-              //   // TODO: send new json with club, city and buffer
+              // TODO: send new json with club, city and buffer
             }
           );
         }
