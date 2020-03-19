@@ -10,7 +10,7 @@ const log = debug('log:v1');
 export default function getClub(teamId, cb) {
   Teams.findById(teamId, (err, club) => {
     if (err) {
-      log(`error on finding club \n ${err}`);
+      console.log(`error on finding club \n ${err}`);
       return cb(500, 'error on finding club');
     }
     console.log('club ==> ', club);
@@ -25,9 +25,10 @@ export default function getClub(teamId, cb) {
     if (group === 'AFC' && country && city) {
       fs.readFile(`~/repos/fans_club/routes/logo/${country + city + name}.png`, (errRead, img) => {
         if (errRead) {
-          log('---------------------', errRead);
+          console.log('---------------------', errRead);
           return cb(200, { club, errRead });
         }
+        console.log('tewaeeeeeeeeeeeeeeeeam with logo has been found');
         City.findOne(
           {
             country: country.trim(),

@@ -681,7 +681,7 @@ function Map(props) {
 
     const pathnameSplit = pathname.split('/');
     // log('-------------------------------', <i className="fas fa-helicopter    " />);
-
+    console.log(pathname.split('/'));
     if (
       pathnameSplit[pathnameSplit.length - 1] &&
       state.teamId !== pathnameSplit[pathnameSplit.length - 1]
@@ -746,7 +746,7 @@ function Map(props) {
           }
         })
         .catch(err => {
-          log(err);
+          console.log('errrrrrrrrrrrrrrrrrr', err);
         });
 
       axios
