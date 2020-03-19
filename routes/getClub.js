@@ -24,7 +24,7 @@ export default function getClub(teamId, cb) {
     // log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
     if (group === 'AFC' && country && city) {
       fs.readFile(
-        `~/repos/fans_club/routes/logo/${(country + city + name).trim()}.png`,
+        `/repos/fans_club/routes/logo/${(country + city + name).trim()}.png`,
         (errRead, img) => {
           if (errRead) {
             console.log('---------------------', errRead);
