@@ -680,7 +680,7 @@ function Map(props) {
     map.on('moveend', clearFansLocation);
 
     const pathnameSplit = pathname.split('/');
-
+    alert(pathnameSplit[2]);
     // log('-------------------------------', <i className="fas fa-helicopter    " />);
 
     if (pathnameSplit[2] && state.teamId !== pathnameSplit[2]) {
