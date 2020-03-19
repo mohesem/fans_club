@@ -452,7 +452,7 @@ function Map(props) {
   function addToSourceOnMove() {
     if (map.getSource('boundary-source')) {
       const pathnameSplit = pathname.split('/');
-      const id = pathnameSplit[2];
+      const id = pathnameSplit[pathnameSplit.length - 1];
       const val = isLike === true ? 'like' : 'dislike';
       const bbox = map.getBounds();
 
@@ -579,7 +579,7 @@ function Map(props) {
 
   function addOnMove() {
     // const pathnameSplit = pathname.split('/');
-    // const id = pathnameSplit[2];
+    // const id = pathnameSplit[pathnameSplit.length - 1];
     // const val = isLike === true ? 'like' : 'dislike';
     // const bbox = map.getBounds();
     // callApi(bbox, val, id);
@@ -680,22 +680,25 @@ function Map(props) {
     map.on('moveend', clearFansLocation);
 
     const pathnameSplit = pathname.split('/');
-    alert(pathnameSplit[2]);
     // log('-------------------------------', <i className="fas fa-helicopter    " />);
 
-    if (pathnameSplit[2] && state.teamId !== pathnameSplit[2]) {
+    if (
+      pathnameSplit[pathnameSplit.length - 1] &&
+      state.teamId !== pathnameSplit[pathnameSplit.length - 1]
+    ) {
       console.log('get cluuuuuuuuuuuuuub');
-      // alert(pathnameSplit[2]);
+      // alert(pathnameSplit[pathnameSplit.length - 1]);
       console.log(
         '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<',
         state.teamId,
-        pathnameSplit[2],
-        pathnameSplit[2] && state.teamId !== pathnameSplit[2]
+        pathnameSplit[pathnameSplit.length - 1],
+        pathnameSplit[pathnameSplit.length - 1] &&
+          state.teamId !== pathnameSplit[pathnameSplit.length - 1]
       );
 
       _totalLikes = null;
       axios
-        .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[2]}`)
+        .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[pathnameSplit.length - 1]}`)
         .then(res => {
           log('............................. club has been found', res);
           if (res.data.base64Image) {
@@ -747,7 +750,11 @@ function Map(props) {
         });
 
       axios
-        .get(`https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${pathnameSplit[2]}`)
+        .get(
+          `https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${
+            pathnameSplit[pathnameSplit.length - 1]
+          }`
+        )
         .then(response => {
           const firstColorStr = response.data.team.primary_color;
           const secondColorStr = response.data.team.secondary_color;
@@ -802,7 +809,7 @@ function Map(props) {
           log(error);
         });
 
-      setState({ ...state, teamId: pathnameSplit[2] });
+      setState({ ...state, teamId: pathnameSplit[pathnameSplit.length - 1] });
     }
 
     (function loop() {
