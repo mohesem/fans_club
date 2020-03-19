@@ -684,6 +684,7 @@ function Map(props) {
     // log('-------------------------------', <i className="fas fa-helicopter    " />);
 
     if (pathnameSplit[2] && state.teamId !== pathnameSplit[2]) {
+      console.log('get cluuuuuuuuuuuuuub');
       // alert(pathnameSplit[2]);
       log(
         '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<',
@@ -697,7 +698,7 @@ function Map(props) {
       axios
         .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[2]}`)
         .then(res => {
-          // log('............................. club has been found', res);
+          log('............................. club has been found', res);
           if (res.data.base64Image) {
             dispatch(
               mapActions.updateFlyToClub({
