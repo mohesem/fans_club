@@ -37,19 +37,19 @@ export default function getClub(teamId, cb) {
               name: city.trim(),
             },
             async (errCity, cityObj) => {
-              if (err) {
-                log('--------------- finding City', err);
+              if (errCity) {
+                console.log('--------------- finding City', errCity);
                 return cb(200, { club, errCity });
               }
               if (!cityObj) {
-                log('--------------- no city has been found', cityObj);
-                return cb(200, { club, errCity });
+                console.log('--------------- no city has been found', cityObj);
+                return cb(200, { club, errCity: null });
               }
               const base64Image = Buffer.from(img).toString('base64');
 
               // Buffer.from(img, 'binary').toString('base64');
 
-              log('-----------------', cityObj);
+              console.log('-----------------', cityObj);
               return cb(200, { city: cityObj, club, base64Image });
 
               // TODO: send new json with club, city and buffer
