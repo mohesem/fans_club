@@ -33,8 +33,8 @@ export default function getClub(teamId, cb) {
           console.log('tewaeeeeeeeeeeeeeeeeam with logo has been found');
           City.findOne(
             {
-              country,
-              name: city,
+              country: country.trim(),
+              name: city.trim(),
             },
             async (errCity, cityObj) => {
               if (err) {
