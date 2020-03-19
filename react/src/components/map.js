@@ -700,7 +700,7 @@ function Map(props) {
       axios
         .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[pathnameSplit.length - 1]}`)
         .then(res => {
-          log('............................. club has been found', res);
+          console.log('............................. club has been found', res);
           if (res.data.base64Image) {
             dispatch(
               mapActions.updateFlyToClub({
