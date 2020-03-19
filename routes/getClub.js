@@ -54,7 +54,10 @@ export default function getClub(teamId, cb) {
                 city: {
                   name: cityObj.name,
                   country: cityObj.country,
-                  geo: cityObj.geo,
+                  geo: {
+                    type: cityObj.geo.type,
+                    coordinates: cityObj.geo.coordinates,
+                  },
                 },
                 club,
                 base64Image,
