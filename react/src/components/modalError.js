@@ -40,7 +40,7 @@ export default function ErrorModal(props) {
         <DialogTitle id="alert-dialog-title">ERROR</DialogTitle>
         <DialogContent>{renderErrors()}</DialogContent>
         <DialogActions>
-          <Button onClick={props.handleClose} color="primary">
+          <Button onClick={handleClose} color="primary">
             close
           </Button>
         </DialogActions>

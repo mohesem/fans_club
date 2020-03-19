@@ -38,8 +38,8 @@ ReactDOM.render(
         <ThemeProvider theme={theme}>
           <Route path="/" component={Map} />
           <Route path="/" component={Appbar} />
-          <Route exact path="/signup" component={Signup} />
           <Route exact path={['/', '/v', '/v/:id', '/signup/getUserLocation']} component={Search} />
+          <Route exact path="/signup" component={Signup} />
 
           <Route exact path="/signin" component={Signin} />
           <Route exact path="/clubs" component={Clubs} />

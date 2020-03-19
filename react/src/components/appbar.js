@@ -1,7 +1,9 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import debug from 'debug';
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Redirect, Link as RouterLink } from 'react-router-dom';
+import { withRouter, Redirect, Link as RouterLink } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
 // material-ui
 import { makeStyles } from '@material-ui/core/styles';
@@ -18,6 +20,9 @@ import MenuItem from '@material-ui/core/MenuItem';
 import userAction from '../actions/user';
 // api
 import getUserInfoApi from '../api/getUserInfo';
+
+// component
+import GetUserlocationNav from './getUserLocation';
 
 // --debuger
 const log = debug('log:Appbar');
@@ -58,7 +63,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const redirectTo = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
-export default function Appbar() {
+function Appbar(props) {
   const classes = useStyles();
   const { enqueueSnackbar } = useSnackbar();
   const dispatch = useDispatch();
@@ -292,6 +297,9 @@ export default function Appbar() {
 
             {toolbarContent()}
           </Toolbar>
+
+          {props.location.pathname === '/signup/getUserLocation' ? <GetUserlocationNav /> : null}
+
           {userReducer.isValid === undefined ? (
             <div className={classes.linearProgress}>
               <LinearProgress />
@@ -305,3 +313,5 @@ export default function Appbar() {
     </>
   );
 }
+
+export default withRouter(Appbar);

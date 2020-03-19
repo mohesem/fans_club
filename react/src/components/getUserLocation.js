@@ -24,8 +24,8 @@ const useStyles = makeStyles(theme => ({
   container: {
     padding: '0px',
     textAlign: 'center',
-    position: 'absolute',
-    top: 61,
+    // position: 'absolute',
+    // top: 61,
   },
   typoContainer: {
     backgroundColor: 'rgb(29, 41, 51)',

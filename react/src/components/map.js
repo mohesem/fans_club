@@ -895,7 +895,7 @@ function Map(props) {
         }}
         className="mapContainer"
       />
-      {state.mode === 1 ? <GetUserlocationNav /> : null}
+      {/* {state.mode === 1 ? <GetUserlocationNav /> : null} */}
       {state.mode === 2 ? (
         <>
           <div id="state-legend" className="legend" hidden={state.legends === 0}>
