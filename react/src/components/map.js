@@ -686,7 +686,7 @@ function Map(props) {
     if (pathnameSplit[2] && state.teamId !== pathnameSplit[2]) {
       console.log('get cluuuuuuuuuuuuuub');
       // alert(pathnameSplit[2]);
-      log(
+      console.log(
         '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<',
         state.teamId,
         pathnameSplit[2],
@@ -694,7 +694,6 @@ function Map(props) {
       );
 
       _totalLikes = null;
-
       axios
         .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[2]}`)
         .then(res => {
