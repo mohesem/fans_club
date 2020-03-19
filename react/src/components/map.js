@@ -228,6 +228,7 @@ function Map(props) {
   }
 
   if (mapReducer.flyTo.state === true) {
+    console.log('flyyyyyyyyyyyyyyyyyyyyyyyy');
     if (mapReducer.flyTo.coord.length === 2) {
       if (searchMarker !== null) {
         searchMarker.remove();

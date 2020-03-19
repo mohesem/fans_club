@@ -50,7 +50,15 @@ export default function getClub(teamId, cb) {
               // Buffer.from(img, 'binary').toString('base64');
 
               console.log('-----------------', cityObj);
-              return cb(200, { city: cityObj, club, base64Image });
+              return cb(200, {
+                city: {
+                  name: cityObj.name,
+                  country: cityObj.country,
+                  geo: cityObj.geo,
+                },
+                club,
+                base64Image,
+              });
 
               // TODO: send new json with club, city and buffer
             }
