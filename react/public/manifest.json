@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fans Club",
+  "name": "Fans Club, a Club for Football Fans",
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,4 +22,4 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
-}
+}s
