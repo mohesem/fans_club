@@ -77,6 +77,18 @@ app.get('/clubs', (req, res) => {
   res.sendFile(path.resolve('react', 'build', 'index.html'));
 });
 
+app.get('/signup', (req, res) => {
+  console.log(__dirname);
+  console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
+  res.sendFile(path.resolve('react', 'build', 'index.html'));
+});
+
+app.get('/signin', (req, res) => {
+  console.log(__dirname);
+  console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
+  res.sendFile(path.resolve('react', 'build', 'index.html'));
+});
+
 app.get('/v/*', (req, res) => {
   console.log(__dirname);
   console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
