@@ -28,7 +28,6 @@ export default async function(body, cb) {
 
       console.log(user[`${type}s`]);
 
-      console.log(user);
       const session = await mongoose.startSession();
       session.startTransaction();
 
