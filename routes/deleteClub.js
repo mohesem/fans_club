@@ -35,14 +35,18 @@ export default async function(body, cb) {
         await user.save();
 
         if (type === 'like') {
-          user.likes.filter(like => like._id !== club._id);
+          user.likes.filter(like => {
+            console.log(like._id, club._id);
+            return like._id !== club._id;
+          });
+
           console.log(user.likes);
           user.save();
           Like.deleteMany({ user_id: user._id, team_id: club._id });
         }
 
         if (type === 'dislike') {
-          user.dislikes.filter(like => like._id !== club._id);
+          user.dislikes.filter(dislike => dislike._id !== club._id);
           user.save();
           Dislike.deleteMany({ user_id: user._id, team_id: club._id });
         }
