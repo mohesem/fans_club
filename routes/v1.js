@@ -119,7 +119,6 @@ router.get('/GET/club/:clubId', (req, res) => {
 });
 
 router.post('/POST/deleteClub', (req, res) => {
-  console.log(req.body);
   deleteClub(req.body, (status, trace) => {
     log(status, trace);
     res.status(status).send(trace);
