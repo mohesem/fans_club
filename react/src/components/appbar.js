@@ -119,7 +119,7 @@ function Appbar(props) {
     } else {
       log('no token has been found for fans_club');
       dispatch(userAction({ isValid: false }));
-      enqueueSnackbar('Signup to get more ...', { variant: 'error' });
+      enqueueSnackbar('Sign up to get more ...', { variant: 'error' });
     }
   }
 
@@ -168,12 +168,12 @@ function Appbar(props) {
                 component={redirectTo}
                 to="/signup"
               >
-                Signup
+                Sign up
               </Button>
             </MenuItem>
             <MenuItem onClick={handleMenuClose}>
               <Button color="secondary" component={redirectTo} to="/signin">
-                Signin
+                Sign in
               </Button>
             </MenuItem>
           </Menu>
@@ -196,7 +196,7 @@ function Appbar(props) {
             </MenuItem> */}
             <MenuItem onClick={handleMenuClose}>
               <Button color="secondary" component={redirectTo} to="/clubs">
-                teams
+                clubs
               </Button>
             </MenuItem>
             <MenuItem onClick={handleMenuClose}>
@@ -215,10 +215,10 @@ function Appbar(props) {
     <>
       <div className={classes.sectionDesktop}>
         <Button className="appbarButton" color="secondary" component={redirectTo} to="/signup">
-          Signup
+          Sign up
         </Button>
         <Button color="secondary" component={redirectTo} to="/signin">
-          Signin
+          Sign in
         </Button>
       </div>
       <div className={classes.sectionMobile}>
@@ -241,7 +241,7 @@ function Appbar(props) {
           profile
         </Button> */}
         <Button color="secondary" component={redirectTo} to="/clubs">
-          teams
+          clubs
         </Button>
         <Button color="secondary" component={redirectTo} to="/" onClick={handleLogOut}>
           logout

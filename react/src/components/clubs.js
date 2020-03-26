@@ -1,5 +1,5 @@
 // import debug from 'debug';
-import { useSelector /* useDispatch */ } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import { Redirect /* Link as RouterLink */ } from 'react-router-dom';
 
@@ -24,6 +24,12 @@ import AddNewClub from './addNewClub';
 // Themes
 import blueTheme from '../themes/blue';
 import redTheme from '../themes/red';
+
+// API
+import APIDeleteClub from '../api/deleteClub';
+
+// actions
+import userAction from '../actions/user';
 
 // --debuger
 // const log = debug('log:clubs');
@@ -100,7 +106,7 @@ const useStyles = makeStyles(theme => ({
 // const RedirectToLink = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
 
 export default function Club() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const userReducer = useSelector(state => state.user);
   const classes = useStyles();
 
@@ -110,6 +116,7 @@ export default function Club() {
     onHold: false,
     redirect: false,
   });
+  const [onHold, setOnHold] = useState(false);
 
   function onModalErrorClose() {
     setState({ ...state, modalErrors: [] });
@@ -121,23 +128,19 @@ export default function Club() {
 
   function handleDeleteTeams(teamId, type) {
     console.log(teamId, type);
+    setOnHold(true);
 
-    // setOnHold(true);
-
-    // APIDeleteTeam(teamId, action)
-    //   .then(res => {
-    //     console.log(res);
-    //     dispatch(likesAction(res.likes));
-    //     dispatch(dislikeAction(res.dislikes));
-
-    //     // setRedirect('/teams');
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   })
-    //   .finally(() => {
-    //     setOnHold(false);
-    //   });
+    APIDeleteClub(teamId, type)
+      .then(res => {
+        // dispatch(userAction(data));
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+      .finally(() => {
+        setOnHold(false);
+      });
   }
 
   return (
@@ -195,7 +198,7 @@ export default function Club() {
                                 <TableCell>{team.country}</TableCell>
                                 <TableCell align="right">
                                   <Button
-                                    // disabled={onHold}
+                                    disabled={onHold}
                                     // autoFocus
                                     color="primary"
                                     // className={classes.deleteButton}
@@ -262,12 +265,12 @@ export default function Club() {
                                 <TableCell>{team.country}</TableCell>
                                 <TableCell align="right">
                                   <Button
-                                    // disabled={onHold}
+                                    disabled={onHold}
                                     // autoFocus
                                     color="primary"
                                     // className={classes.deleteButton}
                                     // className={classes.headerLogoutButton}
-                                    onClick={() => handleDeleteTeams(team, 'like')}
+                                    onClick={() => handleDeleteTeams(team, 'dislike')}
                                   >
                                     delete
                                   </Button>

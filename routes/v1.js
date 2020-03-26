@@ -15,6 +15,7 @@ import getClub from './getClub';
 import getTiles from './getTiles';
 import getMembersFromPoly from './getMembersFromPoly';
 import getLikesForPolys from './getLikesForPolys';
+import deleteClub from './deleteClub';
 
 const log = debug('log:v1');
 
@@ -115,6 +116,18 @@ router.get('/GET/club/:clubId', (req, res) => {
     console.log(status, trace);
     res.status(status).send(trace);
   });
+});
+
+router.delete('/DELETE/deleteClub', (req, res) => {
+  deleteClub(req.body, (status, trace) => {
+    log(status, trace);
+    res.status(status).send(trace);
+  });
+
+  // getClub(req.params.clubId, (status, trace) => {
+  //   console.log(status, trace);
+  // res.status(status).send(trace);
+  // });
 });
 
 export default router;
