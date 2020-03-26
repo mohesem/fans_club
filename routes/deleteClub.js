@@ -20,11 +20,13 @@ export default async function(body, cb) {
       if (error) return cb(500, { other: 'Server Internal Error' });
       if (!user) return cb(400, 'User doesnt exist');
 
+      console.log(user[`${type}s`]);
+
       const newLikeOrDislike = user[`${type}s`].filter(a => a._id !== club._id);
 
-      console.log(user);
-
       user[`${type}s`] = newLikeOrDislike;
+
+      console.log(user[`${type}s`]);
 
       console.log(user);
       const session = await mongoose.startSession();
