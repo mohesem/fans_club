@@ -35,17 +35,43 @@ export default async function(body, cb) {
         await user.save();
 
         if (type === 'like') {
-          const n = user.likes.filter(like => like._id != club._id);
+          const n = await user.likes.filter(like => like._id != club._id);
           user.likes = n;
-          user.save();
-          Like.deleteMany({ user_id: user._id, team_id: club._id });
+          await user.save();
+          await Like.deleteMany({ user_id: user._id, team_id: club._id });
+
+          getUserById(user._id, (finalError, finalUser) => {
+            if (finalError) return cb(500, { msg: 'internal error' });
+
+            return cb(200, {
+              firstname: finalUser.firstname,
+              lastname: finalUser.lastname,
+              likes: finalUser.likes || null,
+              dislikes: finalUser.dislikes || null,
+              suggests: finalUser.suggests || null,
+              location: finalUser.geo,
+            });
+          });
         }
 
         if (type === 'dislike') {
-          const n = user.dislikes.filter(dislike => dislike._id != club._id);
+          const n = await user.dislikes.filter(dislike => dislike._id != club._id);
           user.dislikes = n;
-          user.save();
-          Dislike.deleteMany({ user_id: user._id, team_id: club._id });
+          await user.save();
+          await Dislike.deleteMany({ user_id: user._id, team_id: club._id });
+
+          getUserById(user._id, (finalError, finalUser) => {
+            if (finalError) return cb(500, { msg: 'internal error' });
+
+            return cb(200, {
+              firstname: finalUser.firstname,
+              lastname: finalUser.lastname,
+              likes: finalUser.likes || null,
+              dislikes: finalUser.dislikes || null,
+              suggests: finalUser.suggests || null,
+              location: finalUser.geo,
+            });
+          });
         }
 
         await session.commitTransaction();
@@ -55,19 +81,6 @@ export default async function(body, cb) {
         session.endSession();
         // throw err;
         return cb(500, { msg: 'internal error' });
-      } finally {
-        getUserById(user._id, (finalError, finalUser) => {
-          if (finalError) return cb(500, { msg: 'internal error' });
-
-          return cb(200, {
-            firstname: finalUser.firstname,
-            lastname: finalUser.lastname,
-            likes: finalUser.likes || null,
-            dislikes: finalUser.dislikes || null,
-            suggests: finalUser.suggests || null,
-            location: finalUser.geo,
-          });
-        });
       }
     });
   });
