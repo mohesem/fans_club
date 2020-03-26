@@ -132,8 +132,8 @@ export default function Club() {
 
     APIDeleteClub(teamId, type)
       .then(res => {
-        // dispatch(userAction(data));
-        console.log(res);
+        dispatch(userAction(res.data));
+        console.log('...........................', res);
       })
       .catch(err => {
         console.log(err);
