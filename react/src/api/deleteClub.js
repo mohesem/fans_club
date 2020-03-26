@@ -7,7 +7,7 @@ const log = debug('log:isUserNew');
 export default function deleteClub(club, type) {
   return new Promise((resolve, reject) => {
     axios
-      .delete('https://www.fansclub.app/api/v1/DELETE/deleteClub', {
+      .post('https://www.fansclub.app/api/v1/POST/deleteClub', {
         token: localStorage.fans_club,
         club,
         type,
