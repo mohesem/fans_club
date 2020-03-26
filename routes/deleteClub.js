@@ -36,8 +36,8 @@ export default async function(body, cb) {
 
         if (type === 'like') {
           user.likes.filter(like => {
-            console.log(like._id, club._id, like._id !== club._id);
-            return like._id !== club._id;
+            console.log(like._id, club._id, like._id != club._id);
+            return like._id != club._id;
           });
 
           console.log(user.likes);
@@ -46,7 +46,7 @@ export default async function(body, cb) {
         }
 
         if (type === 'dislike') {
-          user.dislikes.filter(dislike => dislike._id !== club._id);
+          user.dislikes.filter(dislike => dislike._id != club._id);
           user.save();
           Dislike.deleteMany({ user_id: user._id, team_id: club._id });
         }
