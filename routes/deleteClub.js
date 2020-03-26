@@ -42,7 +42,8 @@ export default async function(body, cb) {
         }
 
         if (type === 'dislike') {
-          user.dislikes.filter(dislike => dislike._id != club._id);
+          const n = user.dislikes.filter(dislike => dislike._id != club._id);
+          user.dislikes = n;
           user.save();
           Dislike.deleteMany({ user_id: user._id, team_id: club._id });
         }

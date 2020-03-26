@@ -127,7 +127,7 @@ export default function Club() {
   }
 
   function handleDeleteTeams(teamId, type) {
-    console.log(teamId, type);
+    // console.log(teamId, type);
     setOnHold(true);
 
     APIDeleteClub(teamId, type)
