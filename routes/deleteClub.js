@@ -20,7 +20,7 @@ export default async function(body, cb) {
       if (error) return cb(500, { other: 'Server Internal Error' });
       if (!user) return cb(400, 'User doesnt exist');
 
-      const newLikeOrDislike = user[type].filter(id => id !== club._id);
+      const newLikeOrDislike = user[`${type}s`].filter(id => id !== club._id);
 
       user[type] = newLikeOrDislike;
 
