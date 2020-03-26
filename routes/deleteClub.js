@@ -22,7 +22,7 @@ export default async function(body, cb) {
 
       const newLikeOrDislike = user[`${type}s`].filter(id => id !== club._id);
 
-      user[type] = newLikeOrDislike;
+      user[`${type}s`] = newLikeOrDislike;
 
       const session = await mongoose.startSession();
       session.startTransaction();
