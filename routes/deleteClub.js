@@ -20,13 +20,13 @@ export default async function(body, cb) {
       if (error) return cb(500, { other: 'Server Internal Error' });
       if (!user) return cb(400, 'User doesnt exist');
 
-      console.log(user[`${type}s`]);
+      // console.log(user[`${type}s`]);
 
-      const newLikeOrDislike = user[`${type}s`].filter(a => a._id !== club._id);
+      // const newLikeOrDislike = user[`${type}s`].filter(a => a._id !== club._id);
 
-      user[`${type}s`] = newLikeOrDislike;
+      // user[`${type}s`] = newLikeOrDislike;
 
-      console.log(user[`${type}s`]);
+      // console.log(user[`${type}s`]);
 
       const session = await mongoose.startSession();
       session.startTransaction();
@@ -35,10 +35,14 @@ export default async function(body, cb) {
         await user.save();
 
         if (type === 'like') {
+          user.likes.filter(like => like._id !== club._id);
+          user.save();
           Like.deleteMany({ user_id: user._id, team_id: club._id });
         }
 
         if (type === 'dislike') {
+          user.dislikes.filter(like => like._id !== club._id);
+          user.save();
           Dislike.deleteMany({ user_id: user._id, team_id: club._id });
         }
 
