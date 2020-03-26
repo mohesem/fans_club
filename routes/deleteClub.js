@@ -36,6 +36,7 @@ export default async function(body, cb) {
 
         if (type === 'like') {
           user.likes.filter(like => like._id !== club._id);
+          console.log(user.likes);
           user.save();
           Like.deleteMany({ user_id: user._id, team_id: club._id });
         }
