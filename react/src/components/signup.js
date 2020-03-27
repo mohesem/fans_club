@@ -481,7 +481,7 @@ export default function Signup() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={false} md={12} className={classes.image} />
+        {/* <Grid item xs={false} sm={false} md={12} className={classes.image} /> */}
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}
