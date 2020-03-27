@@ -49,6 +49,7 @@ const useStyles = makeStyles(theme => ({
     top: 0,
     bottom: 0,
     zIndex: -1,
+    boxShadow: 'none',
   },
   image: {
     backgroundImage: 'url(./img/3.jpeg)',
