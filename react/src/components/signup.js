@@ -73,6 +73,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%', // Fix IE 11 issue.
     marginTop: theme.spacing(1),
     backgroundColor: theme.palette.background.default,
+    boxShadow: 'none',
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
