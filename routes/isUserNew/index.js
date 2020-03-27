@@ -13,7 +13,7 @@ export default async function(body, cb) {
   if (Object.entries(test).length) return cb(400, test);
   getUserByEmail(email, (err, user) => {
     if (err) return cb(500, { other: 'Internal Server Error' });
-    if (user) return cb(401, { other: 'Account exists' });
+    if (user) return cb(400, { other: 'Account exists' });
     return cb(200, { msg: 'New User' });
   });
   return null;
