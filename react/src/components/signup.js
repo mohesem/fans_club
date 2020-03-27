@@ -70,7 +70,6 @@ const useStyles = makeStyles(theme => ({
   },
   form: {
     width: '100%', // Fix IE 11 issue.
-    height: 'inherit',
     marginTop: theme.spacing(1),
     backgroundColor: theme.palette.background.default,
   },
@@ -89,6 +88,7 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     margin: '25% 10% 10% 10%',
+    boxShadow: 'none',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -481,7 +481,7 @@ export default function Signup() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={12} md={12} className={classes.image} />
+        <Grid item xs={false} sm={false} md={12} className={classes.image} />
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}
