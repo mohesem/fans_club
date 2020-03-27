@@ -12,6 +12,7 @@ import DateFnsUtils from '@date-io/date-fns';
 // material-ui component
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Hidden from '@material-ui/core/Hidden';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -483,7 +484,9 @@ export default function Signup() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={false} md={12} className={classes.image} />
+        <Hidden smDown>
+          <Grid item xs={false} sm={12} md={12} className={classes.image} />
+        </Hidden>
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}
