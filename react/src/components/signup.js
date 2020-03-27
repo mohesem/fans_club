@@ -188,7 +188,7 @@ export default function Signup() {
           if (err.status === 503) {
             enqueueSnackbar('Network Error', { variant: 'error' });
           } else {
-            log(err);
+            console.log('errrrrrrrrrrrrrrrr', err);
             setState({
               ...state,
               modalErrors: [err],
@@ -310,7 +310,7 @@ export default function Signup() {
       case 1:
         return (
           <div className={classes.stepperBody}>
-            <Typography className={classes.instructions}>Signin with</Typography>
+            {/* <Typography className={classes.instructions}>Signin with</Typography> */}
             <FormControl fullWidth disabled={signupReducers.location === undefined}>
               <GoogleLoginButton
                 onClick={() => {
