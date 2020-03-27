@@ -15,6 +15,9 @@ import Divider from '@material-ui/core/Divider';
 import RoomIcon from '@material-ui/icons/Room';
 import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
 
+import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
+import ThumbDownAltRoundedIcon from '@material-ui/icons/ThumbDownAltRounded';
+
 // actions
 import mapActions from '../actions/map';
 import clubAction from '../actions/club';
@@ -74,6 +77,7 @@ export default function Search() {
   const [state, setState] = useState({
     modalErrors: [],
     searchMode: 'team',
+    teamSearchMode: 'like',
     open: false,
   });
 
@@ -85,6 +89,14 @@ export default function Search() {
     setRedirect(`/v/${inputValue._id}`);
 
     // setOptions([]);
+  }
+
+  function handleChangeTeamSearchMode() {
+    if (state.teamSearchMode === 'like') {
+      setState({ ...state, teamSearchMode: 'dislike' });
+    } else {
+      setState({ ...state, teamSearchMode: 'like' });
+    }
   }
 
   const loading = state.open && options.length === 1;
@@ -254,8 +266,25 @@ export default function Search() {
               )}
             />
           )}
+          {state.searchMode === 'team' ? (
+            <IconButton
+              // className={
+              //   state.searchMode === 'place' ? classes.iconButtonSelected : classes.iconButton
+              // }
+              onClick={() => handleChangeTeamSearchMode()}
+              aria-label="search"
+            >
+              {state.teamSearchMode === 'like' ? (
+                <ThumbUpAltRoundedIcon style={{ color: '#4caf50' }} />
+              ) : (
+                <ThumbDownAltRoundedIcon style={{ color: '#f44336' }} />
+              )}
+            </IconButton>
+          ) : null}
+          {/* <Button>
+            <ThumbUpAltRoundedIcon />
+          </Button> */}
         </Paper>
-        <Button>like</Button>
       </div>
     </>
   );

@@ -12,8 +12,8 @@ import * as turf from '@turf/turf';
 import { Line } from 'react-chartjs-2';
 
 // material-ui component
-import Link from '@material-ui/core/Link';
-import IconButton from '@material-ui/core/IconButton';
+import { makeStyles } from '@material-ui/core/styles';
+import { Link, Popover, Typography, IconButton } from '@material-ui/core';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import TrendingUpRoundedIcon from '@material-ui/icons/TrendingUpRounded';
 import FormatListBulletedRoundedIcon from '@material-ui/icons/FormatListBulletedRounded';
@@ -56,7 +56,14 @@ let clubMarker = null;
 let userLocationMarker = null;
 const coordsArray = [];
 
+const useStyles = makeStyles(theme => ({
+  typography: {
+    padding: theme.spacing(2),
+  },
+}));
+
 function Map(props) {
+  const classes = useStyles();
   const dispatch = useDispatch();
 
   const userReducer = useSelector(state => state.user);
@@ -93,6 +100,26 @@ function Map(props) {
     c2: undefined,
     c3: 'rgb(255, 255, 255)',
   });
+
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  function handleCopyLink(event) {
+    const el = document.createElement('textarea');
+    el.value = window.location.href;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+
+    setAnchorEl(event.currentTarget);
+  }
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
 
   // NOTE: as its for showcase we only suport likes
   const [isLike, setIsLike] = useState(true);
@@ -1086,6 +1113,23 @@ function Map(props) {
                 <CloseRoundedIcon />
               </Link>
             </IconButton>
+
+            <Popover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'center',
+              }}
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'center',
+              }}
+            >
+              <Typography className={classes.typography}>Link copied to the clipboard.</Typography>
+            </Popover>
           </div>
 
           <div id="show-chart" className="legend-show-chart">
@@ -1105,19 +1149,7 @@ function Map(props) {
           </div>
 
           <div id="link-legend" className="legend-Link">
-            <IconButton
-              style={{ padding: 3, color: '#263238' }}
-              onClick={() => {
-                (() => {
-                  const el = document.createElement('textarea');
-                  el.value = window.location.href;
-                  document.body.appendChild(el);
-                  el.select();
-                  document.execCommand('copy');
-                  document.body.removeChild(el);
-                })();
-              }}
-            >
+            <IconButton style={{ padding: 3, color: '#263238' }} onClick={handleCopyLink}>
               <LinkRoundedIcon />
             </IconButton>
           </div>
