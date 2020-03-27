@@ -12,8 +12,8 @@ export default async function(body, cb) {
   log('test isNewUser', test);
   if (Object.entries(test).length) return cb(400, test);
   getUserByEmail(email, (err, user) => {
-    if (err) return cb(500, { other: 'Internal Server Error' });
-    if (user) return cb(500, { other: 'Account exists' });
+    if (err) return cb(200, { err: true, other: 'Internal Server Error' });
+    if (user) return cb(200, { err: true, other: 'Account exists' });
     return cb(200, { msg: 'New User' });
   });
   return null;

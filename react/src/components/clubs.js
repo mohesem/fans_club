@@ -73,6 +73,7 @@ const useStyles = makeStyles(theme => ({
   },
   form: {
     width: '100%', // Fix IE 11 issue.
+    height: 'inherit',
     marginTop: theme.spacing(1),
   },
   submit: {

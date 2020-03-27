@@ -70,7 +70,7 @@ const useStyles = makeStyles(theme => ({
   },
   form: {
     width: '100%', // Fix IE 11 issue.
-    height: '100vh',
+    height: 'inherit',
     marginTop: theme.spacing(1),
     backgroundColor: theme.palette.background.default,
   },
@@ -205,11 +205,20 @@ export default function Signup() {
     isUserNewApi(user.email)
       .then(res => {
         console.log('reeeeeeeeeeeees', res);
-        setState({
-          ...state,
-          isNewuser: true,
-          try: false,
-        });
+        if (res.err) {
+          setState({
+            ...state,
+            modalErrors: [res.other],
+            isNewuser: false,
+            try: false,
+          });
+        } else {
+          setState({
+            ...state,
+            isNewuser: true,
+            try: false,
+          });
+        }
       })
       .catch(err => {
         console.log('errrrrrrrrrrrrrrrrrrr', err);
@@ -220,14 +229,16 @@ export default function Signup() {
             isNewuser: false,
             try: false,
           });
-        } else {
-          setState({
-            ...state,
-            modalErrors: [err],
-            isNewuser: false,
-            try: false,
-          });
         }
+
+        // else {
+        //   setState({
+        //     ...state,
+        //     modalErrors: [err],
+        //     isNewuser: false,
+        //     try: false,
+        //   });
+        // }
       });
   }
 
