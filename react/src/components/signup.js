@@ -70,6 +70,7 @@ const useStyles = makeStyles(theme => ({
   },
   form: {
     width: '100%', // Fix IE 11 issue.
+    height: '100vh',
     marginTop: theme.spacing(1),
     backgroundColor: theme.palette.background.default,
   },
@@ -469,7 +470,7 @@ export default function Signup() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={12} md={12} />
+        <Grid item xs={false} sm={12} md={12} className={classes.image} />
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}
