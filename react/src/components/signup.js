@@ -204,7 +204,7 @@ export default function Signup() {
 
     isUserNewApi(user.email)
       .then(res => {
-        log('reeeeeeeeeeeees', res);
+        console.log('reeeeeeeeeeeees', res);
         setState({
           ...state,
           isNewuser: true,
