@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { Redirect } from 'react-router-dom';
+import { withRouter, Redirect } from 'react-router-dom';
 import debug from 'debug';
 import { useSnackbar } from 'notistack';
 
@@ -14,7 +14,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
 import RoomIcon from '@material-ui/icons/Room';
 import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
-
 import ThumbUpAltRoundedIcon from '@material-ui/icons/ThumbUpAltRounded';
 import ThumbDownAltRoundedIcon from '@material-ui/icons/ThumbDownAltRounded';
 
@@ -68,7 +67,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function Search() {
+function Search(props) {
   const dispatch = useDispatch();
   const { enqueueSnackbar } = useSnackbar();
 
@@ -86,17 +85,30 @@ export default function Search() {
 
   const [redirect, setRedirect] = useState(false);
 
-  function handleRedirect(inputValue) {
-    setRedirect(`/v/${inputValue._id}`);
+  const { location } = props;
+  const { pathname } = location;
 
+  function handleRedirect(inputValue) {
+    setRedirect(`/v/${searchModeReducer}/${inputValue._id}`);
     // setOptions([]);
+  }
+
+  const pathArr = pathname.split('/');
+  if (pathArr[2] != searchModeReducer && pathArr[2]) {
+    dispatch(searchAction(pathArr[2]));
   }
 
   function handleChangeTeamSearchMode() {
     if (searchModeReducer === 'like') {
       dispatch(searchAction('dislike'));
+      if (pathArr.length > 3) {
+        setRedirect(`/v/dislike/${pathArr[3]}`);
+      }
     } else {
       dispatch(searchAction('like'));
+      if (pathArr.length > 3) {
+        setRedirect(`/v/like/${pathArr[3]}`);
+      }
     }
   }
 
@@ -290,3 +302,5 @@ export default function Search() {
     </>
   );
 }
+
+export default withRouter(Search);

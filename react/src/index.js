@@ -38,7 +38,11 @@ ReactDOM.render(
         <ThemeProvider theme={theme}>
           <Route path="/" component={Map} />
           <Route path="/" component={Appbar} />
-          <Route exact path={['/', '/v', '/v/:id', '/signup/getUserLocation']} component={Search} />
+          <Route
+            exact
+            path={['/', '/v', '/v/:likeOrDislike/:id', '/signup/getUserLocation']}
+            component={Search}
+          />
           <Route exact path="/signup" component={Signup} />
 
           <Route exact path="/signin" component={Signin} />

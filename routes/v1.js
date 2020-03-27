@@ -66,8 +66,8 @@ router.post('/POST/dislikeClub', (req, res) => {
   });
 });
 
-router.get('/GET/getClubTotalLikes/:id', (req, res) => {
-  getClubTotalLikes(req.params.id, (status, trace) => {
+router.get('/GET/getClubTotalLikes/:mode/:id', (req, res) => {
+  getClubTotalLikes(req.params.id, req.params.mode, (status, trace) => {
     res.status(status).send(trace);
   });
 });

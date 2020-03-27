@@ -1,7 +1,7 @@
-export default (state = 'team', action) => {
+export default (state = 'like', action) => {
   switch (action.type) {
     case 'UPDATE_SEARCH':
-      return { ...state, ...action.payload };
+      return action.payload;
     default:
       return state;
   }

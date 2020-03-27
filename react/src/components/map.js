@@ -69,6 +69,9 @@ function Map(props) {
   const userReducer = useSelector(state => state.user);
   const mapReducer = useSelector(state => state.map);
   const clubReducer = useSelector(state => state.club);
+  const searchModeReducer = useSelector(state => state.search);
+  const [searchMode, setSearchMode] = useState('');
+  console.log('seach moooooooode', searchModeReducer);
 
   // local state
   const [state, setState] = useState({
@@ -76,8 +79,6 @@ function Map(props) {
     isLoader: true,
     // NOTE: 0 is normal && 1 is getUserLocation && 2 is virtualization
     mode: 'wait',
-    // NOTE: 1 is for like and 0 is for dislike
-    likeOrDislike: 1,
     // NOTE: 0 is color helper and 1 is for chart
     legends: 0,
     clubId: undefined,
@@ -122,7 +123,7 @@ function Map(props) {
   const id = open ? 'simple-popover' : undefined;
 
   // NOTE: as its for showcase we only suport likes
-  const [isLike, setIsLike] = useState(true);
+  // const [isLike, setIsLike] = useState(true);
 
   function specifyCriterion() {
     // mapbox.setPaintProperty('boundry', 'fill-color', [
@@ -477,16 +478,18 @@ function Map(props) {
     return setState({ ...state, legends: 0 });
   }
 
-  function addToSourceOnMove() {
+  function addToSourceOnMove(mode) {
     if (map.getSource('boundary-source')) {
       const pathnameSplit = pathname.split('/');
       const id = pathnameSplit[pathnameSplit.length - 1];
-      const val = isLike === true ? 'like' : 'dislike';
+      // const val = pathnameSplit[pathnameSplit.length - 2];
       const bbox = map.getBounds();
+
+      console.log('-----------------', mode);
 
       // log('bbox is ', bbox);
       if (map.getZoom() > 8) {
-        getMembersFromPoly(bbox, val, id)
+        getMembersFromPoly(bbox, mode, id)
           .then(res => {
             geojson.features = [];
 
@@ -711,9 +714,11 @@ function Map(props) {
     // log('-------------------------------', <i className="fas fa-helicopter    " />);
     console.log(pathname.split('/'));
     if (
-      pathnameSplit[pathnameSplit.length - 1] &&
-      state.teamId !== pathnameSplit[pathnameSplit.length - 1]
+      (pathnameSplit[pathnameSplit.length - 1] &&
+        state.teamId !== pathnameSplit[pathnameSplit.length - 1]) ||
+      searchModeReducer !== searchMode
     ) {
+      setSearchMode(searchModeReducer);
       console.log('get cluuuuuuuuuuuuuub');
       // alert(pathnameSplit[pathnameSplit.length - 1]);
       console.log(
@@ -726,7 +731,11 @@ function Map(props) {
 
       _totalLikes = null;
       axios
-        .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[pathnameSplit.length - 1]}`)
+        .get(
+          `https://www.fansclub.app/api/v1/GET/club/${
+            pathnameSplit[pathnameSplit.length - 1]
+          }`
+        )
         .then(res => {
           console.log('............................. club has been found', res);
           if (res.data.base64Image) {
@@ -779,7 +788,7 @@ function Map(props) {
 
       axios
         .get(
-          `https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${
+          `https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${searchMode}/${
             pathnameSplit[pathnameSplit.length - 1]
           }`
         )
@@ -948,7 +957,8 @@ function Map(props) {
               {helper.step2}
             </div>
             <div>
-              <span style={{ backgroundColor: helper.c3 }} />0
+              <span style={{ backgroundColor: helper.c3 }} />
+              0
             </div>
           </div>
           <div

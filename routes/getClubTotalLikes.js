@@ -1,42 +1,68 @@
 import debug from 'debug';
 import Like from '../DB/models/likeModel';
+import Dislike from '../DB/models/dislikeModel';
 import Team from '../DB/models/teamsModel';
 
 const log = debug('log:v1');
 
-function findPointsForLikes(within, teamId, gender) {
-  // log(')))))))))))))))))))))))))))))', within);
+function findPointsForLikes(within, teamId, mode, gender) {
   return new Promise((resolve, reject) => {
-    Like.countDocuments({
-      // geo: {
-      //   $geoWithin: {
-      //     $geometry: reqPoly.geometry,
-      //   },
-      // },
-      team_id: teamId,
-      gender,
-      date: {
-        $gte: new Date(within[0]),
-        $lte: new Date(within[1]),
-      },
-      // fid: {
-      //   $lte: '500',
-      // },
-    }).exec((err, res) => {
-      if (err) {
-        log('geoWithin err', err);
-        reject(err);
-      }
-      // log('geoWithin', res);
-      resolve(res);
-    });
+    if (mode === 'like') {
+      Like.countDocuments({
+        // geo: {
+        //   $geoWithin: {
+        //     $geometry: reqPoly.geometry,
+        //   },
+        // },
+        team_id: teamId,
+        gender,
+        date: {
+          $gte: new Date(within[0]),
+          $lte: new Date(within[1]),
+        },
+        // fid: {
+        //   $lte: '500',
+        // },
+      }).exec((err, res) => {
+        if (err) {
+          log('geoWithin err', err);
+          reject(err);
+        }
+        // log('geoWithin', res);
+        resolve(res);
+      });
+    } else {
+      Dislike.countDocuments({
+        // geo: {
+        //   $geoWithin: {
+        //     $geometry: reqPoly.geometry,
+        //   },
+        // },
+        team_id: teamId,
+        gender,
+        date: {
+          $gte: new Date(within[0]),
+          $lte: new Date(within[1]),
+        },
+        // fid: {
+        //   $lte: '500',
+        // },
+      }).exec((err, res) => {
+        if (err) {
+          log('geoWithin err', err);
+          reject(err);
+        }
+        // log('geoWithin', res);
+        resolve(res);
+      });
+    }
   });
 }
 
-export default function getTotalLikes(body, cb) {
+export default function getTotalLikes(teamId, mode, cb) {
   log('get total likes', body);
-  const teamId = '5e6aa5e6075d200d2a9d7530';
-
+  // const teamId = '5e6aa5e6075d200d2a9d7530';
+  // TODO: make date unstatic
   const startDate = 1580114579000;
   const endDate = 1590568979000;
   const def = (endDate - startDate) / 6;
@@ -66,28 +92,28 @@ export default function getTotalLikes(body, cb) {
       // );
 
       const males = await (async () => {
-        const males1 = await findPointsForLikes(step1, teamId, 'male');
-        const males2 = (await findPointsForLikes(step2, teamId, 'male')) + males1;
-        const males3 = (await findPointsForLikes(step3, teamId, 'male')) + males2;
-        const males4 = (await findPointsForLikes(step4, teamId, 'male')) + males3;
-        const males5 = (await findPointsForLikes(step5, teamId, 'male')) + males4;
-        const males6 = (await findPointsForLikes(step6, teamId, 'male')) + males5;
+        const males1 = await findPointsForLikes(step1, teamId, mode, 'male');
+        const males2 = (await findPointsForLikes(step2, teamId, mode, 'male')) + males1;
+        const males3 = (await findPointsForLikes(step3, teamId, mode, 'male')) + males2;
+        const males4 = (await findPointsForLikes(step4, teamId, mode, 'male')) + males3;
+        const males5 = (await findPointsForLikes(step5, teamId, mode, 'male')) + males4;
+        const males6 = (await findPointsForLikes(step6, teamId, mode, 'male')) + males5;
 
         return [males1, males2, males3, males4, males5, males6];
       })();
 
       const females = await (async () => {
-        const females1 = await findPointsForLikes(step1, teamId, 'female');
-        const females2 = (await findPointsForLikes(step2, teamId, 'female')) + females1;
-        const females3 = (await findPointsForLikes(step3, teamId, 'female')) + females2;
-        const females4 = (await findPointsForLikes(step4, teamId, 'female')) + females3;
-        const females5 = (await findPointsForLikes(step5, teamId, 'female')) + females4;
-        const females6 = (await findPointsForLikes(step6, teamId, 'female')) + females5;
+        const females1 = await findPointsForLikes(step1, teamId, mode, 'female');
+        const females2 = (await findPointsForLikes(step2, teamId, mode, 'female')) + females1;
+        const females3 = (await findPointsForLikes(step3, teamId, mode, 'female')) + females2;
+        const females4 = (await findPointsForLikes(step4, teamId, mode, 'female')) + females3;
+        const females5 = (await findPointsForLikes(step5, teamId, mode, 'female')) + females4;
+        const females6 = (await findPointsForLikes(step6, teamId, mode, 'female')) + females5;
 
         return [females1, females2, females3, females4, females5, females6];
       })();
 
-      const team = await Team.findById('5e6aa5e6075d200d2a9d7530', (error, res) => {
+      const team = await Team.findById(teamId, (error, res) => {
         // log(error, res);
         if (error) return cb(500, { msg: 'Internal Serever Error' });
         return res;
