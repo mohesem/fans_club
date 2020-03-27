@@ -212,7 +212,7 @@ export default function Signup() {
         });
       })
       .catch(err => {
-        log(err);
+        console.log('errrrrrrrrrrrrrrrrrrr', err);
         if (err === 'network error') {
           setState({
             ...state,
