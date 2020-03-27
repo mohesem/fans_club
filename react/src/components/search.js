@@ -21,6 +21,7 @@ import ThumbDownAltRoundedIcon from '@material-ui/icons/ThumbDownAltRounded';
 // actions
 import mapActions from '../actions/map';
 import clubAction from '../actions/club';
+import searchAction from '../actions/search';
 
 // api
 import searchClubsApi from '../api/searchClubs';
@@ -73,11 +74,11 @@ export default function Search() {
 
   // reducers
   const mapCenterReducer = useSelector(global => global.map.center);
+  const searchModeReducer = useSelector(global => global.search);
 
   const [state, setState] = useState({
     modalErrors: [],
     searchMode: 'team',
-    teamSearchMode: 'like',
     open: false,
   });
 
@@ -92,10 +93,10 @@ export default function Search() {
   }
 
   function handleChangeTeamSearchMode() {
-    if (state.teamSearchMode === 'like') {
-      setState({ ...state, teamSearchMode: 'dislike' });
+    if (searchModeReducer === 'like') {
+      dispatch(searchAction('dislike'));
     } else {
-      setState({ ...state, teamSearchMode: 'like' });
+      dispatch(searchAction('like'));
     }
   }
 
@@ -274,7 +275,7 @@ export default function Search() {
               onClick={() => handleChangeTeamSearchMode()}
               aria-label="search"
             >
-              {state.teamSearchMode === 'like' ? (
+              {searchModeReducer === 'like' ? (
                 <ThumbUpAltRoundedIcon style={{ color: '#4caf50' }} />
               ) : (
                 <ThumbDownAltRoundedIcon style={{ color: '#f44336' }} />
