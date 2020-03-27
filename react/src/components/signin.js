@@ -120,7 +120,7 @@ export default function Singin() {
             location: res.data.location,
           })
         );
-        enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
+        // enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
       })
       .catch(err => {
         log(err);
