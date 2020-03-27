@@ -478,18 +478,24 @@ function Map(props) {
     return setState({ ...state, legends: 0 });
   }
 
-  function addToSourceOnMove(mode) {
+  function addToSourceOnMove() {
     if (map.getSource('boundary-source')) {
       const pathnameSplit = pathname.split('/');
       const id = pathnameSplit[pathnameSplit.length - 1];
-      // const val = pathnameSplit[pathnameSplit.length - 2];
       const bbox = map.getBounds();
 
-      console.log('-----------------', mode);
+      const splitHref = window.location.href.split('/');
+      const val = splitHref[splitHref.length - 2];
+
+      console.log('-----------------', val);
+
+      // TODO: store val and if it chenged clear the previous ones;
+      // TODO: set different colors for likes and dislikes
+      // TODO: change dots to pins
 
       // log('bbox is ', bbox);
       if (map.getZoom() > 8) {
-        getMembersFromPoly(bbox, mode, id)
+        getMembersFromPoly(bbox, val, id)
           .then(res => {
             geojson.features = [];
 
@@ -608,12 +614,13 @@ function Map(props) {
     specifyCriterion();
   }
 
-  function addOnMove() {
+  function addOnMove(m) {
     // const pathnameSplit = pathname.split('/');
     // const id = pathnameSplit[pathnameSplit.length - 1];
     // const val = isLike === true ? 'like' : 'dislike';
     // const bbox = map.getBounds();
     // callApi(bbox, val, id);
+
     addToSourceOnMove();
     specifyCriterion();
 
@@ -731,11 +738,7 @@ function Map(props) {
 
       _totalLikes = null;
       axios
-        .get(
-          `https://www.fansclub.app/api/v1/GET/club/${
-            pathnameSplit[pathnameSplit.length - 1]
-          }`
-        )
+        .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameSplit[pathnameSplit.length - 1]}`)
         .then(res => {
           console.log('............................. club has been found', res);
           if (res.data.base64Image) {
@@ -957,8 +960,7 @@ function Map(props) {
               {helper.step2}
             </div>
             <div>
-              <span style={{ backgroundColor: helper.c3 }} />
-              0
+              <span style={{ backgroundColor: helper.c3 }} />0
             </div>
           </div>
           <div
@@ -1123,23 +1125,6 @@ function Map(props) {
                 <CloseRoundedIcon />
               </Link>
             </IconButton>
-
-            <Popover
-              id={id}
-              open={open}
-              anchorEl={anchorEl}
-              onClose={handleClose}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'center',
-              }}
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'center',
-              }}
-            >
-              <Typography className={classes.typography}>Link copied to the clipboard.</Typography>
-            </Popover>
           </div>
 
           <div id="show-chart" className="legend-show-chart">
@@ -1162,6 +1147,23 @@ function Map(props) {
             <IconButton style={{ padding: 3, color: '#263238' }} onClick={handleCopyLink}>
               <LinkRoundedIcon />
             </IconButton>
+
+            <Popover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'center',
+              }}
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'center',
+              }}
+            >
+              <Typography className={classes.typography}>Link copied to the clipboard.</Typography>
+            </Popover>
           </div>
         </>
       ) : null}

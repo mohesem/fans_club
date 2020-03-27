@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Redirect /* Link as RouterLink */ } from 'react-router-dom';
 
 // material-ui
+import Hidden from '@material-ui/core/Hidden';
 import TableRow from '@material-ui/core/TableRow';
 import TableHead from '@material-ui/core/TableHead';
 import TableCell from '@material-ui/core/TableCell';
@@ -75,6 +76,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%', // Fix IE 11 issue.
     height: 'inherit',
     marginTop: theme.spacing(1),
+    boxShadow: 'none',
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
@@ -160,7 +162,9 @@ export default function Club() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Grid item xs={false} sm={12} md={12} className={classes.image} />
+        <Hidden smDown>
+          <Grid item xs={false} sm={12} md={12} className={classes.image} />
+        </Hidden>
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}

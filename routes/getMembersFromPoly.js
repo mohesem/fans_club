@@ -2,6 +2,7 @@
 import debug from 'debug';
 import * as turf from '@turf/turf';
 import Like from '../DB/models/likeModel';
+import Dislike from '../DB/models/dislikeModel';
 
 const log = debug('log:v1');
 
@@ -13,19 +14,37 @@ export default function getMembersFromPoly(swlng, swlat, nelng, nelat, val, team
   const boundsCoords = [swlng, swlat, nelng, nelat];
   const requestedPoly = turf.bboxPolygon(boundsCoords);
 
-  Like.find(
-    {
-      team_id: '5e6aa5e6075d200d2a9d7530',
-      geo: {
-        $geoWithin: {
-          $geometry: requestedPoly.geometry,
+  if (val === 'like') {
+    Like.find(
+      {
+        team_id: teamId,
+        geo: {
+          $geoWithin: {
+            $geometry: requestedPoly.geometry,
+          },
         },
       },
-    },
-    (err, res) => {
-      console.log(res);
-      if (err) return cb(500, { msg: 'Inernal Server Error' });
-      return cb(200, { likes: res });
-    }
-  );
+      (err, res) => {
+        console.log(res);
+        if (err) return cb(500, { msg: 'Inernal Server Error' });
+        return cb(200, { likes: res });
+      }
+    );
+  } else {
+    Dislike.find(
+      {
+        team_id: teamId,
+        geo: {
+          $geoWithin: {
+            $geometry: requestedPoly.geometry,
+          },
+        },
+      },
+      (err, res) => {
+        console.log(res);
+        if (err) return cb(500, { msg: 'Inernal Server Error' });
+        return cb(200, { likes: res });
+      }
+    );
+  }
 }
