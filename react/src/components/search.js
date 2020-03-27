@@ -6,7 +6,7 @@ import debug from 'debug';
 import { useSnackbar } from 'notistack';
 
 // material-ui component
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Button } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Paper from '@material-ui/core/Paper';
@@ -255,6 +255,7 @@ export default function Search() {
             />
           )}
         </Paper>
+        <Button>like</Button>
       </div>
     </>
   );
