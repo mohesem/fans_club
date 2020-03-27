@@ -205,10 +205,10 @@ export default function Signup() {
     isUserNewApi(user.email)
       .then(res => {
         console.log('reeeeeeeeeeeees', res);
-        if (res.err) {
+        if (res.data.err) {
           setState({
             ...state,
-            modalErrors: [res.other],
+            modalErrors: [{ other: res.data.other }],
             isNewuser: false,
             try: false,
           });
