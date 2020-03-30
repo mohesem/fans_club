@@ -75,6 +75,7 @@ export default async function(body, cb) {
               team_id: body.club._id,
               geo: user.geo,
               fid: boundary.fid,
+              gender: user.gender,
             });
             newLike.save();
           });
