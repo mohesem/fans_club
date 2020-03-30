@@ -73,8 +73,8 @@ router.get('/GET/getClubTotalLikes/:mode/:id', (req, res) => {
 });
 router.get('/GET/tiles/:z/:x/:y', (req, res) => {
   const { z, x, y } = req.params;
-  console.log(x, z, y);
-  log(z, x, y);
+  // console.log(x, z, y);
+  // log(z, x, y);
   getTiles(z, x, y, (status, header, tile) => {
     // res.;
     res
@@ -86,6 +86,7 @@ router.get('/GET/tiles/:z/:x/:y', (req, res) => {
 
 router.get('/GET/membersFromPoly/:swlng/:swlat/:nelng/:nelat/:val/:teamId', (req, res) => {
   const { swlng, swlat, nelng, nelat, val, teamId } = req.params;
+  console.log(swlng, swlat, nelng, nelat, val, teamId);
   getMembersFromPoly(swlng, swlat, nelng, nelat, val, teamId, (status, trace) => {
     res.status(status).send(trace);
   });
