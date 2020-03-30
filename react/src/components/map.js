@@ -598,7 +598,7 @@ function Map(props) {
                     {
                       source: 'boundary-source',
                       sourceLayer: 'boundry',
-                      id: key /* dataValues['USA1' + row.STATE_ID].id_int */,
+                      id: String(key) /* dataValues['USA1' + row.STATE_ID].id_int */,
                     },
                     { fans: likes[key] * 3000 }
                   );
