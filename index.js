@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import Cors from 'cors';
 import path from 'path';
-import logger from 'morgan';
+// import logger from 'morgan';
 import debug from 'debug';
 import mongoose from 'mongoose';
 import 'dotenv/config';
@@ -58,7 +58,7 @@ app.use(Cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(logger('dev'));
+// app.use(logger('dev'));
 
 app.use(Cors());
 app.use(bodyParser.json());

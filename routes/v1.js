@@ -95,6 +95,7 @@ router.get('/GET/membersFromPoly/:swlng/:swlat/:nelng/:nelat/:val/:teamId', (req
 
 router.post('/POST/getLikesForPolys', (req, res) => {
   getLikesForPolys(req.body, (status, trace) => {
+    console.log('getLikesForPolys ......', trace);
     res.status(status).send(trace);
   });
 });
