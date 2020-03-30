@@ -3,9 +3,9 @@ import GeoJSON from 'mongoose-geojson-schema';
 
 const likeSchema = new Schema({
   geo: Schema.Types.Point,
-  user_id: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  boundy_id: { type: Schema.Types.ObjectId, ref: 'GeoJSON', required: true },
-  team_id: { type: Schema.Types.ObjectId, ref: 'Team', required: true },
+  user_id: { type: String },
+  boundy_id: { type: String },
+  team_id: { type: String },
   name0: { type: String },
   name1: { type: String },
   name2: { type: String },
