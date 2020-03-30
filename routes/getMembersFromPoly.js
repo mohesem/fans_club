@@ -11,6 +11,7 @@ const log = debug('log:v1');
 // NOTE: as it is for showcase it only returns likes
 // [bounds._sw.lng, bounds._sw.lat, bounds._ne.lng, bounds._ne.lat]
 export default function getMembersFromPoly(swlng, swlat, nelng, nelat, val, teamId, cb) {
+  console.log('........................', teamId);
   const boundsCoords = [swlng, swlat, nelng, nelat];
   const requestedPoly = turf.bboxPolygon(boundsCoords);
 
