@@ -600,7 +600,7 @@ function Map(props) {
                       sourceLayer: 'boundry',
                       id: key /* dataValues['USA1' + row.STATE_ID].id_int */,
                     },
-                    { fans: likes[key] / 3 }
+                    { fans: likes[key] * 3000 }
                   );
                 });
               })
