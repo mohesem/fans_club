@@ -11,7 +11,7 @@ export default function getMembersFromPoly(bounds, val, teamId) {
         `https://www.fansclub.app/api/v1/GET/membersFromPoly/${bounds._sw.lng}/${bounds._sw.lat}/${bounds._ne.lng}/${bounds._ne.lat}/${val}/${teamId}`
       )
       .then(response => {
-        console.log(response);
+        console.log('getMembersFromPoly', response);
         resolve(response);
       })
       .catch(err => {
