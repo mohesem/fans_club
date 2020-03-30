@@ -49,7 +49,7 @@ export default function getClub(teamId, cb) {
 
               // Buffer.from(img, 'binary').toString('base64');
 
-              console.log('-----------------', cityObj);
+              // console.log('-----------------', cityObj);
               return cb(200, {
                 city: cityObj,
                 club,

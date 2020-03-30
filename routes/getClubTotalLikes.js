@@ -60,7 +60,7 @@ function findPointsForLikes(within, teamId, mode, gender) {
 }
 
 export default function getTotalLikes(teamId, mode, cb) {
-  log('get total likes', body);
+  // log('get total likes', body);
   // const teamId = '5e6aa5e6075d200d2a9d7530';
   // TODO: make date unstatic
   const startDate = 1580114579000;
