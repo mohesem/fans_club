@@ -46,6 +46,7 @@ export default async function(body, cb) {
            ** the actual boundary
            */
           await bounds.array.forEach(boundary => {
+            console.log(boundry.fid);
             const newLike = new Like({
               name0: boundary.name0,
               name1: boundary.name1,
