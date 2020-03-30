@@ -125,7 +125,6 @@ function Map(props) {
   const searchModeReducer = useSelector(state => state.search);
   const [searchMode, setSearchMode] = useState('');
   const [openShareButtons, setOpenShareButtons] = useState(false);
-  console.log('seach moooooooode', searchModeReducer);
 
   // local state
   const [state, setState] = useState({

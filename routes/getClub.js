@@ -13,9 +13,9 @@ export default function getClub(teamId, cb) {
       console.log(`error on finding club \n ${err}`);
       return cb(500, 'error on finding club');
     }
-    console.log('club ==> ', club);
+    // console.log('club ==> ', club);
 
-    log('club ==> ', club);
+    // log('club ==> ', club);
     const { city, group, country, name } = club;
     // city.trim();
     // country.trim();
