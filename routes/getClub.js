@@ -30,7 +30,6 @@ export default function getClub(teamId, cb) {
             console.log('---------------------', errRead);
             return cb(200, { club, errRead });
           }
-          console.log('tewaeeeeeeeeeeeeeeeeam with logo has been found');
           City.findOne(
             {
               country: country.trim(),
