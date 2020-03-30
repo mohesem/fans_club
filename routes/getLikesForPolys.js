@@ -9,8 +9,9 @@ function getLikeNumbers(body) {
   return new Promise((resolve, reject) => {
     try {
       reducedDuplicates.forEach(async (fid, index) => {
+        console.log('fiddddddddddddddddddd', fid);
         // console.log(reducedDuplicates.length - 1, index);
-        await Like.countDocuments({ fid: String(fid), team_id: teamId }, (err, res) => {
+        await Like.countDocuments({ fid, team_id: teamId }, (err, res) => {
           if (err) console.log(err);
           // console.log(res);
           // finalRes.push({ fid: res });
