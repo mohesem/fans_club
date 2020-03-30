@@ -10,17 +10,14 @@ function getLikeNumbers(body) {
     try {
       reducedDuplicates.forEach(async (fid, index) => {
         // console.log(reducedDuplicates.length - 1, index);
-        await Like.countDocuments(
-          { fid: String(fid), team_id: '5e6aa5e6075d200d2a9d7530' },
-          (err, res) => {
-            if (err) console.log(err);
-            // console.log(res);
-            // finalRes.push({ fid: res });
-            // console.log(finalRes);
+        await Like.countDocuments({ fid: String(fid), team_id: teamId }, (err, res) => {
+          if (err) console.log(err);
+          // console.log(res);
+          // finalRes.push({ fid: res });
+          // console.log(finalRes);
 
-            finalRes[fid] = res;
-          }
-        );
+          finalRes[fid] = res;
+        });
 
         if (reducedDuplicates.length - 1 === index) {
           resolve(finalRes);
