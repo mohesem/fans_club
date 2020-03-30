@@ -47,7 +47,6 @@ router.get('/GET/getUserInfo/:token', (req, res) => {
 });
 
 router.post('/POST/searchClubs', (req, res) => {
-  console.log('asdf asdf');
   log(req.body);
   searchClubs(req.body, (status, trace) => {
     res.status(status).send(trace);
