@@ -540,7 +540,7 @@ function Map(props) {
       const bbox = map.getBounds();
 
       const splitHref = window.location.href.split('/');
-      const val = splitHref[splitHref.length - 2];
+      const val = splitHref[splitHref.length - 1];
 
       console.log('-----------------', val);
 

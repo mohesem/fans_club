@@ -53,6 +53,7 @@ export default async function(body, cb) {
               user_id: user._id,
               boundy_id: boundary._id,
               team_id: body.club._id,
+              geo: user.geo,
             });
             newLike.save();
           });
