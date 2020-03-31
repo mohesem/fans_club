@@ -414,6 +414,8 @@ function Map(props) {
       // log('bbox is ', bbox);
 
       const fs = map.queryRenderedFeatures({ layers: ['boundry'] });
+      console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~', fs);
+
       const { length } = fs;
       if (fsLength !== length) {
         fsLength = length;
@@ -444,7 +446,7 @@ function Map(props) {
                       sourceLayer: 'boundry',
                       id: key /* dataValues['USA1' + row.STATE_ID].id_int */,
                     },
-                    { fans: likes[key] * 3000 }
+                    { fans: likes[key] }
                   );
                 });
               })

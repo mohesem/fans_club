@@ -7,6 +7,11 @@ const log = debug('log:v1');
 function getLikeNumbers(body) {
   const { likeOrDislike, reducedDuplicates, teamId } = body;
   const finalRes = {};
+
+  const calculatedFid = () => {
+    if (fid < 1000) return fid;
+    if (fid > 1000) return fid - 1000;
+  };
   return new Promise((resolve, reject) => {
     try {
       reducedDuplicates.forEach(async (fid, index) => {
@@ -16,7 +21,7 @@ function getLikeNumbers(body) {
             finalRes[fid] = res;
           });
         } else {
-          await Dislike.countDocuments({ fid, team_id: teamId }, (err, res) => {
+          await Dislike.countDocuments({ fid: calculatedFid(), team_id: teamId }, (err, res) => {
             if (err) console.log(err);
             finalRes[fid] = res;
           });
