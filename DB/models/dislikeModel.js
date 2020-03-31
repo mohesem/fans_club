@@ -9,7 +9,7 @@ const dislikeSchema = new Schema({
   name0: { type: String },
   name1: { type: String },
   name2: { type: String },
-  fid: { type: String, require: true },
+  fid: { type: Number, require: true },
   date: { type: Date, default: new Date() },
   gender: { type: String },
 });

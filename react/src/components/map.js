@@ -373,6 +373,7 @@ function Map(props) {
                 reducedDuplicates,
               })
               .then(response => {
+                console.log(response);
                 const { likes } = response.data;
                 Object.keys(likes).forEach(key => {
                   map.setFeatureState(
@@ -381,7 +382,7 @@ function Map(props) {
                       sourceLayer: 'boundry',
                       id: key /* dataValues['USA1' + row.STATE_ID].id_int */,
                     },
-                    { fans: likes[key] / 3 }
+                    { fans: likes[key] }
                   );
                 });
               })
@@ -396,12 +397,124 @@ function Map(props) {
     return null;
   }
 
+  function addToSourceOnMove() {
+    if (map.getSource('boundary-source')) {
+      const pathnameSplit = pathname.split('/');
+      const id = pathnameSplit[pathnameSplit.length - 1];
+
+      const splitHref = window.location.href.split('/');
+      const val = splitHref[splitHref.length - 1];
+
+      console.log('-----------------', val);
+
+      // TODO: store val and if it chenged clear the previous ones;
+      // TODO: set different colors for likes and dislikes
+      // TODO: change dots to pins
+
+      // log('bbox is ', bbox);
+
+      const fs = map.queryRenderedFeatures({ layers: ['boundry'] });
+      const { length } = fs;
+      if (fsLength !== length) {
+        fsLength = length;
+        const array = fs.map(f => f.id);
+        const uniqueArray = [...new Set(array)];
+        const reducedDuplicates = [];
+
+        uniqueArray.forEach((u, i) => {
+          if (!localDataRef[u]) {
+            localDataRef[u] = 1;
+            reducedDuplicates.push(u);
+          }
+
+          if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
+            axios
+              .post('https://www.fansclub.app/api/v1/POST/getLikesForPolys', {
+                likeOrDislike: LikeOrDislike,
+                teamId: TeamId,
+                reducedDuplicates,
+              })
+              .then(response => {
+                console.log(response);
+                const { likes } = response.data;
+                Object.keys(likes).forEach(key => {
+                  map.setFeatureState(
+                    {
+                      source: 'boundary-source',
+                      sourceLayer: 'boundry',
+                      id: key /* dataValues['USA1' + row.STATE_ID].id_int */,
+                    },
+                    { fans: likes[key] * 3000 }
+                  );
+                });
+              })
+              .catch(error => {
+                // TODO: check this out
+              });
+          }
+        });
+      }
+    }
+
+    map.off('data', addToSourceOnData);
+
+    return null;
+  }
+
   function addLayers(teamId, likeOrDislike) {
     // if (map.getSource('boundary-source')) {
     // }
 
     (function loop() {
       if (map && map.isStyleLoaded()) {
+        // boundary source >>
+        map.addSource('boundary-source', {
+          type: 'vector',
+          tiles: ['https://www.fansclub.app/api/v1/GET/tiles/{z}/{x}/{y}'],
+          minzoom: 0,
+          maxzoom: 18,
+        });
+        // <<
+        // main boundary layer >>
+        const boundry = {
+          id: 'boundry',
+          type: 'fill',
+          source: 'boundary-source',
+          'source-layer': 'boundry',
+        };
+        map.addLayer(boundry, 'waterway-label');
+        map.setPaintProperty('boundry', 'fill-color', [
+          'case',
+          ['!=', ['feature-state', 'fans'], null],
+          [
+            'interpolate',
+            ['linear'],
+            ['feature-state', 'fans'],
+            0,
+            'rgba(236, 225, 203,1.0)',
+            1,
+            'rgba(211,47,47,1.0)',
+          ],
+          'rgba(255,255,255,1.0)',
+        ]);
+        // <<
+        // boundary border lines >>
+        const boundaryLine = {
+          id: 'boundryLine',
+          type: 'line',
+          source: 'boundary-source',
+          'source-layer': 'boundry',
+          layout: {
+            'line-join': 'round',
+            'line-cap': 'round',
+          },
+          paint: {
+            'line-color': '#424242',
+            'line-width': 2,
+          },
+        };
+        map.addLayer(boundaryLine, 'waterway-label');
+        // <<
         // likes Layer >>
         const likesLayer = {
           id: 'likes',
@@ -434,57 +547,8 @@ function Map(props) {
         });
         map.addLayer(dislikesLayer, 'waterway-label');
         // <<
-        // boundary source >>
-        map.addSource('boundary-source', {
-          type: 'vector',
-          tiles: ['https://www.fansclub.app/api/v1/GET/tiles/{z}/{x}/{y}'],
-          minzoom: 0,
-          maxzoom: 18,
-        });
-        // <<
-        // boundary border lines >>
-        const boundryLine = {
-          id: 'boundryLine',
-          type: 'line',
-          source: 'boundary-source',
-          'source-layer': 'boundary',
-          layout: {
-            'line-join': 'round',
-            'line-cap': 'round',
-          },
-          paint: {
-            'line-color': '#424242',
-            'line-width': 2,
-          },
-        };
-        map.addLayer(boundryLine, 'waterway-label');
-        // <<
-        // main boundary layer >>
-        const boundary = {
-          id: 'boundary',
-          type: 'fill',
-          source: 'boundary-source',
-          'source-layer': 'boundary',
-          paint: [
-            'case',
-            ['!=', ['feature-state', 'fans'], null],
-            [
-              'interpolate',
-              ['linear'],
-              ['feature-state', 'fans'],
-              0,
-              'rgba(236, 225, 203,0.0)',
-              1,
-              'rgba(211,47,47,1.0)',
-            ],
-            'rgba(255,255,255,1)',
-          ],
-        };
-        map.addLayer(boundary, 'waterway-label');
-        // <<
-
-        map.on('data', addToSourceOnData);
-        // map.on('moveend', addOnMove);
+        // map.on('data', addToSourceOnData);
+        map.on('moveend', addToSourceOnMove);
         map.on('moveend', addFollowersPins);
       } else {
         setTimeout(() => {
@@ -593,7 +657,7 @@ function Map(props) {
         map.removeSource('dislikes');
       }
 
-      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
+      if (map.getLayer('boundaryLine')) map.removeLayer('boundaryLine');
     }
   }
 

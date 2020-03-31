@@ -347,7 +347,6 @@ function Map(props) {
       if (map && map.isStyleLoaded()) {
         if (!map.getSource('boundary-source')) {
           // (async () => {
-          map.addLayer(boundry, 'waterway-label');
 
           map.off('click', onClick);
           // })();
