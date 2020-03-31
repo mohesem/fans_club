@@ -16,15 +16,18 @@ function getLikeNumbers(body) {
     try {
       reducedDuplicates.forEach(async (fid, index) => {
         if (likeOrDislike === 'like') {
-          console.log(calculatedFid(fid));
-          await Like.countDocuments({ fid: calculatedFid(fid), team_id: teamId }, (err, res) => {
+          const c = calculatedFid(fid);
+          console.log(c);
+          await Like.countDocuments({ fid: c, team_id: teamId }, (err, res) => {
             if (err) console.log(err);
-            finalRes[fid] = res;
+            finalRes[c] = res;
           });
         } else {
-          await Dislike.countDocuments({ fid: calculatedFid(fid), team_id: teamId }, (err, res) => {
+          const c = calculatedFid(fid);
+          console.log(c);
+          await Dislike.countDocuments({ fid: c, team_id: teamId }, (err, res) => {
             if (err) console.log(err);
-            finalRes[fid] = res;
+            finalRes[c] = res;
           });
         }
 
