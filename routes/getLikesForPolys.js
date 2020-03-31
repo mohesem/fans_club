@@ -11,7 +11,7 @@ function getLikeNumbers(body) {
   const calculatedFid = fid => {
     if (fid < 1000) return fid;
     if (fid > 1000) return fid + 1000;
-    if (fid > 1000) return fid + 10000;
+    if (fid > 10000) return fid + 10000;
   };
   return new Promise((resolve, reject) => {
     try {
