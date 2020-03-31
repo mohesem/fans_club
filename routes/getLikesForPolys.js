@@ -10,7 +10,7 @@ function getLikeNumbers(body) {
 
   const calculatedFid = fid => {
     if (fid < 1000) return fid;
-    if (fid > 1000) return fid - 1000;
+    if (fid > 1000) return fid + 1000;
   };
   return new Promise((resolve, reject) => {
     try {
@@ -20,14 +20,14 @@ function getLikeNumbers(body) {
           console.log(c);
           await Like.countDocuments({ fid: c, team_id: teamId }, (err, res) => {
             if (err) console.log(err);
-            finalRes[c] = res;
+            finalRes[fid] = res;
           });
         } else {
           const c = calculatedFid(fid);
           console.log(c);
           await Dislike.countDocuments({ fid: c, team_id: teamId }, (err, res) => {
             if (err) console.log(err);
-            finalRes[c] = res;
+            finalRes[fid] = res;
           });
         }
 
