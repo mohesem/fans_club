@@ -146,9 +146,9 @@ export default function Singin() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        {/* <Hidden smDown> */}
-        <Grid item xs={false} sm={12} md={12} className={classes.image} />
-        {/* </Hidden> */}
+        <Hidden smDown>
+          <Grid item xs={false} sm={12} md={12} className={classes.image} />
+        </Hidden>
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}
