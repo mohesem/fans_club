@@ -74,7 +74,7 @@ export default props => {
       <div className="Demo__some-network">
         <WhatsappShareButton
           url={shareUrl}
-          content={content}
+          content="some text goes here"
           separator=":: "
           className="Demo__some-network__share-button"
         >
