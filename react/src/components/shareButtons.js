@@ -3,48 +3,22 @@ import {
   FacebookShareButton,
   FacebookMessengerShareButton,
   FacebookMessengerIcon,
-  LinkedinShareButton,
   TwitterShareButton,
-  PinterestShareButton,
-  VKShareButton,
-  OKShareButton,
   TelegramShareButton,
   WhatsappShareButton,
-  RedditShareButton,
   EmailShareButton,
-  TumblrShareButton,
-  LivejournalShareButton,
-  MailruShareButton,
-  ViberShareButton,
-  WorkplaceShareButton,
-  LineShareButton,
-  WeiboShareButton,
-  PocketShareButton,
-  InstapaperShareButton,
   FacebookIcon,
   TwitterIcon,
-  LinkedinIcon,
-  PinterestIcon,
-  VKIcon,
-  OKIcon,
   TelegramIcon,
   WhatsappIcon,
-  RedditIcon,
-  TumblrIcon,
-  MailruIcon,
   EmailIcon,
-  LivejournalIcon,
-  ViberIcon,
-  WorkplaceIcon,
-  LineIcon,
-  PocketIcon,
-  InstapaperIcon,
-  WeiboIcon,
 } from 'react-share';
 
 export default props => {
   const shareUrl = props.url;
-  const content = props.c || 'fans Club';
+  // const content = props.c || 'fans Club';
+  const content = <p>some text goes here</p>;
+
   return (
     <div className="Demo__container">
       <div className="Demo__some-network">
@@ -111,105 +85,6 @@ export default props => {
       </div>
 
       <div className="Demo__some-network">
-        <LinkedinShareButton url={shareUrl} className="Demo__some-network__share-button">
-          <LinkedinIcon size={32} round />
-        </LinkedinShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <PinterestShareButton
-          url={String(window.location)}
-          media={`${String(window.location)}`}
-          className="Demo__some-network__share-button"
-        >
-          <PinterestIcon size={32} round />
-        </PinterestShareButton>
-
-        {/* <div>
-            <PinterestShareCount url={shareUrl} className="Demo__some-network__share-count" />
-          </div> */}
-      </div>
-
-      <div className="Demo__some-network">
-        <VKShareButton
-          url={shareUrl}
-          image={`${String(window.location)}`}
-          className="Demo__some-network__share-button"
-        >
-          <VKIcon size={32} round />
-        </VKShareButton>
-        {/*
-          <div>
-            <VKShareCount url={shareUrl} className="Demo__some-network__share-count" />
-          </div> */}
-      </div>
-
-      <div className="Demo__some-network">
-        <OKShareButton
-          url={shareUrl}
-          image={`${String(window.location)}`}
-          className="Demo__some-network__share-button"
-        >
-          <OKIcon size={32} round />
-        </OKShareButton>
-
-        {/* <div>
-            <OKShareCount url={shareUrl} className="Demo__some-network__share-count" />
-          </div> */}
-      </div>
-
-      <div className="Demo__some-network">
-        <RedditShareButton
-          url={shareUrl}
-          content={content}
-          windowWidth={660}
-          windowHeight={460}
-          className="Demo__some-network__share-button"
-        >
-          <RedditIcon size={32} round />
-        </RedditShareButton>
-
-        {/* <div>
-            <RedditShareCount url={shareUrl} className="Demo__some-network__share-count" />
-          </div> */}
-      </div>
-
-      <div className="Demo__some-network">
-        <TumblrShareButton
-          url={shareUrl}
-          content={content}
-          className="Demo__some-network__share-button"
-        >
-          <TumblrIcon size={32} round />
-        </TumblrShareButton>
-
-        {/* <div>
-            <TumblrShareCount url={shareUrl} className="Demo__some-network__share-count" />
-          </div> */}
-      </div>
-
-      <div className="Demo__some-network">
-        <LivejournalShareButton
-          url={shareUrl}
-          content={content}
-          description={shareUrl}
-          className="Demo__some-network__share-button"
-        >
-          <LivejournalIcon size={32} round />
-        </LivejournalShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <MailruShareButton
-          url={shareUrl}
-          content={content}
-          className="Demo__some-network__share-button"
-        >
-          <MailruIcon size={32} round />
-        </MailruShareButton>
-      </div>
-
-      <div className="Demo__some-network">
         <EmailShareButton
           url={shareUrl}
           subject={content}
@@ -218,66 +93,6 @@ export default props => {
         >
           <EmailIcon size={32} round />
         </EmailShareButton>
-      </div>
-      <div className="Demo__some-network">
-        <ViberShareButton
-          url={shareUrl}
-          content={content}
-          className="Demo__some-network__share-button"
-        >
-          <ViberIcon size={32} round />
-        </ViberShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <WorkplaceShareButton
-          url={shareUrl}
-          quote={content}
-          className="Demo__some-network__share-button"
-        >
-          <WorkplaceIcon size={32} round />
-        </WorkplaceShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <LineShareButton
-          url={shareUrl}
-          content={content}
-          className="Demo__some-network__share-button"
-        >
-          <LineIcon size={32} round />
-        </LineShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <WeiboShareButton
-          url={shareUrl}
-          content={content}
-          image={`${String(window.location)}`}
-          className="Demo__some-network__share-button"
-        >
-          <WeiboIcon size={32} round />
-        </WeiboShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <PocketShareButton
-          url={shareUrl}
-          content={content}
-          className="Demo__some-network__share-button"
-        >
-          <PocketIcon size={32} round />
-        </PocketShareButton>
-      </div>
-
-      <div className="Demo__some-network">
-        <InstapaperShareButton
-          url={shareUrl}
-          content={content}
-          className="Demo__some-network__share-button"
-        >
-          <InstapaperIcon size={32} round />
-        </InstapaperShareButton>
       </div>
     </div>
   );
