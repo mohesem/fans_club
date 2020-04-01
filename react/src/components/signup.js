@@ -60,10 +60,13 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'fixed',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
+    width: '-webkit-fill-available',
+    height: '-webkit-fill-available',
+    // position: 'fixed',
+    // top: 0,
+    // bottom: 0,
+    // left: 0,
+    // right: 0,
     zIndex: -1,
   },
   avatar: {
@@ -484,9 +487,9 @@ export default function Signup() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Hidden smDown>
-          <Grid item xs={false} sm={12} md={12} className={classes.image} />
-        </Hidden>
+        {/* <Hidden mdDown> */}
+        <Grid item xs={false} sm={12} md={12} className={classes.image} />
+        {/* </Hidden> */}
         <Grid item xs={false} sm={2} md={3} />
         <Grid
           className={classes.form}

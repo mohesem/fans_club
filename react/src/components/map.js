@@ -54,9 +54,9 @@ const geojson = {
 let _totalLikes;
 const localDataRef = {};
 let fsLength = 0;
-const searchMarker = null;
+let searchMarker = null;
 const clubMarker = null;
-const userLocationMarker = null;
+let userLocationMarker = null;
 const coordsArray = [];
 
 let TeamId = null;
@@ -107,23 +107,65 @@ function Map(props) {
 
   const [anchorEl, setAnchorEl] = useState(null);
 
+  function getAddress(coords) {
+    return new Promise((resolve, reject) => {
+      /* TODO: use getLocation bar as a sub component and pass submit on hold to that */
+      setState({ ...state, submitLocationOnHold: true });
+      coordsArray.push(coords);
+
+      getAddressFromMapboxApi(coords)
+        .then(res => {
+          log('mapbox res', res);
+          resolve(res);
+          setState({ ...state, submitLocationOnHold: false });
+        })
+        .catch(err => {
+          reject(err);
+        });
+    });
+  }
   const { location } = props;
   const { pathname } = location;
-  function handleRoutes() {
-    // log('route pathname', pathname);
-    if (map) {
-      const mode = (() => {
-        if (pathname === '/signup/getUserLocation') return 1;
-        if (pathname === '/') return 0;
-        if (pathname.includes('/v/')) return 2;
-        return 0;
-      })();
 
-      if (mode !== state.mode) {
-        log('new state after route change');
-        setState({ ...state, mode });
+  function addUserLocationMarker(e) {
+    if (state.mode === 1) {
+      dispatch(signupActions({ submitButtonState: false }));
+      getAddress(e.lngLat.wrap())
+        .then(address => {
+          if (address) {
+            log('final result is ==> ', {
+              location: e.lngLat.wrap(),
+              address: address.data.features[0].place_name,
+            });
+            dispatch(
+              signupActions({
+                location: e.lngLat.wrap(),
+                address: address.data.features[0].place_name,
+                submitButtonState: true,
+              })
+            );
+          }
+        })
+        .catch(() => {
+          log('some error came from mapbox');
+        });
+
+      if (userLocationMarker !== null) {
+        userLocationMarker.remove();
       }
+      userLocationMarker = new mapboxgl.Marker({
+        draggable: false,
+      });
+      userLocationMarker.setLngLat(e.lngLat.wrap());
+      userLocationMarker.addTo(map);
     }
+  }
+
+  function handleRoutes() {
+    if (pathname === '/' && state.mode !== 0) setState({ ...state, mode: 0 });
+    if (pathname === '/signup/getUserLocation' && state.mode !== 1) setState({ ...state, mode: 1 });
+    if (pathname.includes('/v/') && state.mode !== 2) setState({ ...state, mode: 2 });
+    // }
   }
 
   function getColorCode(firstColorStr, secondColorStr, cb) {
@@ -549,15 +591,34 @@ function Map(props) {
         });
         map.addLayer(dislikesLayer, 'waterway-label');
         // <<
-        // map.on('data', addToSourceOnData);
-        map.on('moveend', addToSourceOnMove);
-        map.on('moveend', addFollowersPins);
       } else {
         setTimeout(() => {
           loop();
         }, 50);
       }
     })();
+  }
+
+  function addVirtualization() {
+    map.on('data', addToSourceOnData);
+    map.on('moveend', addToSourceOnMove);
+    map.on('moveend', addFollowersPins);
+    if (map && !map.getSource('boundary-source')) {
+      addLayers();
+    } else {
+      map.removeFeatureState({
+        source: 'boundary-source',
+        sourceLayer: 'boundry',
+      });
+      map.getSource('likes').setData({
+        type: 'FeatureCollection',
+        features: [],
+      });
+      map.getSource('dislikes').setData({
+        type: 'FeatureCollection',
+        features: [],
+      });
+    }
   }
 
   useEffect(() => {
@@ -596,9 +657,55 @@ function Map(props) {
     }
 
     window.addEventListener('resize', setChartWidthFunc);
+    map.on('click', addUserLocationMarker);
+    function clearEvents() {
+      window.removeEventListener('resize', setChartWidthFunc);
+      map.off('click', addUserLocationMarker);
+      if (searchMarker) searchMarker.remove();
+    }
 
-    return () => window.removeEventListener('resize', setChartWidthFunc);
-  }, []);
+    return () => clearEvents();
+  }, [state]);
+
+  if (mapReducer.flyTo.state === true) {
+    if (mapReducer.flyTo.coord.length === 2) {
+      if (searchMarker !== null) {
+        searchMarker.remove();
+      }
+
+      map.flyTo({
+        center: mapReducer.flyTo.coord,
+        zoom: 5,
+        essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+      });
+      searchMarker = new mapboxgl.Marker({
+        draggable: false,
+      });
+      searchMarker.setLngLat(mapReducer.flyTo.coord);
+      searchMarker.addTo(map);
+      dispatch(mapActions.updateFlyTo({ state: false, coord: [] }));
+    } else {
+      if (searchMarker !== null) {
+        searchMarker.remove();
+      }
+      const c = mapReducer.flyTo.coord;
+      map.fitBounds([
+        [c[0], c[1]],
+        [c[2], c[3]],
+      ]);
+
+      const poly = turf.bboxPolygon(c);
+      const centerOfPoly = turf.centroid(poly);
+      log('----------------------------------', centerOfPoly);
+      searchMarker = new mapboxgl.Marker({
+        draggable: false,
+      });
+
+      searchMarker.setLngLat(centerOfPoly.geometry.coordinates);
+      searchMarker.addTo(map);
+      dispatch(mapActions.updateFlyTo({ state: false, coord: [] }));
+    }
+  }
 
   if (state.mode === 2) {
     setChartWidthFunc();
@@ -622,9 +729,9 @@ function Map(props) {
       getClub(teamId);
       getClubTotalLikes(teamId, likeOrDislike);
       if (likeOrDislike === 'like') {
-        addLayers(teamId, 'like');
+        addVirtualization(teamId, 'like');
       } else if (likeOrDislike === 'dislike') {
-        addLayers(teamId, 'dislike');
+        addVirtualization(teamId, 'dislike');
       }
     }
   }
@@ -660,7 +767,12 @@ function Map(props) {
       }
 
       if (map.getLayer('boundaryLine')) map.removeLayer('boundaryLine');
+      if (map.getLayer('boundry')) map.removeLayer('boundry');
     }
+  }
+
+  if (state.mode !== 1) {
+    if (userLocationMarker) userLocationMarker.remove();
   }
 
   return (

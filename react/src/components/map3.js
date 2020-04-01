@@ -81,51 +81,6 @@ function Map(props) {
     })();
   }
 
-  if (mapReducer.flyTo.state === true) {
-    console.log('flyyyyyyyyyyyyyyyyyyyyyyyy');
-    if (mapReducer.flyTo.coord.length === 2) {
-      if (searchMarker !== null) {
-        searchMarker.remove();
-      }
-
-      map.flyTo({
-        center: mapReducer.flyTo.coord,
-        zoom: 5,
-        essential: true, // this animation is considered essential with respect to prefers-reduced-motion
-      });
-      searchMarker = new mapboxgl.Marker({
-        draggable: false,
-      });
-      searchMarker.setLngLat(mapReducer.flyTo.coord);
-      searchMarker.addTo(map);
-      dispatch(mapActions.updateFlyTo({ state: false, coord: [] }));
-    } else {
-      if (searchMarker !== null) {
-        searchMarker.remove();
-      }
-      // map.fitBounds([
-      //   [32.958984, -5.353521],
-      //   [43.50585, 5.615985],
-      // ]);
-      const c = mapReducer.flyTo.coord;
-      map.fitBounds([
-        [c[0], c[1]],
-        [c[2], c[3]],
-      ]);
-
-      const poly = turf.bboxPolygon(c);
-      const centerOfPoly = turf.centroid(poly);
-      log('----------------------------------', centerOfPoly);
-      searchMarker = new mapboxgl.Marker({
-        draggable: false,
-      });
-
-      searchMarker.setLngLat(centerOfPoly.geometry.coordinates);
-      searchMarker.addTo(map);
-      dispatch(mapActions.updateFlyTo({ state: false, coord: [] }));
-    }
-  }
-
   if (mapReducer.flyToClub.state === true) {
     // log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', clubMarker !== null, clubMarker);
     if (clubMarker !== null) {
@@ -159,134 +114,6 @@ function Map(props) {
     }, 10);
   }
 
-  function getAddress(coords) {
-    return new Promise((resolve, reject) => {
-      /* TODO: use getLocation bar as a sub component and pass submit on hold to that */
-      setState({ ...state, submitLocationOnHold: true });
-      coordsArray.push(coords);
-
-      getAddressFromMapboxApi(coords)
-        .then(res => {
-          log('mapbox res', res);
-          resolve(res);
-          setState({ ...state, submitLocationOnHold: false });
-        })
-        .catch(err => {
-          reject(err);
-        });
-    });
-  }
-
-  function addUserLocationMarker(e) {
-    dispatch(signupActions({ submitButtonState: false }));
-    getAddress(e.lngLat.wrap())
-      .then(address => {
-        if (address) {
-          log('final result is ==> ', {
-            location: e.lngLat.wrap(),
-            address: address.data.features[0].place_name,
-          });
-          dispatch(
-            signupActions({
-              location: e.lngLat.wrap(),
-              address: address.data.features[0].place_name,
-              submitButtonState: true,
-            })
-          );
-        }
-      })
-      .catch(() => {
-        log('some error came from mapbox');
-      });
-
-    if (userLocationMarker !== null) {
-      userLocationMarker.remove();
-    }
-    userLocationMarker = new mapboxgl.Marker({
-      draggable: false,
-    });
-    userLocationMarker.setLngLat(e.lngLat.wrap());
-    userLocationMarker.addTo(map);
-  }
-
-  function addToSourceOnMove() {
-    if (map.getSource('boundary-source')) {
-      const pathnameSplit = pathname.split('/');
-      const id = pathnameSplit[pathnameSplit.length - 1];
-
-      const splitHref = window.location.href.split('/');
-      const val = splitHref[splitHref.length - 1];
-
-      console.log('-----------------', val);
-
-      // TODO: store val and if it chenged clear the previous ones;
-      // TODO: set different colors for likes and dislikes
-      // TODO: change dots to pins
-
-      // log('bbox is ', bbox);
-
-      const fs = map.queryRenderedFeatures({ layers: ['boundry'] });
-      const { length } = fs;
-      if (fsLength !== length) {
-        fsLength = length;
-        const array = fs.map(f => f.id);
-        const uniqueArray = [...new Set(array)];
-        const reducedDuplicates = [];
-
-        uniqueArray.forEach((u, i) => {
-          if (!localDataRef[u]) {
-            localDataRef[u] = 1;
-            reducedDuplicates.push(u);
-          }
-
-          if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
-            axios
-              .post('https://www.fansclub.app/api/v1/POST/getLikesForPolys', {
-                teamId: state.teamId,
-                reducedDuplicates,
-              })
-              .then(response => {
-                const { likes } = response.data;
-                Object.keys(likes).forEach(key => {
-                  map.setFeatureState(
-                    {
-                      source: 'boundary-source',
-                      sourceLayer: 'boundry',
-                      id: String(key) /* dataValues['USA1' + row.STATE_ID].id_int */,
-                    },
-                    { fans: likes[key] * 3000 }
-                  );
-                });
-              })
-              .catch(error => {
-                // TODO: check this out
-              });
-          }
-        });
-      }
-    }
-
-    return null;
-  }
-
-  function addOnData() {
-    addToSourceOnData();
-    specifyCriterion();
-  }
-
-  function addOnMove(m) {
-    // const pathnameSplit = pathname.split('/');
-    // const id = pathnameSplit[pathnameSplit.length - 1];
-    // const val = isLike === true ? 'like' : 'dislike';
-    // const bbox = map.getBounds();
-    // callApi(bbox, val, id);
-
-    addToSourceOnMove();
-    specifyCriterion();
-
-    map.off('data', addOnData);
-  }
-
   function onClick(e) {
     getAddress(e.lngLat.wrap(), (err, address) => {
       if (address) {
@@ -310,9 +137,6 @@ function Map(props) {
     if (userLocationMarker !== null) {
       userLocationMarker.remove();
     }
-  }
-  if (state.mode === 1) {
-    map.on('click', addUserLocationMarker);
   }
 
   if (state.mode !== 'wait' && state.mode !== 2) {
