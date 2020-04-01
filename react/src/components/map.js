@@ -52,12 +52,13 @@ const geojson = {
   features: [],
 };
 let _totalLikes;
-const localDataRef = {};
+let localDataRef = {};
 let fsLength = 0;
 let searchMarker = null;
-const clubMarker = null;
+let clubMarker = null;
 let userLocationMarker = null;
 const coordsArray = [];
+let mainColor = null;
 
 let TeamId = null;
 let LikeOrDislike = null;
@@ -169,31 +170,41 @@ function Map(props) {
   }
 
   function getColorCode(firstColorStr, secondColorStr, cb) {
+    console.log('fffffffffffff', firstColorStr);
+    console.log('ssssssssssssss', secondColorStr);
     let value;
     if (firstColorStr === 'white') {
       switch (secondColorStr) {
         case 'red':
           value = { r: 183, g: 28, b: 28 };
           break;
+        case 'blue':
+          value = { r: 13, g: 71, b: 161 };
+          break;
         default:
           break;
       }
     } else {
-      switch (secondColorStr) {
+      switch (firstColorStr) {
         case 'red':
           value = { r: 183, g: 28, b: 28 };
           break;
+        case 'blue':
+          value = { r: 13, g: 71, b: 161 };
+          break;
         default:
+          value = { r: 183, g: 28, b: 28 };
           break;
       }
     }
 
-    return cb({ r: 183, g: 28, b: 28 });
+    return cb(value);
     // return cb(value);
   }
 
-  function calCulauteColors(firstColorStr, secondColorStr, cb) {
+  function calCulateColors(firstColorStr, secondColorStr, cb) {
     getColorCode(firstColorStr, secondColorStr, color => {
+      console.log('cccccccccccccccccccccccccccccccccc', color);
       const factorR = Math.round((255 - color.r) / 3);
       const factorG = Math.round((255 - color.g) / 3);
       const factorB = Math.round((255 - color.b) / 3);
@@ -210,6 +221,8 @@ function Map(props) {
       const c0 = `rgb(${color.r}, ${color.g}, ${color.b})`;
       const c1 = `rgb(${color2.r}, ${color2.g}, ${color2.b})`;
       const c2 = `rgb(${color3.r}, ${color3.g},${color3.b})`;
+      mainColor = c0;
+      console.log('MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM', mainColor);
       return cb(c0, c1, c2);
     });
   }
@@ -295,7 +308,7 @@ function Map(props) {
         console.log('getClubTotalLikes response', response);
         const firstColorStr = response.data.team.primary_color;
         const secondColorStr = response.data.team.secondary_color;
-        calCulauteColors(firstColorStr, secondColorStr, (c0, c1, c2) => {
+        calCulateColors(firstColorStr, secondColorStr, (c0, c1, c2) => {
           const colors = { c0, c1, c2 };
           const { males } = response.data;
           const { females } = response.data;
@@ -447,8 +460,6 @@ function Map(props) {
       const splitHref = window.location.href.split('/');
       const val = splitHref[splitHref.length - 1];
 
-      console.log('-----------------', val);
-
       // TODO: store val and if it chenged clear the previous ones;
       // TODO: set different colors for likes and dislikes
       // TODO: change dots to pins
@@ -456,7 +467,6 @@ function Map(props) {
       // log('bbox is ', bbox);
 
       const fs = map.queryRenderedFeatures({ layers: ['boundry'] });
-      console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~', fs);
 
       const { length } = fs;
       if (fsLength !== length) {
@@ -500,8 +510,9 @@ function Map(props) {
       }
     }
 
-    map.off('data', addToSourceOnData);
-
+    setTimeout(() => {
+      map.off('data', addToSourceOnData);
+    }, 200);
     return null;
   }
 
@@ -537,7 +548,7 @@ function Map(props) {
             0,
             'rgba(236, 225, 203,1.0)',
             1,
-            'rgba(211,47,47,1.0)',
+            'rgba(236, 225, 203,1.0)',
           ],
           'rgba(255,255,255,1.0)',
         ]);
@@ -599,26 +610,61 @@ function Map(props) {
     })();
   }
 
+  function specifyCriterion() {
+    (function loop() {
+      if (_totalLikes && map && map.isStyleLoaded()) {
+        const zoom = map.getZoom();
+        console.log('runnnnnnning lllllllooooooooop');
+        map.setPaintProperty('boundry', 'fill-color', [
+          'case',
+          ['!=', ['feature-state', 'fans'], null],
+          [
+            'interpolate',
+            ['linear'],
+            ['feature-state', 'fans'],
+            0,
+            'rgba(236, 225, 203,1.0)',
+            1,
+            mainColor,
+          ],
+          'rgba(255,255,255,1.0)',
+        ]);
+        return true;
+      }
+      return setTimeout(() => {
+        loop();
+      }, 50);
+    })();
+  }
+
   function addVirtualization() {
-    map.on('data', addToSourceOnData);
-    map.on('moveend', addToSourceOnMove);
-    map.on('moveend', addFollowersPins);
-    if (map && !map.getSource('boundary-source')) {
-      addLayers();
-    } else {
-      map.removeFeatureState({
-        source: 'boundary-source',
-        sourceLayer: 'boundry',
-      });
-      map.getSource('likes').setData({
-        type: 'FeatureCollection',
-        features: [],
-      });
-      map.getSource('dislikes').setData({
-        type: 'FeatureCollection',
-        features: [],
-      });
-    }
+    (function loop() {
+      if (map && map.isStyleLoaded()) {
+        map.on('data', addToSourceOnData);
+        map.on('moveend', addToSourceOnMove);
+        map.on('moveend', addFollowersPins);
+        if (map && !map.getSource('boundary-source')) {
+          addLayers();
+        } else {
+          map.removeFeatureState({
+            source: 'boundary-source',
+            sourceLayer: 'boundry',
+          });
+          map.getSource('likes').setData({
+            type: 'FeatureCollection',
+            features: [],
+          });
+          map.getSource('dislikes').setData({
+            type: 'FeatureCollection',
+            features: [],
+          });
+        }
+      } else {
+        setTimeout(() => {
+          loop();
+        }, 50);
+      }
+    })();
   }
 
   useEffect(() => {
@@ -707,6 +753,47 @@ function Map(props) {
     }
   }
 
+  if (mapReducer.flyToClub.state === true) {
+    // log('%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%', clubMarker !== null, clubMarker);
+    if (clubMarker !== null) {
+      log('remove the fucking marker pleeeeeeeeeeeeeeeeeeeeeeeeease');
+      clubMarker.remove();
+    }
+
+    if (clubReducer.cityCoords) {
+      (function loop() {
+        if (map) {
+          map.flyTo({
+            center: clubReducer.cityCoords,
+            zoom: 5,
+            essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+          });
+        } else {
+          setTimeout(() => {
+            loop();
+          }, 50);
+        }
+      })();
+    }
+
+    if (clubReducer.logoBase64) {
+      const el = document.createElement('div');
+      el.style.background = `url(data:image/png;base64,${clubReducer.logoBase64})`;
+      el.style['background-position'] = 'center';
+      el.style['background-size'] = 'contain';
+      el.style.height = `60px`;
+      el.style.width = `60px`;
+      el.style['background-repeat'] = 'no-repeat';
+      clubMarker = new mapboxgl.Marker(el);
+      clubMarker.setLngLat(clubReducer.cityCoords);
+      clubMarker.addTo(map);
+    }
+
+    setTimeout(() => {
+      dispatch(mapActions.updateFlyToClub({ state: false, coord: [] }));
+    }, 10);
+  }
+
   if (state.mode === 2) {
     setChartWidthFunc();
     const split = pathname.split('/');
@@ -730,8 +817,12 @@ function Map(props) {
       getClubTotalLikes(teamId, likeOrDislike);
       if (likeOrDislike === 'like') {
         addVirtualization(teamId, 'like');
+        specifyCriterion();
+        localDataRef = {};
       } else if (likeOrDislike === 'dislike') {
         addVirtualization(teamId, 'dislike');
+        specifyCriterion();
+        localDataRef = {};
       }
     }
   }
