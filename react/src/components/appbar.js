@@ -289,7 +289,7 @@ function Appbar(props) {
           <Toolbar>
             <Typography variant="h5" className={classes.title}>
               <Button component={redirectTo} to="/" style={{ color: 'white' }}>
-                <img src="lt.svg" alt="logo" style={{ height: '35px' }} />
+                <img src="logoandlogotype.png" alt="logo" style={{ height: '35px' }} />
                 {/* <Typography variant="h5" className={classes.title}>
                   FANS CLUB
                 </Typography> */}

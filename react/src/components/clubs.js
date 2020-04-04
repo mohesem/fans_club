@@ -56,27 +56,30 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'fixed',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
+    width: '-webkit-fill-available',
+    height: '-webkit-fill-available',
+    // position: 'fixed',
+    // top: 0,
+    // bottom: 0,
+    // left: 0,
+    // right: 0,
     zIndex: -1,
   },
   paper: {
     margin: '25% 10% 10% 10%',
     display: 'flex',
     flexDirection: 'column',
-    // alignItems: 'center',
+    alignItems: 'center',
   },
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
-    height: 'inherit',
+    width: '100%', // Fix IE 11 issue.Fix IE 11 issue.
+    height: '100vh',
     marginTop: theme.spacing(1),
-    boxShadow: 'none',
+    background: theme.palette.background.default,
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
