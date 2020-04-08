@@ -55,9 +55,9 @@ const app = express();
 app.use(express.static(path.resolve('react', 'build')));
 app.use(Cors());
 // app.use(logger('combined'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(cookieParser());
 // app.use(logger('dev'));
 
 app.use(Cors());

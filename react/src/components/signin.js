@@ -127,7 +127,6 @@ export default function Singin() {
         enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
       })
       .catch(err => {
-        log(err);
         if (err.status === 503) {
           enqueueSnackbar('Network Error', { variant: 'error' });
         } else {
