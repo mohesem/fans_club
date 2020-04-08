@@ -130,6 +130,18 @@ function Map(props) {
 
   function addUserLocationMarker(e) {
     if (state.mode === 1) {
+      if (map.getLayer('likes')) {
+        map.removeLayer('likes');
+        map.removeSource('likes');
+      }
+      if (map.getLayer('dislikes')) {
+        map.removeLayer('dislikes');
+        map.removeSource('dislikes');
+      }
+
+      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
+      if (map.getLayer('boundry')) map.removeLayer('boundry');
+      if (map.getSource('boundary-source')) map.removeSource('boundary-source');
       dispatch(signupActions({ submitButtonState: false }));
       getAddress(e.lngLat.wrap())
         .then(address => {
@@ -170,8 +182,6 @@ function Map(props) {
   }
 
   function getColorCode(firstColorStr, secondColorStr, cb) {
-    console.log('fffffffffffff', firstColorStr);
-    console.log('ssssssssssssss', secondColorStr);
     let value;
     if (firstColorStr === 'white') {
       switch (secondColorStr) {
@@ -204,7 +214,6 @@ function Map(props) {
 
   function calCulateColors(firstColorStr, secondColorStr, cb) {
     getColorCode(firstColorStr, secondColorStr, color => {
-      console.log('cccccccccccccccccccccccccccccccccc', color);
       const factorR = Math.round((255 - color.r) / 3);
       const factorG = Math.round((255 - color.g) / 3);
       const factorB = Math.round((255 - color.b) / 3);
@@ -222,7 +231,6 @@ function Map(props) {
       const c1 = `rgb(${color2.r}, ${color2.g}, ${color2.b})`;
       const c2 = `rgb(${color3.r}, ${color3.g},${color3.b})`;
       mainColor = c0;
-      console.log('MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM', mainColor);
       return cb(c0, c1, c2);
     });
   }
@@ -638,6 +646,7 @@ function Map(props) {
   }
 
   function addVirtualization() {
+    console.log('add virtualization');
     (function loop() {
       if (map && map.isStyleLoaded()) {
         map.on('data', addToSourceOnData);
@@ -794,6 +803,23 @@ function Map(props) {
     }, 10);
   }
 
+  if (state.mode === 0) {
+    if (map && map.isStyleLoaded()) {
+      if (map.getLayer('likes')) {
+        map.removeLayer('likes');
+        map.removeSource('likes');
+      }
+      if (map.getLayer('dislikes')) {
+        map.removeLayer('dislikes');
+        map.removeSource('dislikes');
+      }
+
+      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
+      if (map.getLayer('boundry')) map.removeLayer('boundry');
+      if (map.getSource('boundary-source')) map.removeSource('boundary-source');
+    }
+  }
+
   if (state.mode === 2) {
     setChartWidthFunc();
     const split = pathname.split('/');
@@ -857,8 +883,9 @@ function Map(props) {
         map.removeSource('dislikes');
       }
 
-      if (map.getLayer('boundaryLine')) map.removeLayer('boundaryLine');
+      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
       if (map.getLayer('boundry')) map.removeLayer('boundry');
+      if (map.getSource('boundary-source')) map.removeSource('boundary-source');
     }
   }
 
