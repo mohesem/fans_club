@@ -127,6 +127,7 @@ export default function Singin() {
         enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
       })
       .catch(err => {
+        setState({ ...state, try: false });
         if (err.status === 503) {
           enqueueSnackbar('Network Error', { variant: 'error' });
         } else {
@@ -145,7 +146,7 @@ export default function Singin() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Hidden smDown>
+        <Hidden xsDown>
           <Grid item xs={false} sm={12} md={12} className={classes.image} />
         </Hidden>
         <Grid item xs={false} sm={2} md={3} />

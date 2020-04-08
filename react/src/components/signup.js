@@ -487,7 +487,7 @@ export default function Signup() {
 
       <Grid container component="main" className={classes.root}>
         <CssBaseline />
-        <Hidden smDown>
+        <Hidden xsDown>
           <Grid item xs={false} sm={12} md={12} className={classes.image} />
         </Hidden>
         <Grid item xs={false} sm={2} md={3} />

@@ -19,7 +19,7 @@ import { Link, Popover, Typography, IconButton } from '@material-ui/core';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import TrendingUpRoundedIcon from '@material-ui/icons/TrendingUpRounded';
 import FormatListBulletedRoundedIcon from '@material-ui/icons/FormatListBulletedRounded';
-import LinkRoundedIcon from '@material-ui/icons/LinkRounded';
+import ShareRoundedIcon from '@material-ui/icons/ShareRounded';
 import RoomIcon from '@material-ui/icons/Room';
 // actions
 import signupActions from '../actions/signup';
@@ -546,11 +546,11 @@ function Map(props) {
             ['linear'],
             ['feature-state', 'fans'],
             0,
-            'rgba(236, 225, 203,1.0)',
+            'rgba(236, 225, 203, 1)',
             1,
-            'rgba(236, 225, 203,1.0)',
+            'rgba(236, 225, 203, 1)',
           ],
-          'rgba(255,255,255,1.0)',
+          'rgba(236, 225, 203, 1)',
         ]);
         // <<
         // boundary border lines >>
@@ -623,11 +623,11 @@ function Map(props) {
             ['linear'],
             ['feature-state', 'fans'],
             0,
-            'rgba(236, 225, 203,1.0)',
+            'rgba(236, 225, 203, 1)',
             1,
             mainColor,
           ],
-          'rgba(255,255,255,1.0)',
+          'rgba(236, 225, 203, 1)',
         ]);
         return true;
       }
@@ -1047,7 +1047,7 @@ function Map(props) {
 
           <div id="link-legend" className="legend-Link">
             <IconButton style={{ padding: 3, color: '#263238' }} onClick={handleShreButtons}>
-              <LinkRoundedIcon />
+              <ShareRoundedIcon />
             </IconButton>
           </div>
           {openShareButtons ? <ShareButtons url={window.location.href} c="content" /> : null}
