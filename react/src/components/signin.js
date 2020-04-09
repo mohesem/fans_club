@@ -127,7 +127,7 @@ export default function Singin() {
             dislikes: res.data.dislikes,
             suggests: res.data.suggests,
             location: res.data.location,
-            form: res.data.from,
+            from: res.data.from,
           })
         );
         enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
