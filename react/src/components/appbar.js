@@ -152,9 +152,9 @@ function Appbar(props) {
     localStorage.removeItem('fans_club');
     console.log('-----------------------------', userReducer.from);
     if (userReducer.from === 'google') {
-      gapi.server.setApiKey(
-        '951334179095-359plh303nv4b6oi184594gi11jmpvfk.apps.googleusercontent.com'
-      );
+      // gapi.server.setApiKey(
+      //   '951334179095-359plh303nv4b6oi184594gi11jmpvfk.apps.googleusercontent.com'
+      // );
       const auth2 = gapi.auth2.getAuthInstance();
       auth2.signOut().then(() => {
         console.log('User signed out.');
