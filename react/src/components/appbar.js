@@ -104,8 +104,7 @@ function Appbar(props) {
               location: res.data.location,
             })
           );
-
-          hello('google').logout();
+          localStorage.clear();
           // TODO: ADD TO USER REDUCER
         })
         .catch(err => {

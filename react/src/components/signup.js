@@ -337,6 +337,7 @@ export default function Signup() {
                     .login({
                       scope: 'email',
                       force: true,
+                      display: 'popup',
                     })
                     .then(
                       resp => {
