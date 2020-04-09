@@ -336,6 +336,7 @@ export default function Signup() {
                   hello('google')
                     .login({
                       scope: 'email',
+                      force: true,
                     })
                     .then(
                       resp => {
