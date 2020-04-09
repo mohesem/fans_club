@@ -125,6 +125,7 @@ export default function Singin() {
             dislikes: res.data.dislikes,
             suggests: res.data.suggests,
             location: res.data.location,
+            form: res.data.googleId ? 'google' : 'facebook',
           })
         );
         enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });

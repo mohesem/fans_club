@@ -104,25 +104,6 @@ function Appbar(props) {
               location: res.data.location,
             })
           );
-          // localStorage.clear();
-          // hello.logout('facebook');
-          // hello.logout('google');
-
-          function makeFrame(domId, url) {
-            const ifrm = document.createElement('IFRAME');
-            ifrm.setAttribute('src', url);
-            ifrm.setAttribute('id', domId);
-            ifrm.setAttribute('style', 'display:none;');
-            ifrm.style.width = `${1}px`;
-            ifrm.style.height = `${1}px`;
-            document.body.appendChild(ifrm);
-          }
-
-          function logOutGoogle() {
-            makeFrame('googleLogoutIFrame', 'https://www.google.com/accounts/Logout');
-          }
-          logOutGoogle();
-
           // TODO: ADD TO USER REDUCER
         })
         .catch(err => {
@@ -153,20 +134,23 @@ function Appbar(props) {
   };
 
   const handleLogOut = () => {
+    // dispatch(
+    //   userAction({
+    //     isValid: undefined,
+    //     firstname: undefined,
+    //     lastname: undefined,
+    //     likes: undefined,
+    //     dislikes: undefined,
+    //     suggests: undefined,
+    //     location: undefined,
+    //     // logout: true,
+    //   })
+    // );
     localStorage.removeItem('fans_club');
-
-    dispatch(
-      userAction({
-        isValid: undefined,
-        firstname: undefined,
-        lastname: undefined,
-        likes: undefined,
-        dislikes: undefined,
-        suggests: undefined,
-        location: undefined,
-        // logout: true,
-      })
-    );
+    if (userReducer.from === 'google') {
+      window.location.href =
+        'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://www.fansclub.app';
+    }
   };
 
   function renderMobileMenu() {
