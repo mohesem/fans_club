@@ -149,6 +149,7 @@ function Appbar(props) {
     //   })
     // );
     localStorage.removeItem('fans_club');
+    console.log('-----------------------------', userReducer.from);
     if (userReducer.from === 'google') {
       window.location.href =
         'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://www.fansclub.app';
