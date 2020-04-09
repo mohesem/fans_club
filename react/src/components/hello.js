@@ -9,4 +9,6 @@ hello.init(
   { redirect_uri: 'https://www.fansclub.app/auth/callback' }
 );
 
+window.hello = hello;
+
 export default hello;
