@@ -35,6 +35,7 @@ export default async function(body, cb) {
         dislikes: user.dislikes || null,
         suggests: user.suggests || null,
         location: user.geo,
+        from: user.googleId ? 'google' : 'facebook',
       });
     });
     return null;

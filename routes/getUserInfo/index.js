@@ -20,6 +20,7 @@ export default function getUserInfo(token, cb) {
         dislikes: user.dislikes || null,
         suggests: user.suggests || null,
         location: user.geo,
+        from: user.googleId ? 'google' : 'facebook',
       });
     });
     // if (err) reject(err);
