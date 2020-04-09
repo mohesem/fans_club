@@ -8,6 +8,7 @@ export default (
     dislikes: [],
     suggests: [],
     location: undefined,
+    logout: false,
   },
   action
 ) => {

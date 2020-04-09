@@ -535,7 +535,7 @@ function Map(props) {
           type: 'vector',
           tiles: ['https://www.fansclub.app/api/v1/GET/tiles/{z}/{x}/{y}'],
           minzoom: 0,
-          maxzoom: 18,
+          maxzoom: 14,
         });
         // <<
         // main boundary layer >>

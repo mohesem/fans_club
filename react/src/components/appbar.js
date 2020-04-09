@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { withRouter, Redirect, Link as RouterLink } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
+import hello from 'hellojs';
 // material-ui
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -103,6 +104,8 @@ function Appbar(props) {
               location: res.data.location,
             })
           );
+
+          hello('google').logout();
           // TODO: ADD TO USER REDUCER
         })
         .catch(err => {
@@ -144,6 +147,7 @@ function Appbar(props) {
         dislikes: undefined,
         suggests: undefined,
         location: undefined,
+        // logout: true,
       })
     );
   };
