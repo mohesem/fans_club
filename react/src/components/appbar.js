@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { withRouter, Redirect, Link as RouterLink } from 'react-router-dom';
 import { useSnackbar } from 'notistack';
-import hello from 'hellojs';
 // material-ui
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,6 +16,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import hello from './hello';
 // actions
 import userAction from '../actions/user';
 // api
@@ -105,6 +105,8 @@ function Appbar(props) {
             })
           );
           localStorage.clear();
+          hello.logout('facebook');
+          hello.logout('google');
           // TODO: ADD TO USER REDUCER
         })
         .catch(err => {
