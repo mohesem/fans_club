@@ -116,6 +116,8 @@ export default function Singin() {
         log(res);
         localStorage.setItem('fans_club', res.data.token);
         setState({ ...state, redirect: '/' });
+
+        console.log(res.data);
         dispatch(
           userAction({
             isValid: true,
