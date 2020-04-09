@@ -177,6 +177,8 @@ export default function Singin() {
                   hello('google')
                     .login({
                       scope: 'email',
+                      force: true,
+                      display: 'popup',
                     })
                     .then(
                       resp => {
