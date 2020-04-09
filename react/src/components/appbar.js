@@ -104,9 +104,25 @@ function Appbar(props) {
               location: res.data.location,
             })
           );
-          localStorage.clear();
-          hello.logout('facebook');
-          hello.logout('google');
+          // localStorage.clear();
+          // hello.logout('facebook');
+          // hello.logout('google');
+
+          function makeFrame(domId, url) {
+            const ifrm = document.createElement('IFRAME');
+            ifrm.setAttribute('src', url);
+            ifrm.setAttribute('id', domId);
+            ifrm.setAttribute('style', 'display:none;');
+            ifrm.style.width = `${1}px`;
+            ifrm.style.height = `${1}px`;
+            document.body.appendChild(ifrm);
+          }
+
+          function logOutGoogle() {
+            makeFrame('googleLogoutIFrame', 'https://www.google.com/accounts/Logout');
+          }
+          logOutGoogle();
+
           // TODO: ADD TO USER REDUCER
         })
         .catch(err => {
