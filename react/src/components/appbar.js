@@ -103,7 +103,7 @@ function Appbar(props) {
               dislikes: res.data.dislikes,
               suggests: res.data.suggests,
               location: res.data.location,
-              form: res.data.googleId ? 'google' : 'facebook',
+              form: res.data.from,
             })
           );
           // TODO: ADD TO USER REDUCER
