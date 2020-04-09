@@ -92,6 +92,7 @@ function Appbar(props) {
     if (localStorage.fans_club) {
       getUserInfoApi(localStorage.fans_club)
         .then(res => {
+          console.log(res);
           log('appbar getUserInfo valid res', res);
           dispatch(
             userAction({
@@ -102,6 +103,7 @@ function Appbar(props) {
               dislikes: res.data.dislikes,
               suggests: res.data.suggests,
               location: res.data.location,
+              form: res.data.googleId ? 'google' : 'facebook',
             })
           );
           // TODO: ADD TO USER REDUCER
