@@ -125,7 +125,9 @@ export default function Singin() {
             from: res.data.from,
           })
         );
-        enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
+        if (!localStorage.fans_club) {
+          enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
+        }
         localStorage.setItem('fans_club', res.data.token);
         setState({ ...state, redirect: '/' });
       })
