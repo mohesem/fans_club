@@ -113,11 +113,6 @@ export default function Singin() {
     log('this fucking shit is working ');
     signinApi(user)
       .then(res => {
-        log(res);
-        localStorage.setItem('fans_club', res.data.token);
-        setState({ ...state, redirect: '/' });
-
-        console.log(res.data);
         dispatch(
           userAction({
             isValid: true,
@@ -131,6 +126,8 @@ export default function Singin() {
           })
         );
         enqueueSnackbar(`${res.data.snackMsg}`, { variant: 'success' });
+        localStorage.setItem('fans_club', res.data.token);
+        setState({ ...state, redirect: '/' });
       })
       .catch(err => {
         setState({ ...state, try: false });

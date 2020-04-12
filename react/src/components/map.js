@@ -520,7 +520,7 @@ function Map(props) {
 
     setTimeout(() => {
       map.off('data', addToSourceOnData);
-    }, 200);
+    }, 1000);
     return null;
   }
 

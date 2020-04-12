@@ -16,8 +16,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import gapi from 'gapi';
-import hello from './hello';
+// import hello from './hello';
 // actions
 import userAction from '../actions/user';
 // api
@@ -152,16 +151,8 @@ function Appbar(props) {
     localStorage.removeItem('fans_club');
     console.log('-----------------------------', userReducer.from);
     if (userReducer.from === 'google') {
-      // gapi.server.setApiKey(
-      //   '951334179095-359plh303nv4b6oi184594gi11jmpvfk.apps.googleusercontent.com'
-      // );
-      const auth2 = gapi.auth2.getAuthInstance();
-      auth2.signOut().then(() => {
-        console.log('User signed out.');
-      });
-
-      // window.location.href =
-      //   'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://www.fansclub.app';
+      window.location.href =
+        'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://www.fansclub.app';
     }
   };
 
