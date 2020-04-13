@@ -51,7 +51,7 @@ a.mapboxgl-ctrl-logo {
   padding: 10px;
   position: absolute;
   left: 10px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .legend-stop-virtualization {
@@ -62,7 +62,7 @@ a.mapboxgl-ctrl-logo {
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: absolute;
   right: 10px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .legend-Link {
@@ -73,7 +73,7 @@ a.mapboxgl-ctrl-logo {
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: absolute;
   right: 10px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .legend-show-chart {
@@ -84,7 +84,7 @@ a.mapboxgl-ctrl-logo {
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: absolute;
   right: 10px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .legend h4 {
@@ -203,16 +203,4 @@ li[data-focus='true'] {
 .Demo__some-network__custom-icon {
   width: 32px;
   height: 32px;
-}
-
-.legend {
-  z-index: -1;
-}
-
-.legend-Link {
-  z-index: -1 !important;
-}
-
-.legend-show-chart {
-  z-index: -1;
 }
