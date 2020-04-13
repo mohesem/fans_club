@@ -210,7 +210,7 @@ li[data-focus='true'] {
 }
 
 .legend-link {
-  z-index: -1;
+  z-index: -1 !important;
 }
 
 .legend-show-chart {
