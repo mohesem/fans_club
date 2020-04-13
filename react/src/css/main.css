@@ -204,3 +204,15 @@ li[data-focus='true'] {
   width: 32px;
   height: 32px;
 }
+
+.legend {
+  z-index: -1;
+}
+
+.legend-link {
+  z-index: -1;
+}
+
+.legend-show-chart {
+  z-index: -1;
+}
