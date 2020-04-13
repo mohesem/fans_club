@@ -51,7 +51,7 @@ a.mapboxgl-ctrl-logo {
   padding: 10px;
   position: absolute;
   left: 10px;
-  z-index: -1;
+  z-index: -1 !important;
 }
 
 .legend-stop-virtualization {
@@ -62,7 +62,7 @@ a.mapboxgl-ctrl-logo {
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: absolute;
   right: 10px;
-  z-index: -1;
+  z-index: -1 !important;
 }
 
 .legend-Link {
@@ -73,7 +73,7 @@ a.mapboxgl-ctrl-logo {
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: absolute;
   right: 10px;
-  z-index: -1;
+  z-index: -1 !important;
 }
 
 .legend-show-chart {
@@ -84,7 +84,7 @@ a.mapboxgl-ctrl-logo {
   font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
   position: absolute;
   right: 10px;
-  z-index: -1;
+  z-index: -1 !important;
 }
 
 .legend h4 {
