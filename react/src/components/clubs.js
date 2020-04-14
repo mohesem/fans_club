@@ -218,7 +218,7 @@ export default function Club() {
                                   <Button
                                     disabled={onHold}
                                     component={redirectTo}
-                                    to={`/v/like/${team.id}`}
+                                    to={`/v/like/${team._id}`}
                                   >
                                     {team.name}
                                   </Button>
@@ -288,7 +288,13 @@ export default function Club() {
                             return (
                               <TableRow key={team._id}>
                                 <TableCell component="th" scope="row">
-                                  {team.name}
+                                  <Button
+                                    disabled={onHold}
+                                    component={redirectTo}
+                                    to={`/v/dislike/${team._id}`}
+                                  >
+                                    {team.name}
+                                  </Button>
                                 </TableCell>
                                 <TableCell>{team.country}</TableCell>
                                 <TableCell align="right">
