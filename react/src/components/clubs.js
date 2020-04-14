@@ -213,7 +213,12 @@ export default function Club() {
                             return (
                               <TableRow key={team._id}>
                                 <TableCell component="th" scope="row">
-                                  {team.name}
+                                  <Button
+                                    disabled={onHold}
+                                    onClick={() => console.log(team, 'like')}
+                                  >
+                                    {team.name}
+                                  </Button>
                                 </TableCell>
                                 <TableCell>{team.country}</TableCell>
                                 <TableCell align="right">
