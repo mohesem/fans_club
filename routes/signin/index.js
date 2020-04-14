@@ -28,7 +28,7 @@ export default async function(body, cb) {
       log('++++++++++++++++++++++', token);
       return cb(200, {
         token,
-        snackMsg: `hello ${user.firstname}`,
+        snackMsg: `hello ${user.firstname}, you signed in with ${user.email}`,
         firstname: user.firstname,
         lastname: user.lastname,
         likes: user.likes || null,
