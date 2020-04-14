@@ -215,7 +215,11 @@ export default function Club() {
                             return (
                               <TableRow key={team._id}>
                                 <TableCell component="th" scope="row">
-                                  <Button disabled={onHold} component={redirectTo} to="/signup">
+                                  <Button
+                                    disabled={onHold}
+                                    component={redirectTo}
+                                    to={`/v/like/${team.id}`}
+                                  >
                                     {team.name}
                                   </Button>
                                 </TableCell>
