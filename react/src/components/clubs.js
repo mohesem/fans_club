@@ -1,7 +1,7 @@
 // import debug from 'debug';
 import { useSelector, useDispatch } from 'react-redux';
 import React, { useState } from 'react';
-import { Redirect /* Link as RouterLink */ } from 'react-router-dom';
+import { Redirect, Link as RouterLink } from 'react-router-dom';
 
 // material-ui
 import Hidden from '@material-ui/core/Hidden';
@@ -113,6 +113,8 @@ const useStyles = makeStyles(theme => ({
 
 // const RedirectToLink = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
 
+const redirectTo = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
+
 export default function Club() {
   const dispatch = useDispatch();
   const userReducer = useSelector(state => state.user);
@@ -213,10 +215,7 @@ export default function Club() {
                             return (
                               <TableRow key={team._id}>
                                 <TableCell component="th" scope="row">
-                                  <Button
-                                    disabled={onHold}
-                                    onClick={() => console.log(team, 'like')}
-                                  >
+                                  <Button disabled={onHold} component={redirectTo} to="/signup">
                                     {team.name}
                                   </Button>
                                 </TableCell>
