@@ -185,67 +185,70 @@ export default function AddNewClub(props) {
             onClick={() => {
               log(props.type);
               if (props.type === 'like') {
-                likeClubApi(state.club)
-                  .then(res => {
-                    log(res);
-                    // TODO: dispatch new like to user on redux
-                    dispatch(
-                      userAction({
-                        isValid: true,
-                        firstname: res.data.firstname,
-                        lastname: res.data.lastname,
-                        likes: res.data.likes,
-                        dislikes: res.data.dislikes,
-                        suggests: res.data.suggests,
-                        location: res.data.location,
-                      })
-                    );
-                    props.handleClose();
-                  })
-                  .catch(err => {
-                    log('errrrrrror', err);
-                    if (err.status === 503) {
-                      enqueueSnackbar('Network Error', { variant: 'error' });
-                    } else {
-                      log(err);
-                      setState({
-                        ...state,
-                        modalErrors: [err],
-                      });
-                    }
-                  });
+                if (state.club) {
+                  likeClubApi(state.club)
+                    .then(res => {
+                      log(res);
+                      // TODO: dispatch new like to user on redux
+                      dispatch(
+                        userAction({
+                          isValid: true,
+                          firstname: res.data.firstname,
+                          lastname: res.data.lastname,
+                          likes: res.data.likes,
+                          dislikes: res.data.dislikes,
+                          suggests: res.data.suggests,
+                          location: res.data.location,
+                        })
+                      );
+                      props.handleClose();
+                    })
+                    .catch(err => {
+                      log('errrrrrror', err);
+                      if (err.status === 503) {
+                        enqueueSnackbar('Network Error', { variant: 'error' });
+                      } else {
+                        log(err);
+                        setState({
+                          ...state,
+                          modalErrors: [err],
+                        });
+                      }
+                    });
+                }
               }
               if (props.type === 'dislike') {
-                console.log('state.club is :: ', state.club);
-                //   dislikeClubApi(state.club)
-                //     .then(res => {
-                //       log('dislike res is :: ', res);
-                //       // TODO: dispatch new like to user on redux
-                //       dispatch(
-                //         userAction({
-                //           isValid: true,
-                //           firstname: res.data.firstname,
-                //           lastname: res.data.lastname,
-                //           likes: res.data.likes,
-                //           dislikes: res.data.dislikes,
-                //           suggests: res.data.suggests,
-                //           location: res.data.location,
-                //         })
-                //       );
-                //       props.handleClose();
-                //     })
-                //     .catch(err => {
-                //       log('errrrrrror', err);
-                //       if (err.status === 503) {
-                //         enqueueSnackbar('Network Error', { variant: 'error' });
-                //       } else {
-                //         log(err);
-                //         setState({
-                //           ...state,
-                //           modalErrors: [err],
-                //         });
-                //       }
-                //     });
+                if (state.club) {
+                  dislikeClubApi(state.club)
+                    .then(res => {
+                      log('dislike res is :: ', res);
+                      // TODO: dispatch new like to user on redux
+                      dispatch(
+                        userAction({
+                          isValid: true,
+                          firstname: res.data.firstname,
+                          lastname: res.data.lastname,
+                          likes: res.data.likes,
+                          dislikes: res.data.dislikes,
+                          suggests: res.data.suggests,
+                          location: res.data.location,
+                        })
+                      );
+                      props.handleClose();
+                    })
+                    .catch(err => {
+                      log('errrrrrror', err);
+                      if (err.status === 503) {
+                        enqueueSnackbar('Network Error', { variant: 'error' });
+                      } else {
+                        log(err);
+                        setState({
+                          ...state,
+                          modalErrors: [err],
+                        });
+                      }
+                    });
+                }
               }
             }}
           >
