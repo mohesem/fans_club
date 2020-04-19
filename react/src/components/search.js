@@ -88,9 +88,20 @@ function Search(props) {
   const { location } = props;
   const { pathname } = location;
 
-  function handleRedirect(inputValue) {
-    setRedirect(`/v/${searchModeReducer}/${inputValue._id}`);
+  const [inputValue, setInputValue] = useState('');
+
+  function handleRedirect(val) {
+    console.log('redirecting', val);
+    setInputValue(val.name);
+    console.log('redddddddddddddddddddddddddddddddddddddddddddddddddirect');
+    setRedirect(`/v/${searchModeReducer}/${val._id}`);
     // setOptions([]);
+  }
+
+  if (redirect) {
+    setTimeout(() => {
+      setRedirect('');
+    }, 0);
   }
 
   const pathArr = pathname.split('/');
@@ -255,12 +266,11 @@ function Search(props) {
               onClose={() => {
                 setState({ ...state, open: false });
               }}
+              inputValue={inputValue}
               onChange={(e, inputValue) => {
                 if (inputValue) {
                   handleRedirect(inputValue);
                 }
-
-                // setState({ ...state, redirect: `/v/${inputValue._id}` });
               }}
               getOptionSelected={(option, value) => option.name === value.name}
               getOptionLabel={option => option.name}
@@ -273,6 +283,7 @@ function Search(props) {
                   fullWidth
                   variant="outlined"
                   onChange={e => {
+                    setInputValue(e.target.value);
                     getClubs(e.target.value);
                   }}
                 />

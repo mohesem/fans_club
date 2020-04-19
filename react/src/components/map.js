@@ -258,7 +258,6 @@ function Map(props) {
     axios
       .get(`https://www.fansclub.app/api/v1/GET/club/${teamId}`)
       .then(res => {
-        console.log('............................. club has been found', res);
         if (res.data.base64Image) {
           dispatch(
             mapActions.updateFlyToClub({
@@ -309,11 +308,9 @@ function Map(props) {
   }
 
   function getClubTotalLikes(teamId, mode) {
-    console.log('getClubTotalLikes ......', teamId, mode);
     axios
       .get(`https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${mode}/${teamId}`)
       .then(response => {
-        console.log('getClubTotalLikes response', response);
         const firstColorStr = response.data.team.primary_color;
         const secondColorStr = response.data.team.secondary_color;
         calCulateColors(firstColorStr, secondColorStr, (c0, c1, c2) => {
@@ -369,14 +366,11 @@ function Map(props) {
   }
 
   function addFollowersPins() {
-    // console.log('&&&&&&&&&&----------&&&', LikeOrDislike, TeamId);
     if (map.getZoom() > 8) {
       const bbox = map.getBounds();
       getMembersFromPoly(bbox, LikeOrDislike, TeamId)
         .then(res => {
           geojson.features = [];
-
-          console.log('&&&&&&&&&&&&&&&&&&', res);
           res.data.likes.forEach(like => {
             if (Number(like.fid) < 500) {
               const newLike = {
@@ -397,7 +391,7 @@ function Map(props) {
         .catch(err => {
           log(err);
         });
-    } else {
+    } else if (map.getSource('likes') || map.getSource('dislikes')) {
       map.getSource('likes').setData({
         type: 'FeatureCollection',
         features: [],
@@ -436,7 +430,6 @@ function Map(props) {
                 reducedDuplicates,
               })
               .then(response => {
-                console.log(response);
                 const { likes } = response.data;
                 Object.keys(likes).forEach(key => {
                   map.setFeatureState(
@@ -497,7 +490,6 @@ function Map(props) {
                 reducedDuplicates,
               })
               .then(response => {
-                console.log(response);
                 const { likes } = response.data;
                 Object.keys(likes).forEach(key => {
                   map.setFeatureState(
@@ -520,7 +512,7 @@ function Map(props) {
 
     setTimeout(() => {
       map.off('data', addToSourceOnData);
-    }, 1000);
+    }, 3000);
     return null;
   }
 
@@ -622,7 +614,6 @@ function Map(props) {
     (function loop() {
       if (_totalLikes && map && map.isStyleLoaded()) {
         const zoom = map.getZoom();
-        console.log('runnnnnnning lllllllooooooooop');
         map.setPaintProperty('boundry', 'fill-color', [
           'case',
           ['!=', ['feature-state', 'fans'], null],
@@ -646,7 +637,6 @@ function Map(props) {
   }
 
   function addVirtualization() {
-    console.log('add virtualization');
     (function loop() {
       if (map && map.isStyleLoaded()) {
         map.on('data', addToSourceOnData);
@@ -837,17 +827,18 @@ function Map(props) {
       TeamId = teamId;
       LikeOrDislike = likeOrDislike;
       // setState({ ...state, teamId, likeOrDislike });
-      console.log('================', state);
       _totalLikes = null;
       getClub(teamId);
       getClubTotalLikes(teamId, likeOrDislike);
       if (likeOrDislike === 'like') {
         addVirtualization(teamId, 'like');
         specifyCriterion();
+        fsLength = 0;
         localDataRef = {};
       } else if (likeOrDislike === 'dislike') {
         addVirtualization(teamId, 'dislike');
         specifyCriterion();
+        fsLength = 0;
         localDataRef = {};
       }
     }
@@ -871,12 +862,13 @@ function Map(props) {
   }
 
   if (state.mode !== 2 && !TeamId) {
-    if (clubMarker) clubMarker = null;
+    if (clubMarker) clubMarker.remove();
 
     if (map) {
-      map.off('moveend', addFollowersPins);
-
       if (map.getLayer('likes')) {
+        map.off('data', addToSourceOnData);
+        map.off('moveend', addToSourceOnMove);
+        map.off('moveend', addFollowersPins);
         map.removeLayer('likes');
         map.removeSource('likes');
       }
