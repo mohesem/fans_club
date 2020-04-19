@@ -871,6 +871,8 @@ function Map(props) {
   }
 
   if (state.mode !== 2 && !TeamId) {
+    if (clubMarker) clubMarker = null;
+
     if (map) {
       map.off('moveend', addFollowersPins);
 
