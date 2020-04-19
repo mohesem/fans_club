@@ -218,19 +218,19 @@ export default function AddNewClub(props) {
               if (props.type === 'dislike') {
                 dislikeClubApi(state.club)
                   .then(res => {
-                    log(res);
+                    log('dislike res is :: ', res);
                     // TODO: dispatch new like to user on redux
-                    dispatch(
-                      userAction({
-                        isValid: true,
-                        firstname: res.data.firstname,
-                        lastname: res.data.lastname,
-                        likes: res.data.likes,
-                        dislikes: res.data.dislikes,
-                        suggests: res.data.suggests,
-                        location: res.data.location,
-                      })
-                    );
+                    // dispatch(
+                    //   userAction({
+                    //     isValid: true,
+                    //     firstname: res.data.firstname,
+                    //     lastname: res.data.lastname,
+                    //     likes: res.data.likes,
+                    //     dislikes: res.data.dislikes,
+                    //     suggests: res.data.suggests,
+                    //     location: res.data.location,
+                    //   })
+                    // );
                     props.handleClose();
                   })
                   .catch(err => {
