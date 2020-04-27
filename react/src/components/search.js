@@ -88,14 +88,8 @@ function Search(props) {
   const { location } = props;
   const { pathname } = location;
 
-  const [inputValue, setInputValue] = useState('');
-
   function handleRedirect(val) {
-    console.log('redirecting', val);
-    setInputValue(val.name);
-    console.log('redddddddddddddddddddddddddddddddddddddddddddddddddirect');
     setRedirect(`/v/${searchModeReducer}/${val._id}`);
-    // setOptions([]);
   }
 
   if (redirect) {
@@ -141,7 +135,7 @@ function Search(props) {
           }
           return { name: f.place_name, center: f.center };
         });
-        // console.log(newOptions);
+        // console.log('new options are :: ', newOptions);
         setOptions(newOptions);
 
         // setState({ ...state, options: newOptions });
@@ -154,6 +148,8 @@ function Search(props) {
         }
       });
   }
+
+  console.log('options are ::', options);
 
   function getClubs(str) {
     // console.log(str);
@@ -190,7 +186,7 @@ function Search(props) {
   }
 
   function handleSeachButton(name) {
-    setOptions([]);
+    // setOptions([]);
     setState({ ...state, searchMode: name });
   }
 
@@ -225,7 +221,6 @@ function Search(props) {
               open={state.open}
               onOpen={() => {
                 setState({ ...state, open: true });
-                // setOpen(true);
               }}
               onClose={() => {
                 setState({ ...state, open: false });
@@ -266,7 +261,6 @@ function Search(props) {
               onClose={() => {
                 setState({ ...state, open: false });
               }}
-              inputValue={inputValue}
               onChange={(e, inputValue) => {
                 if (inputValue) {
                   handleRedirect(inputValue);
@@ -283,7 +277,6 @@ function Search(props) {
                   fullWidth
                   variant="outlined"
                   onChange={e => {
-                    setInputValue(e.target.value);
                     getClubs(e.target.value);
                   }}
                 />
