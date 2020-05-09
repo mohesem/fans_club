@@ -141,15 +141,15 @@ function Search(props) {
         // setState({ ...state, options: newOptions });
       })
       .catch(error => {
-        console.log(error);
+        // console.log(error);
         if (error.response) {
-          console.log(error.response);
+          // console.log(error.response);
           // reject(error.response.data.msg);
         }
       });
   }
 
-  console.log('options are ::', options);
+  // console.log('options are ::', options);
 
   function getClubs(str) {
     // console.log(str);

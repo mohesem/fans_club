@@ -3,7 +3,7 @@
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable import/no-unresolved, import/extensions, import/no-extraneous-dependencies */
 import debug from 'debug';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { withRouter, Link as RouterLink } from 'react-router-dom';
 import mapboxgl from 'mapbox-gl';
@@ -44,7 +44,6 @@ mapboxgl.setRTLTextPlugin(
 const log = debug('log:Map');
 
 const RedirectTo = React.forwardRef((props, ref) => <RouterLink innerRef={ref} {...props} />);
-
 let mapContainer;
 let map;
 const geojson = {
@@ -60,9 +59,6 @@ let userLocationMarker = null;
 const coordsArray = [];
 let mainColor = null;
 
-let TeamId = null;
-let LikeOrDislike = null;
-
 const useStyles = makeStyles(theme => ({
   typography: {
     padding: theme.spacing(2),
@@ -73,25 +69,26 @@ function Map(props) {
   const classes = useStyles();
   const dispatch = useDispatch();
 
-  const userReducer = useSelector(state => state.user);
-  const mapReducer = useSelector(state => state.map);
-  const clubReducer = useSelector(state => state.club);
-  const searchModeReducer = useSelector(state => state.search);
-  const [searchMode, setSearchMode] = useState('');
-  const [openShareButtons, setOpenShareButtons] = useState(false);
+  // porops
+  const { location } = props;
+  const { pathname } = location;
 
-  // local state
+  /* -------------------------------------------------------------------------- */
+  /*                                   states                                   */
+  /* -------------------------------------------------------------------------- */
+  // NOTE: 0 is normal && 1 is getUserLocation && 2 is virtualization
+  const [mode, setMode] = useState(false);
+  const [chartWidth, setChartWidth] = useState(0);
   const [state, setState] = useState({
     submitLocationOnHold: false,
     isLoader: true,
-    // NOTE: 0 is normal && 1 is getUserLocation && 2 is virtualization
-    mode: 'wait',
     // NOTE: 0 is color helper and 1 is for chart
     legends: 0,
     center: undefined,
-    chartWidth: 0,
   });
-
+  const [teamId, setTeamId] = useState('');
+  const [likeOrDislike, setLikeOrDislike] = useState('');
+  const [openShareButtons, setOpenShareButtons] = useState(false);
   const [helper, setHelper] = useState({
     chartTotal: undefined,
     chartMales: undefined,
@@ -105,81 +102,31 @@ function Map(props) {
     c2: undefined,
     c3: 'rgb(255, 255, 255)',
   });
+  /* -------------------------------------------------------------------------- */
+  /*                                  handlers                                  */
+  /* -------------------------------------------------------------------------- */
+  if (pathname === '/' && mode !== 0) setMode(0);
+  if (pathname === '/signup/getUserLocation' && mode !== 1) setMode(1);
+  if (pathname.includes('/v/') && mode !== 2) setMode(2);
 
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  function getAddress(coords) {
-    return new Promise((resolve, reject) => {
-      /* TODO: use getLocation bar as a sub component and pass submit on hold to that */
-      setState({ ...state, submitLocationOnHold: true });
-      coordsArray.push(coords);
-
-      getAddressFromMapboxApi(coords)
-        .then(res => {
-          log('mapbox res', res);
-          resolve(res);
-          setState({ ...state, submitLocationOnHold: false });
-        })
-        .catch(err => {
-          reject(err);
-        });
-    });
-  }
-  const { location } = props;
-  const { pathname } = location;
-
-  function addUserLocationMarker(e) {
-    if (state.mode === 1) {
-      if (map.getLayer('likes')) {
-        map.removeLayer('likes');
-        map.removeSource('likes');
-      }
-      if (map.getLayer('dislikes')) {
-        map.removeLayer('dislikes');
-        map.removeSource('dislikes');
-      }
-
-      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
-      if (map.getLayer('boundry')) map.removeLayer('boundry');
-      if (map.getSource('boundary-source')) map.removeSource('boundary-source');
-      dispatch(signupActions({ submitButtonState: false }));
-      getAddress(e.lngLat.wrap())
-        .then(address => {
-          if (address) {
-            log('final result is ==> ', {
-              location: e.lngLat.wrap(),
-              address: address.data.features[0].place_name,
-            });
-            dispatch(
-              signupActions({
-                location: e.lngLat.wrap(),
-                address: address.data.features[0].place_name,
-                submitButtonState: true,
-              })
-            );
-          }
-        })
-        .catch(() => {
-          log('some error came from mapbox');
-        });
-
-      if (userLocationMarker !== null) {
-        userLocationMarker.remove();
-      }
-      userLocationMarker = new mapboxgl.Marker({
-        draggable: false,
-      });
-      userLocationMarker.setLngLat(e.lngLat.wrap());
-      userLocationMarker.addTo(map);
-    }
+  function handleLegendsVisibility() {
+    if (state.legends === 0) return setState({ ...state, legends: 1 });
+    return setState({ ...state, legends: 0 });
   }
 
-  function handleRoutes() {
-    if (pathname === '/' && state.mode !== 0) setState({ ...state, mode: 0 });
-    if (pathname === '/signup/getUserLocation' && state.mode !== 1) setState({ ...state, mode: 1 });
-    if (pathname.includes('/v/') && state.mode !== 2) setState({ ...state, mode: 2 });
-    // }
+  function handleShreButtons() {
+    if (openShareButtons) return setOpenShareButtons(false);
+    return setOpenShareButtons(true);
   }
+  /* -------------------------------------------------------------------------- */
+  /*                                  reducers                                  */
+  /* -------------------------------------------------------------------------- */
+  const userReducer = useSelector(global => global.user);
+  const mapReducer = useSelector(global => global.map);
+  const clubReducer = useSelector(global => global.club);
+  /* -------------------------------------------------------------------------- */
+  /*                                  functions                                 */
+  /* -------------------------------------------------------------------------- */
 
   function getColorCode(firstColorStr, secondColorStr, cb) {
     let value;
@@ -224,7 +171,7 @@ function Map(props) {
     // return cb(value);
   }
 
-  function calCulateColors(firstColorStr, secondColorStr, cb) {
+  const calCulateColors = useCallback((firstColorStr, secondColorStr, cb) => {
     getColorCode(firstColorStr, secondColorStr, color => {
       const factorR = Math.round((255 - color.r) / 3);
       const factorG = Math.round((255 - color.g) / 3);
@@ -245,28 +192,10 @@ function Map(props) {
       mainColor = c0;
       return cb(c0, c1, c2);
     });
-  }
+  }, []);
 
-  function handleLegendsVisibility() {
-    if (state.legends === 0) return setState({ ...state, legends: 1 });
-    return setState({ ...state, legends: 0 });
-  }
-
-  function handleShreButtons() {
-    if (openShareButtons) return setOpenShareButtons(false);
-    return setOpenShareButtons(true);
-  }
-
-  function setChartWidthFunc() {
-    if (window.innerWidth >= 360 && state.chartWidth < 300) {
-      setState({ ...state, chartWidth: 300 });
-    }
-    if (window.innerWidth < 360) {
-      setState({ ...state, chartWidth: window.innerWidth - 60 });
-    }
-  }
-
-  function getClub(teamId) {
+  const getClub = useCallback(() => {
+    console.log('get club *****************************');
     axios
       .get(`https://www.fansclub.app/api/v1/GET/club/${teamId}`)
       .then(res => {
@@ -317,9 +246,9 @@ function Map(props) {
       .catch(err => {
         console.log('errrrrrrrrrrrrrrrrrr', err);
       });
-  }
+  }, [dispatch, teamId]);
 
-  function getClubTotalLikes(teamId, mode) {
+  const getClubTotalLikes = useCallback(() => {
     axios
       .get(`https://www.fansclub.app/api/v1/GET/getClubTotalLikes/${mode}/${teamId}`)
       .then(response => {
@@ -375,7 +304,84 @@ function Map(props) {
         // NOTE: as there may be lots of requests for tiles it seems that best option is poping errors on console
         log(error);
       });
-  }
+  }, [calCulateColors, helper, mode, teamId]);
+
+  const getAddress = useCallback(
+    coords => {
+      return new Promise((resolve, reject) => {
+        /* TODO: use getLocation bar as a sub component and pass submit on hold to that */
+        setState({ ...state, submitLocationOnHold: true });
+        coordsArray.push(coords);
+
+        getAddressFromMapboxApi(coords)
+          .then(res => {
+            log('mapbox res', res);
+            resolve(res);
+            setState({ ...state, submitLocationOnHold: false });
+          })
+          .catch(err => {
+            reject(err);
+          });
+      });
+    },
+    [state]
+  );
+
+  const addUserLocationMarker = useCallback(
+    e => {
+      if (map.getLayer('likes')) {
+        map.removeLayer('likes');
+        map.removeSource('likes');
+      }
+      if (map.getLayer('dislikes')) {
+        map.removeLayer('dislikes');
+        map.removeSource('dislikes');
+      }
+
+      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
+      if (map.getLayer('boundry')) map.removeLayer('boundry');
+      if (map.getSource('boundary-source')) map.removeSource('boundary-source');
+      dispatch(signupActions({ submitButtonState: false }));
+      getAddress(e.lngLat.wrap())
+        .then(address => {
+          if (address) {
+            log('final result is ==> ', {
+              location: e.lngLat.wrap(),
+              address: address.data.features[0].place_name,
+            });
+            dispatch(
+              signupActions({
+                location: e.lngLat.wrap(),
+                address: address.data.features[0].place_name,
+                submitButtonState: true,
+              })
+            );
+          }
+        })
+        .catch(() => {
+          log('some error came from mapbox');
+        });
+
+      if (userLocationMarker !== null) {
+        userLocationMarker.remove();
+      }
+      userLocationMarker = new mapboxgl.Marker({
+        draggable: false,
+      });
+      userLocationMarker.setLngLat(e.lngLat.wrap());
+      userLocationMarker.addTo(map);
+    },
+    [dispatch, getAddress]
+  );
+
+  const setChartWidthFunc = useCallback(() => {
+    if (window.innerWidth >= 360 && chartWidth < 300) {
+      setChartWidth(300);
+    }
+    if (window.innerWidth < 360) {
+      setChartWidth(window.innerWidth - 60);
+    }
+  }, [chartWidth]);
 
   function addLayers() {
     // if (map.getSource('boundary-source')) {
@@ -471,52 +477,13 @@ function Map(props) {
     })();
   }
 
-  function addFollowersPins() {
-    if (map.getZoom() > 8) {
-      const bbox = map.getBounds();
-      getMembersFromPoly(bbox, LikeOrDislike, TeamId)
-        .then(res => {
-          geojson.features = [];
-          res.data.likes.forEach(like => {
-            if (Number(like.fid) < 500) {
-              const newLike = {
-                type: 'Feature',
-                geometry: like.geo,
-                // properties: { icon-image: 'love' },
-              };
-              geojson.features.push(newLike);
-            }
-          });
-
-          if (LikeOrDislike === 'like') {
-            map.getSource('likes').setData(geojson);
-          } else {
-            map.getSource('dislikes').setData(geojson);
-          }
-        })
-        .catch(err => {
-          log(err);
-        });
-    } else if (map.getSource('likes') || map.getSource('dislikes')) {
-      map.getSource('likes').setData({
-        type: 'FeatureCollection',
-        features: [],
-      });
-      map.getSource('dislikes').setData({
-        type: 'FeatureCollection',
-        features: [],
-      });
-    }
-  }
-
-  function addToSourceOnData() {
+  const addToSourceOnData = useCallback(() => {
     if (map.getSource('boundary-source')) {
       const bbox = map.getBounds();
 
       const fs = map.queryRenderedFeatures({ layers: ['boundry'] });
       const { length } = fs;
       if (fsLength !== length) {
-        // log('bbox is addToSourceOnData', bbox);
         fsLength = length;
         const array = fs.map(f => f.id);
         const uniqueArray = [...new Set(array)];
@@ -529,10 +496,11 @@ function Map(props) {
           }
 
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
+            console.log('sending new req');
             axios
               .post('https://www.fansclub.app/api/v1/POST/getLikesForPolys', {
-                likeOrDislike: LikeOrDislike,
-                teamId: TeamId,
+                likeOrDislike,
+                teamId,
                 reducedDuplicates,
               })
               .then(response => {
@@ -555,11 +523,9 @@ function Map(props) {
         });
       }
     }
+  }, [likeOrDislike, teamId]);
 
-    return null;
-  }
-
-  function addToSourceOnMove() {
+  const addToSourceOnMove = useCallback(() => {
     if (map.getSource('boundary-source')) {
       const pathnameSplit = pathname.split('/');
       const id = pathnameSplit[pathnameSplit.length - 1];
@@ -591,8 +557,8 @@ function Map(props) {
           if (uniqueArray.length - 1 === i && reducedDuplicates.length) {
             axios
               .post('https://www.fansclub.app/api/v1/POST/getLikesForPolys', {
-                likeOrDislike: LikeOrDislike,
-                teamId: TeamId,
+                likeOrDislike,
+                teamId,
                 reducedDuplicates,
               })
               .then(response => {
@@ -620,12 +586,50 @@ function Map(props) {
       map.off('data', addToSourceOnData);
     }, 3000);
     return null;
-  }
+  }, [addToSourceOnData, likeOrDislike, pathname, teamId]);
+
+  const addFollowersPins = useCallback(() => {
+    if (map.getZoom() > 8) {
+      const bbox = map.getBounds();
+      getMembersFromPoly(bbox, likeOrDislike, teamId)
+        .then(res => {
+          geojson.features = [];
+          res.data.likes.forEach(like => {
+            if (Number(like.fid) < 500) {
+              const newLike = {
+                type: 'Feature',
+                geometry: like.geo,
+                // properties: { icon-image: 'love' },
+              };
+              geojson.features.push(newLike);
+            }
+          });
+
+          if (likeOrDislike === 'like') {
+            map.getSource('likes').setData(geojson);
+          } else {
+            map.getSource('dislikes').setData(geojson);
+          }
+        })
+        .catch(err => {
+          log(err);
+        });
+    } else if (map.getSource('likes') || map.getSource('dislikes')) {
+      map.getSource('likes').setData({
+        type: 'FeatureCollection',
+        features: [],
+      });
+      map.getSource('dislikes').setData({
+        type: 'FeatureCollection',
+        features: [],
+      });
+    }
+  }, [likeOrDislike, teamId]);
 
   function specifyCriterion() {
     (function loop() {
       if (_totalLikes && map && map.isStyleLoaded()) {
-        const zoom = map.getZoom();
+        // const zoom = map.getZoom();
         map.setPaintProperty('boundry', 'fill-color', [
           'case',
           ['!=', ['feature-state', 'fans'], null],
@@ -648,81 +652,24 @@ function Map(props) {
     })();
   }
 
-  function addVirtualization() {
-    (function loop() {
-      if (map && map.isStyleLoaded()) {
-        map.on('data', addToSourceOnData);
-        map.on('moveend', addToSourceOnMove);
-        map.on('moveend', addFollowersPins);
-        if (map && !map.getSource('boundary-source')) {
-          addLayers();
-        } else {
-          map.removeFeatureState({
-            source: 'boundary-source',
-            sourceLayer: 'boundry',
-          });
-          map.getSource('likes').setData({
-            type: 'FeatureCollection',
-            features: [],
-          });
-          map.getSource('dislikes').setData({
-            type: 'FeatureCollection',
-            features: [],
-          });
-        }
-      } else {
-        setTimeout(() => {
-          loop();
-        }, 50);
-      }
-    })();
-  }
-
-  useEffect(() => {
-    if (map === undefined) {
-      map = new mapboxgl.Map({
-        container: mapContainer,
-        center: userReducer.location || [0, 0],
-        zoom: 2,
-        attributionControl: false,
-        maxZoom: 14,
+  const addVirtualization = useCallback(() => {
+    if (map && !map.getSource('boundary-source')) {
+      addLayers();
+    } else {
+      map.removeFeatureState({
+        source: 'boundary-source',
+        sourceLayer: 'boundry',
       });
-      map.addControl(
-        new mapboxgl.GeolocateControl({
-          positionOptions: {
-            enableHighAccuracy: true,
-          },
-          trackUserLocation: true,
-        }),
-        'bottom-right'
-      );
-      map.setStyle('mapbox://styles/mohesem/ck59dnl2k1ij41co38c3zy6ib');
-
-      // FIXME: delete on production
-      window.mapbox = map;
-
-      dispatch(mapActions.updateCenter(map.getCenter()));
-      // setState({ ...state, isLoaded: true });
-      map.loadImage(
-        `data:image/png;base64,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`,
-        (error, image) => {
-          console.log('imaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaage', image);
-          if (error) console.log('err on adding new image ', error);
-          map.addImage('love-1', image);
-        }
-      );
+      map.getSource('likes').setData({
+        type: 'FeatureCollection',
+        features: [],
+      });
+      map.getSource('dislikes').setData({
+        type: 'FeatureCollection',
+        features: [],
+      });
     }
-
-    window.addEventListener('resize', setChartWidthFunc);
-    map.on('click', addUserLocationMarker);
-    function clearEvents() {
-      window.removeEventListener('resize', setChartWidthFunc);
-      map.off('click', addUserLocationMarker);
-      if (searchMarker) searchMarker.remove();
-    }
-
-    return () => clearEvents();
-  }, [state]);
+  }, []);
 
   if (mapReducer.flyTo.state === true) {
     if (mapReducer.flyTo.coord.length === 2) {
@@ -771,22 +718,6 @@ function Map(props) {
       clubMarker.remove();
     }
 
-    if (clubReducer.cityCoords) {
-      (function loop() {
-        if (map) {
-          map.flyTo({
-            center: clubReducer.cityCoords,
-            zoom: 5,
-            essential: true, // this animation is considered essential with respect to prefers-reduced-motion
-          });
-        } else {
-          setTimeout(() => {
-            loop();
-          }, 50);
-        }
-      })();
-    }
-
     if (clubReducer.logoBase64) {
       const el = document.createElement('div');
       el.style.background = `url(data:image/png;base64,${clubReducer.logoBase64})`;
@@ -804,83 +735,45 @@ function Map(props) {
       dispatch(mapActions.updateFlyToClub({ state: false, coord: [] }));
     }, 10);
   }
-
-  if (state.mode === 0) {
-    if (map && map.isStyleLoaded()) {
-      if (map.getLayer('likes')) {
-        map.removeLayer('likes');
-        map.removeSource('likes');
-      }
-      if (map.getLayer('dislikes')) {
-        map.removeLayer('dislikes');
-        map.removeSource('dislikes');
-      }
-
-      if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
-      if (map.getLayer('boundry')) map.removeLayer('boundry');
-      if (map.getSource('boundary-source')) map.removeSource('boundary-source');
-    }
-  }
-
-  if (state.mode === 2) {
-    setChartWidthFunc();
-    const split = pathname.split('/');
-    const teamId = split[split.length - 1];
-    const likeOrDislike = split[split.length - 2];
-
-    // NOTE: check if teamId has been changed
-    // if (teamId === TeamId) {
-    //   if (likeOrDislike === 'like') {
-    //   } else if (likeOrDislike === 'dislike') {
-    //   }
-    // } else
-    if (teamId !== TeamId || likeOrDislike !== LikeOrDislike) {
-      // TODO: clear previous layers after changing team or mode
-      TeamId = teamId;
-      LikeOrDislike = likeOrDislike;
-      // setState({ ...state, teamId, likeOrDislike });
-      _totalLikes = null;
-      getClub(teamId);
-      getClubTotalLikes(teamId, likeOrDislike);
-      if (likeOrDislike === 'like') {
-        addVirtualization(teamId, 'like');
-        specifyCriterion();
-        fsLength = 0;
-        localDataRef = {};
-      } else if (likeOrDislike === 'dislike') {
-        addVirtualization(teamId, 'dislike');
-        specifyCriterion();
-        fsLength = 0;
-        localDataRef = {};
-      }
-    }
-  }
-
-  if (state.mode !== 2 && TeamId) {
-    setState({ ...state, teamId: null });
-    setHelper({
-      chartTotal: undefined,
-      chartMales: undefined,
-      chartFemales: undefined,
-      totalLikes: undefined,
-      step0: undefined,
-      step1: undefined,
-      step2: undefined,
-      c0: undefined,
-      c1: undefined,
-      c2: undefined,
-      c3: 'rgb(255, 255, 255)',
+  /* -------------------------------------------------------------------------- */
+  /*                                  effects                                */
+  /* -------------------------------------------------------------------------- */
+  useEffect(() => {
+    map = new mapboxgl.Map({
+      container: mapContainer,
+      center: userReducer.location || [0, 0],
+      zoom: 2,
+      attributionControl: false,
+      maxZoom: 14,
     });
-  }
+    map.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true,
+        },
+        trackUserLocation: true,
+      }),
+      'bottom-right'
+    );
+    map.setStyle('mapbox://styles/mohesem/ck59dnl2k1ij41co38c3zy6ib');
 
-  if (state.mode !== 2 && !TeamId) {
-    if (clubMarker) clubMarker.remove();
+    // FIXME: delete on production
+    window.mapbox = map;
 
-    if (map) {
+    dispatch(mapActions.updateCenter(map.getCenter()));
+    // setState({ ...state, isLoaded: true });
+    map.loadImage(
+      `data:image/png;base64,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`,
+      (error, image) => {
+        if (error) console.log('err on adding new image ', error);
+        map.addImage('love-1', image);
+      }
+    );
+  }, [userReducer, dispatch]);
+
+  useEffect(() => {
+    const deleteLayers = () => {
       if (map.getLayer('likes')) {
-        map.off('data', addToSourceOnData);
-        map.off('moveend', addToSourceOnMove);
-        map.off('moveend', addFollowersPins);
         map.removeLayer('likes');
         map.removeSource('likes');
       }
@@ -888,27 +781,118 @@ function Map(props) {
         map.removeLayer('dislikes');
         map.removeSource('dislikes');
       }
-
       if (map.getLayer('boundryLine')) map.removeLayer('boundryLine');
       if (map.getLayer('boundry')) map.removeLayer('boundry');
       if (map.getSource('boundary-source')) map.removeSource('boundary-source');
-    }
-  }
+    };
 
-  if (state.mode !== 1) {
-    if (userLocationMarker) userLocationMarker.remove();
-  }
+    if (mode === 0) {
+      deleteLayers();
+      if (userLocationMarker) userLocationMarker.remove();
+    }
+
+    if (mode === 1) {
+      deleteLayers();
+    }
+
+    if (mode === 2) {
+      if (userLocationMarker) userLocationMarker.remove();
+      // setChartWidthFunc();
+      const split = pathname.split('/');
+      const _teamId = split[split.length - 1];
+      const _likeOrDislike = split[split.length - 2];
+
+      if (_teamId !== teamId && clubReducer.cityCoords) {
+        map.flyTo({
+          center: clubReducer.cityCoords,
+          zoom: 5,
+          essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+        });
+      }
+
+      // if (!teamId) {
+      //   getClub();
+      //   setTeamId(_teamId);
+      // }
+
+      console.log(
+        ')))))))))))))))))))))))))))))',
+        _teamId !== teamId || _likeOrDislike !== likeOrDislike
+      );
+
+      if (_teamId !== teamId || _likeOrDislike !== likeOrDislike) {
+        getClub();
+        getClubTotalLikes();
+        setTeamId(_teamId);
+        setLikeOrDislike(_likeOrDislike);
+      }
+    }
+  }, [
+    mode,
+    chartWidth,
+    likeOrDislike,
+    teamId,
+    pathname,
+    setChartWidthFunc,
+    getClub,
+    getClubTotalLikes,
+    clubReducer.cityCoords,
+  ]);
+
+  console.log('....................................');
+
+  useEffect(() => {
+    if (likeOrDislike === 'like') {
+      addVirtualization(teamId, 'like');
+      specifyCriterion();
+      fsLength = 0;
+      localDataRef = {};
+    } else if (likeOrDislike === 'dislike') {
+      addVirtualization(teamId, 'dislike');
+      specifyCriterion();
+      fsLength = 0;
+      localDataRef = {};
+    }
+  }, [teamId, likeOrDislike, addVirtualization]);
+
+  useEffect(() => {
+    function clear() {
+      map.off('data', addToSourceOnData);
+      map.off('moveend', addToSourceOnMove);
+      map.off('moveend', addFollowersPins);
+      window.removeEventListener('resize', setChartWidthFunc);
+    }
+
+    if (mode === 1) {
+      map.on('click', addUserLocationMarker);
+      return () => map.off('click', addUserLocationMarker);
+    }
+    if (mode === 2) {
+      map.on('data', addToSourceOnData);
+      map.on('moveend', addToSourceOnMove);
+      map.on('moveend', addFollowersPins);
+      window.addEventListener('resize', setChartWidthFunc);
+
+      return () => clear();
+    }
+  }, [
+    mode,
+    setChartWidthFunc,
+    addUserLocationMarker,
+    addToSourceOnData,
+    addToSourceOnMove,
+    addFollowersPins,
+  ]);
 
   return (
     <>
-      {handleRoutes()}
       <div
         ref={function ref(el) {
           mapContainer = el;
         }}
         className="mapContainer"
       />
-      {state.mode === 2 ? (
+      {mode === 2 ? (
         <>
           <div id="state-legend" className="legend" hidden={state.legends === 0}>
             <h4>Population</h4>
