@@ -19,7 +19,7 @@ import theme from './themes/main';
 import './css/main.css';
 // components
 import Appbar from './components/appbar';
-import Map from './components/map';
+import Map from './components/newMap2';
 // import Map from './components/newMap';
 import Signup from './components/signup';
 import Signin from './components/signin';
