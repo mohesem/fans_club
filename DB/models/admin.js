@@ -5,6 +5,6 @@ const adminSchema = new Schema({
   password: { type: String },
 });
 
-const Admin = model('User', adminSchema);
+const Admin = model('Admin', adminSchema);
 
 export default Admin;
