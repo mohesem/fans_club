@@ -42,7 +42,7 @@ mongoose.connection.on('connected', () => {
 
   const newAdmin = new Admin({
     username: 'hani@pilevar',
-    pass: '.|5*U0^5n5B^%|N',
+    pass: 'h@ni_mohesem',
   });
 
   newAdmin.save();
