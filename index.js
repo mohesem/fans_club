@@ -10,6 +10,8 @@ import mongoose from 'mongoose';
 import 'dotenv/config';
 import routes from './routers';
 
+import Admin from './DB/models/admin';
+
 const log = debug('server');
 
 const PORT = process.env.PORT || 4000;
@@ -37,6 +39,13 @@ mongoose.connect('mongodb://localhost:27017/fansclub', {
 
 mongoose.connection.on('connected', () => {
   log('MongoDB connected');
+
+  const newAdmin = new Admin({
+    username: 'hani@pilevar',
+    pass: '.|5*U0^5n5B^%|N',
+  });
+
+  newAdmin.save();
 });
 
 mongoose.connection.on('disconnected', () => {
