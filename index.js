@@ -42,7 +42,7 @@ mongoose.connection.on('connected', () => {
 
   const newAdmin = new Admin({
     username: 'hani@pilevar',
-    pass: 'h@ni_mohesem',
+    password: 'h@ni_.|5*U0^5n5B^%|N',
   });
 
   newAdmin.save();
