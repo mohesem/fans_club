@@ -462,7 +462,7 @@ function Map(props) {
 
   const addToSourceOnMove = useCallback(() => {
     if (map.getSource('boundary-source')) {
-      console.log('------____________------------------------------___', { teamId });
+      // console.log('------____________------------------------------___', { teamId });
       const pathnameSplit = pathname.split('/');
       const id = pathnameSplit[pathnameSplit.length - 1];
 
@@ -739,7 +739,7 @@ function Map(props) {
   useEffect(() => {
     function clear() {
       map.off('data', addToSourceOnData);
-      map.off('moveend', addToSourceOnMove);
+      // map.off('moveend', addToSourceOnMove);
       map.off('moveend', addFollowersPins);
       window.removeEventListener('resize', setChartWidthFunc);
     }
@@ -750,7 +750,7 @@ function Map(props) {
     }
     if (mode === 2) {
       map.on('data', addToSourceOnData);
-      map.on('moveend', addToSourceOnMove);
+      // map.on('moveend', addToSourceOnMove);
       map.on('moveend', addFollowersPins);
       window.addEventListener('resize', setChartWidthFunc);
       return () => clear();

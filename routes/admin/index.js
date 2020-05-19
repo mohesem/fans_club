@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import Admin from '../../DB/models/admin';
+// import Admin from '../../DB/models/admin';
 
 const router = Router();
 

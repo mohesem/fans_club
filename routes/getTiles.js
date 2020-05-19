@@ -18,6 +18,7 @@ const headerErr = { 'Content-Type': 'text/plain' };
 
 export default function serverTiles(z, x, y, cb) {
   // log(z, x, y);
+  console.log(z, x, y);
   if (z < 4) {
     new MBTiles('./mbTiles/0.mbtiles', (err, mbtiles) => {
       mbtiles.getTile(z, x, y, (err, tile) => {

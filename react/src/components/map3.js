@@ -20,6 +20,7 @@ function Map(props) {
     if (userLocationMarker !== null) {
       userLocationMarker.remove();
     }
+
     userLocationMarker = new mapboxgl.Marker({
       draggable: false,
     });
