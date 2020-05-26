@@ -78,7 +78,7 @@ router.get('/GET/tiles/:z/:x/:y', (req, res) => {
   getTiles(z, x, y, (status, header, tile) => {
     // res.;
     console.log('sending tile');
-    if (res.status === 200) {
+    if (status === 200) {
       res
         .set(header)
         .status(status)
