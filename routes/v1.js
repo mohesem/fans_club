@@ -78,10 +78,14 @@ router.get('/GET/tiles/:z/:x/:y', (req, res) => {
   getTiles(z, x, y, (status, header, tile) => {
     // res.;
     console.log('sending tile');
-    res
-      .set(header)
-      .status(status)
-      .send(tile);
+    if (res.status === 200) {
+      res
+        .set(header)
+        .status(status)
+        .send(tile);
+    } else {
+      res.sendStatus(204);
+    }
   });
 });
 

@@ -526,7 +526,6 @@ function Map(props) {
   }, [likeOrDislike, teamId, mode]);
 
   const removeFeatures = useCallback(() => {
-    console.log(')))))))))))))))))))))))))))))))))))))))))))0');
     if (map && map.isStyleLoaded()) {
       map.removeFeatureState({
         source: 'boundary-source',
