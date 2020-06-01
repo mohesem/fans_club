@@ -4,6 +4,7 @@ import User from '../../DB/models/userModel';
 const log = debug('log:db');
 
 export default function getUserByEmail(facebookId, cb) {
+  console.log('-----', typeof facebookId);
   console.log('gert user by facebookId is working', facebookId);
 
   User.findOne({ facebookId }, (err, user) => {
