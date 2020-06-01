@@ -5,6 +5,7 @@ import path, { dirname } from 'path';
 import { stat } from 'fs';
 import makeNewUser from './makeNewUser';
 import isUserNew from './isUserNew';
+import isUserNewFb from './isUserNewFb';
 import signin from './signin';
 import getUserInfo from './getUserInfo';
 import searchClubs from './searchClubs';
@@ -30,6 +31,12 @@ router.post('/POST/makeNewUser', (req, res) => {
 
 router.post('/POST/isUserNew', (req, res) => {
   isUserNew(req.body, (status, trace) => {
+    res.status(status).send(trace);
+  });
+});
+
+router.post('/POST/isUserNewFb', (req, res) => {
+  isUserNewFb(req.body, (status, trace) => {
     res.status(status).send(trace);
   });
 });

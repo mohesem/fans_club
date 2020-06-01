@@ -3,7 +3,7 @@ import validator from '../validator';
 export default body => {
   const rulesObj = [
     { value: body.from, name: 'from', required: true, type: 'string' },
-    { value: body.email, name: 'email', required: true, email: true },
+    { value: body.email, name: 'email', email: true },
     {
       value: body.firstname,
       name: 'firstname',
