@@ -5,7 +5,14 @@ const log = debug('log:db');
 
 export default function signin(obj, cb) {
   log('gert user by email is working', obj);
-  User.findOne({ email: obj.email, facebookId: obj.facebookId, googleId: obj.googleId })
+  const query = {};
+  if (Object.facebookId) {
+    query.facebookId = obj.facebookId;
+  } else {
+    query.googleId = obj.googleId;
+  }
+
+  User.findOne(query)
     // .populate('likes')
     // .populate('dislikes')
     // .populate('suggests')
