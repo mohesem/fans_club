@@ -6,8 +6,8 @@ import signin from '../db/signin';
 const log = debug('log:v1');
 
 export default async function(body, cb) {
-  const { email, facebookId, googleId } = body;
-  const obj = { email, facebookId, googleId };
+  const { facebookId, googleId } = body;
+  const obj = { facebookId, googleId };
   signin(obj, (err, user) => {
     // return cb(status, trace);
 
