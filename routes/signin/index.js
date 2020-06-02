@@ -25,7 +25,6 @@ export default async function(body, cb) {
         log('error on creating token', error);
         return cb(500, { other: 'Server Internal Error' });
       }
-      log('++++++++++++++++++++++', token);
       return cb(200, {
         token,
         snackMsg: `hello ${user.firstname}, you signed in with ${user.email}`,
