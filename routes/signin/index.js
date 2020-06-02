@@ -36,6 +36,7 @@ export default async function(body, cb) {
         suggests: user.suggests || null,
         location: user.geo,
         from: user.googleId ? 'google' : 'facebook',
+        thumbnail: user.thumbnail,
       });
     });
     return null;
