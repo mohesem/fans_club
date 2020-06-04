@@ -148,11 +148,13 @@ export default props => {
       <>
         {Platform.OS !== 'web' ? (
           <Button transparent primary onPress={handleMenuToggle}>
-            <Icon name="bars" type="FontAwesome" />
+            {/* <Icon name="bars" type="FontAwesome" /> */}
+            <IconReactNative name="thumbs-down" size={25} color="white" />
           </Button>
         ) : (
           <Button transparent primary onPress={props.handleWebMenuOpen}>
-            <Icon name="bars" type="FontAwesome" />
+            {/* <Icon name="bars" type="FontAwesome" /> */}
+            <IconReactNative name="thumbs-down" size={25} color="white" />
           </Button>
         )}
       </>
