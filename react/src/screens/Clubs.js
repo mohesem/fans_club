@@ -16,6 +16,8 @@ import {
   Badge,
   List,
 } from 'native-base';
+import {FontAwesomeIcon as IconReact} from '@fortawesome/react-fontawesome';
+import {faTimesCircle} from '@fortawesome/free-solid-svg-icons';
 import MyModal from '../myTheme/components/modal';
 import MyInput from '../myTheme/components/input';
 import IconReactNative from 'react-native-vector-icons/FontAwesome';
@@ -139,6 +141,10 @@ const styles = StyleSheet.create({
   // ########
   clubsListItem: {
     flexDirection: Platform.OS === 'web' ? 'row-reverse' : 'row',
+  },
+  clubsListItemWeb: {
+    flexDirection: Platform.OS === 'web' ? 'row-reverse' : 'row',
+    cursor: 'default',
   },
   clubDeleteBtn: {
     position: 'absolute',
@@ -359,16 +365,7 @@ export default () => {
               return (
                 <ListItem
                   key={club._id}
-                  style={() => {
-                    if (Platform.OS === 'web') {
-                      return {
-                        ...styles.clubsListItem,
-                        cursor: 'default',
-                      };
-                    } else {
-                      return styles.clubsListItem;
-                    }
-                  }}>
+                  style={Platform.OS === 'web' ? styles.clubsListItemWeb : styles.clubsListItem}>
                   <Button
                     transparent
                     style={styles.clubNameBtn}
@@ -382,7 +379,11 @@ export default () => {
                       transparent
                       style={styles.clubDeleteBtn}
                       onPress={() => handleDeleteClub(club, 'like')}>
-                      <IconReactNative name="times-circle" size={20} color={colors.brandDanger} />
+                      {Platform.OS !== 'web' ? (
+                        <IconReactNative name="times-circle" size={20} color={colors.brandDanger} />
+                      ) : (
+                        <IconReact icon={faTimesCircle} color={colors.brandDanger} />
+                      )}
                     </Button>
                   ) : (
                     <Spinner style={styles.deleteOnHoldSpinners} />
