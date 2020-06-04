@@ -83,6 +83,7 @@ export default props => {
       open={toggle}
       overlayId="webDrawerOverlay"
       pullRight
+      touchHandleWidth={0}
       //   onSetOpen={this.onSetSidebarOpen}
       styles={{sidebar: sidebarStyle}}
     />
