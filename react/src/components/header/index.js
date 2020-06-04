@@ -7,7 +7,13 @@ import colors from '../../native-base-theme/colors';
 
 import IconReactNative from 'react-native-vector-icons/FontAwesome';
 import {FontAwesomeIcon as IconReact} from '@fortawesome/react-fontawesome';
-import {faUserPlus, faSignInAlt, faSignOutAlt, faTshirt} from '@fortawesome/free-solid-svg-icons';
+import {
+  faUserPlus,
+  faSignInAlt,
+  faSignOutAlt,
+  faTshirt,
+  faBars,
+} from '@fortawesome/free-solid-svg-icons';
 
 import {useHistory} from '../../router';
 import {isUserAction, userAction} from '../../redux/actions';
@@ -149,12 +155,18 @@ export default props => {
         {Platform.OS !== 'web' ? (
           <Button transparent primary onPress={handleMenuToggle}>
             {/* <Icon name="bars" type="FontAwesome" /> */}
-            <IconReactNative name="thumbs-down" size={25} color="white" />
+            <IconReact
+              icon={faBars}
+              color={props.searchMode === 'team' ? colors.brandLight : '#263238'}
+            />
           </Button>
         ) : (
           <Button transparent primary onPress={props.handleWebMenuOpen}>
             {/* <Icon name="bars" type="FontAwesome" /> */}
-            <IconReactNative name="thumbs-down" size={25} color="white" />
+            <IconReact
+              icon={faBars}
+              color={props.searchMode === 'team' ? colors.brandLight : '#263238'}
+            />
           </Button>
         )}
       </>
