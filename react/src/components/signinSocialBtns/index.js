@@ -8,11 +8,7 @@ import {userAction, isUserAction} from '../../redux/actions';
 import {Button, Text} from 'native-base';
 
 import {GoogleSignin, statusCodes} from '@react-native-community/google-signin';
-import {
-  GraphRequest,
-  GraphRequestManager,
-  LoginManager,
-} from 'react-native-fbsdk';
+import {GraphRequest, GraphRequestManager, LoginManager} from 'react-native-fbsdk';
 
 // api
 import signinApi from '../../api/signin';
@@ -79,8 +75,7 @@ export const GoogleLoginBtn = props => {
   };
 
   GoogleSignin.configure({
-    webClientId:
-      '434006094164-jsnovosa0adtmia7jlqhea3ctrti3ta0.apps.googleusercontent.com',
+    webClientId: '434006094164-jsnovosa0adtmia7jlqhea3ctrti3ta0.apps.googleusercontent.com',
     offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
   });
   const signInGoogle = async () => {

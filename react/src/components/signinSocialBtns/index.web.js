@@ -118,7 +118,7 @@ export const GoogleLoginBtn = props => {
           <Text style={styles.googleText}>SIGNUP WITH GOOGLE</Text>
         </Button>
       )}
-      clientId="951334179095-56e83hvmusamr0scc8pb2al139p9v1hd.apps.googleusercontent.com"
+      clientId="951334179095-359plh303nv4b6oi184594gi11jmpvfk.apps.googleusercontent.com"
       buttonText="LOGIN WITH GOOGLE"
       onSuccess={responseGoogle}
       onFailure={responseGoogle}
@@ -166,7 +166,7 @@ export const FacebookLoginBtn = props => {
 
   return (
     <FacebookLogin
-      appId="566163224103232"
+      appId="726965834493962"
       fields="first_name,last_name,name,email,picture"
       //   onClick={componentClicked}
       callback={responseFacebook}
