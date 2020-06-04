@@ -72,8 +72,10 @@ export default () => {
   console.log('isUser ::::: ', isUserReducer);
 
   return (
-    <>
-      {isUserReducer !== null ? (
+    <Router>
+      {Platform.OS !== 'web' ? (
+        <DrawerMobile />
+      ) : (
         <>
           {mediaReducer === 'lg' ? (
             <Router>
@@ -81,22 +83,39 @@ export default () => {
               <Routes />
             </Router>
           ) : (
-            <Router>
-              {Platform.OS !== 'web' ? (
-                <>
-                  <DrawerMobile />
-                </>
-              ) : (
-                <>
-                  <DrawerWeb dummyNumber={dummyNumber} />
-                  <Header handleWebMenuOpen={handleWebMenuOpen} />
-                  <Routes />
-                </>
-              )}
-            </Router>
+            <>
+              <Routes />
+              <DrawerWeb dummyNumber={dummyNumber} />
+              <Header handleWebMenuOpen={handleWebMenuOpen} />
+            </>
           )}
         </>
-      ) : null}
-    </>
+      )}
+    </Router>
   );
 };
+
+// {isUserReducer !== null ? (
+//         <>
+//           {mediaReducer === 'lg' ? (
+//             <Router>
+//               <Header />
+//               <Routes />
+//             </Router>
+//           ) : (
+//             <Router>
+//               {Platform.OS !== 'web' ? (
+//                 <>
+//                   <DrawerMobile />
+//                 </>
+//               ) : (
+//                 <>
+//                   <DrawerWeb dummyNumber={dummyNumber} />
+//                   <Header handleWebMenuOpen={handleWebMenuOpen} />
+//                   <Routes />
+//                 </>
+//               )}
+//             </Router>
+//           )}
+//         </>
+//       ) : null}

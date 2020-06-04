@@ -7,7 +7,7 @@ import {useHistory} from '../../router';
 
 import Sidebar from 'react-sidebar';
 
-const sidebarStyle = {background: 'white', zIndex: 999};
+const sidebarStyle = {background: 'white', zIndex: 999999999999999999};
 const bodyStyle = {
   width: 180,
   height: '-webkit-fill-available',
