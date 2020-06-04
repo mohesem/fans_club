@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     paddingBottom: 10,
     backgroundColor: colors.brandGray,
+    zIndex: 20,
   },
   btnTxt: {
     color: colors.brandLight,
@@ -216,5 +217,5 @@ export default props => {
   /* -------------------------------------------------------------------------- */
   /*                                   return                                   */
   /* -------------------------------------------------------------------------- */
-  return <AppHeader />;
+  return <AppHeader style={{zIndex: 20}} />;
 };

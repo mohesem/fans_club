@@ -64,6 +64,7 @@ export default props => {
       right: 0,
       left: 0,
       bottom: 0,
+      zIndex: 1,
     },
     fabs: {backgroundColor: '#ffffff00', boxShadow: 'none'},
     fabShare: {

@@ -17,6 +17,12 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     justifyContent: 'center',
+    zIndex: 1,
+    position: 'absolute',
+    top: 56,
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   formLayoutParent: {
     position: 'absolute',
@@ -24,6 +30,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
+    zIndex: 2,
     overflow: Platform.OS === 'web' ? 'auto' : null,
   },
   formCol: {
@@ -81,14 +88,8 @@ export default () => {
         <H3 style={styles.title}>step one</H3>
         {!wait ? (
           <>
-            <GoogleLoginBtn
-              handleOtherErrors={handleOtherErrors}
-              handleWait={handleWait}
-            />
-            <FacebookLoginBtn
-              handleOtherErrors={handleOtherErrors}
-              handleWait={handleWait}
-            />
+            <GoogleLoginBtn handleOtherErrors={handleOtherErrors} handleWait={handleWait} />
+            <FacebookLoginBtn handleOtherErrors={handleOtherErrors} handleWait={handleWait} />
           </>
         ) : (
           <Spinner />
@@ -100,10 +101,7 @@ export default () => {
     <>
       {mediaReducer === 'lg' ? (
         <>
-          <ImageBackground
-            source={require('../assets/img/3.jpeg')}
-            style={styles.imageBack}
-          />
+          <ImageBackground source={require('../assets/img/3.jpeg')} style={styles.imageBack} />
           <Grid style={styles.formLayoutParent}>
             <Col size={1} />
             <Col size={2} style={styles.formCol}>
@@ -116,10 +114,7 @@ export default () => {
         </>
       ) : (
         <>
-          <ImageBackground
-            source={require('../assets/img/3.jpeg')}
-            style={styles.imageBack}
-          />
+          <ImageBackground source={require('../assets/img/3.jpeg')} style={styles.imageBack} />
           <Grid padder style={styles.formLayoutParent}>
             <Col size={2} style={styles.formCol}>
               <View style={styles.viewCol}>

@@ -1,28 +1,9 @@
 import React, {useState, useEffect} from 'react';
 
 import {useSelector} from 'react-redux';
-import {
-  Grid,
-  Col,
-  Form,
-  Button,
-  Text,
-  H3,
-  ListItem,
-  Left,
-  Right,
-  View,
-  Spinner,
-} from 'native-base';
+import {Grid, Col, Form, Button, Text, H3, ListItem, Left, Right, View, Spinner} from 'native-base';
 
-import {
-  ImageBackground,
-  StyleSheet,
-  Platform,
-  Image,
-  ScrollView,
-  AsyncStorage,
-} from 'react-native';
+import {ImageBackground, StyleSheet, Platform, Image, ScrollView, AsyncStorage} from 'react-native';
 // import Input from '../myTheme/components/input';
 import {useHistory} from '../router';
 import colors from '../native-base-theme/colors';
@@ -51,6 +32,12 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     justifyContent: 'center',
+    zIndex: 1,
+    position: 'absolute',
+    top: 56,
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   formLayoutParent: {
     position: 'absolute',
@@ -58,6 +45,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
+    zIndex: 2,
     overflow: Platform.OS === 'web' ? 'auto' : null,
   },
   formCol: {
@@ -272,9 +260,7 @@ export default () => {
             } else {
               console.log('errrrrrrrrrrrrrrrr', err);
               if (err.test) {
-                const arrayFromTestObject = Object.keys(err.test).map(
-                  key => err.test[key],
-                );
+                const arrayFromTestObject = Object.keys(err.test).map(key => err.test[key]);
                 setOtherError(arrayFromTestObject);
               } else {
                 setOtherError(err);
@@ -310,21 +296,9 @@ export default () => {
       return <IconReact icon={faTimesCircle} color={colors.brandDanger} />;
     } else {
       if (props.selected) {
-        return (
-          <IconReactNative
-            name="check-circle"
-            size={25}
-            color={colors.brandPrimary}
-          />
-        );
+        return <IconReactNative name="check-circle" size={25} color={colors.brandPrimary} />;
       }
-      return (
-        <IconReactNative
-          name="times-circle"
-          size={25}
-          color={colors.brandDanger}
-        />
-      );
+      return <IconReactNative name="times-circle" size={25} color={colors.brandDanger} />;
     }
   };
 
@@ -364,15 +338,12 @@ export default () => {
       <Form style={styles.form}>
         <H3 style={styles.title}>step one</H3>
         <Text style={styles.secondaryText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
         </Text>
 
         {!UserLocation ? (
-          <Button
-            block
-            onPress={() => history.push('/getUserLocation')}
-            style={styles.locationBtn}>
+          <Button block onPress={() => history.push('/getUserLocation')} style={styles.locationBtn}>
             <Text>Choose your location on map</Text>
           </Button>
         ) : (
@@ -387,9 +358,7 @@ export default () => {
 
         {UserLocation ? (
           <View style={styles.addressContainer}>
-            <Text style={styles.addressText}>
-              Address : {UserLocation.address}
-            </Text>
+            <Text style={styles.addressText}>Address : {UserLocation.address}</Text>
           </View>
         ) : null}
 
@@ -397,22 +366,16 @@ export default () => {
 
         <H3 style={styles.title}>step two</H3>
         <Text style={styles.secondaryText}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
         </Text>
 
         {!SignupInfo ? (
           <>
             {!wait ? (
               <>
-                <GoogleLoginBtn
-                  handleOtherErrors={handleOtherErrors}
-                  handleWait={handleWait}
-                />
-                <FacebookLoginBtn
-                  handleOtherErrors={handleOtherErrors}
-                  handleWait={handleWait}
-                />
+                <GoogleLoginBtn handleOtherErrors={handleOtherErrors} handleWait={handleWait} />
+                <FacebookLoginBtn handleOtherErrors={handleOtherErrors} handleWait={handleWait} />
               </>
             ) : (
               <Spinner />
@@ -422,9 +385,7 @@ export default () => {
 
         {SignupInfo ? (
           <View style={styles.userInfoContainer}>
-            <Text style={styles.userInfoText}>
-              HELLO {SignupInfo.firstname}
-            </Text>
+            <Text style={styles.userInfoText}>HELLO {SignupInfo.firstname}</Text>
             <Image
               style={styles.userInfoImg}
               source={{
@@ -441,15 +402,11 @@ export default () => {
         <Text style={styles.error}>{genderError}</Text>
 
         <H3 style={styles.title}>Birth</H3>
-        <Text style={styles.secondaryText}>
-          click on date to change the value
-        </Text>
+        <Text style={styles.secondaryText}>click on date to change the value</Text>
         <DatePicker handleNewDate={handleNewDate} date={date} />
 
         <H3 style={styles.title}>Submit</H3>
-        <Text style={styles.secondaryText}>
-          Thank you for joining fans club
-        </Text>
+        <Text style={styles.secondaryText}>Thank you for joining fans club</Text>
         <View>
           <Button success block style={styles.submitBtn} onPress={handleSubmit}>
             <Text style={styles.submitBtnTxt}>Ok</Text>
@@ -464,10 +421,7 @@ export default () => {
     <>
       {Media === 'lg' ? (
         <>
-          <ImageBackground
-            source={require('../assets/img/3.jpeg')}
-            style={styles.imageBack}
-          />
+          <ImageBackground source={require('../assets/img/3.jpeg')} style={styles.imageBack} />
           <Grid style={styles.formLayoutParent}>
             <Col size={1} />
             <Col size={2} style={styles.formCol}>
@@ -480,10 +434,7 @@ export default () => {
         </>
       ) : (
         <>
-          <ImageBackground
-            source={require('../assets/img/3.jpeg')}
-            style={styles.imageBack}
-          />
+          <ImageBackground source={require('../assets/img/3.jpeg')} style={styles.imageBack} />
           <Grid padder style={styles.formLayoutParent}>
             <Col size={2} style={styles.formCol}>
               <View style={styles.viewCol}>
@@ -495,11 +446,7 @@ export default () => {
           </Grid>
         </>
       )}
-      <MyModal
-        showModal={showModal}
-        setShowModal={handleShowModal}
-        title="ERROR"
-        type="error">
+      <MyModal showModal={showModal} setShowModal={handleShowModal} title="ERROR" type="error">
         {typeof otherError === 'string' ? (
           <Text>{otherError}</Text>
         ) : (
