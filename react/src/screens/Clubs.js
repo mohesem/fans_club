@@ -40,6 +40,12 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: 'cover',
     justifyContent: 'center',
+    zIndex: 1,
+    position: 'absolute',
+    top: 56,
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   formCol: {
     // padding: 20,
