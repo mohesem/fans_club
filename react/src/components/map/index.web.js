@@ -4,7 +4,7 @@ import {useDispatch} from 'react-redux';
 import * as turf from '@turf/turf';
 import axios from 'axios';
 import {Line} from 'react-chartjs-2';
-import IconReactNative from 'react-native-vector-icons/FontAwesome';
+// import IconReactNative from 'react-native-vector-icons/FontAwesome';
 import colors from '../../myTheme/colors';
 import {useHistory} from '../../router';
 // apir
@@ -14,6 +14,9 @@ import {centerAction} from '../../redux/actions';
 import {Button} from 'native-base';
 
 import ShareBtns from '../shareBtns';
+
+import {FontAwesomeIcon as IconReact} from '@fortawesome/react-fontawesome';
+import {faShare, faChartPie, faInfo, faTimes} from '@fortawesome/free-solid-svg-icons';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibW9oZXNlbSIsImEiOiJjanR3amhqcWcxZm05NDVtcG03Nm44Ynk4In0.YUdlvT5fABnW8BReNMSuPg';
@@ -70,7 +73,7 @@ export default props => {
     fabShare: {
       height: 29,
       width: 29,
-      padding: 7,
+      padding: 6,
       marginBottom: 6,
       borderRadius: 5,
       backgroundColor: '#ffffff',
@@ -86,7 +89,7 @@ export default props => {
     fabClose: {
       height: 29,
       width: 29,
-      padding: 7,
+      padding: 9,
       borderRadius: 5,
       backgroundColor: '#ffffff',
       shadowColor: colors.brandDark,
@@ -796,69 +799,25 @@ export default props => {
             style={styles.fabs}
             className="legend-stop-virtualization"
             onPress={() => history.push('/')}>
-            <Button style={styles.fabShare}>
-              <IconReactNative
-                name="share-alt"
-                size={18}
-                color="#333333"
-                onPress={handleShreButtons}
-              />
+            <Button style={styles.fabShare} onPress={handleShreButtons}>
+              <IconReact icon={faShare} size="lg" color="#333333" />
             </Button>
 
             <Button
               light
-              style={{...styles.fabLegends, padding: legends === 0 ? 6 : 10}}
+              style={{...styles.fabLegends, padding: legends === 0 ? 6 : 11}}
               onPress={handleLegendsVisibility}>
               {legends === 0 ? (
-                <IconReactNative name="pie-chart" size={17} color="#333333" />
+                <IconReact icon={faChartPie} size="lg" color="#333333" />
               ) : (
-                <IconReactNative name="info" size={18} color="#333333" />
+                <IconReact icon={faInfo} size="lg" color="#333333" />
               )}
             </Button>
-            <Button style={styles.fabClose}>
-              <IconReactNative
-                name="times"
-                size={18}
-                color="#333333"
-                onPress={() => history.push('/')}
-              />
+            <Button style={styles.fabClose} onPress={() => history.push('/')}>
+              <IconReact icon={faTimes} size="lg" color="#333333" />
             </Button>
-
-            {/* <IconButton style={{padding: 3, color: '#dd2c01'}}>
-              <Link
-                variant="body2"
-                component={RedirectTo}
-                to="/"
-                style={{height: '24px', width: '24px'}}>
-                <CloseRoundedIcon />
-              </Link> */}
-            {/* </IconButton> */}
           </div>
 
-          {/* <div id="show-chart" className="legend-show-chart">
-            <IconButton style={{padding: 3, color: '#263238'}}>
-              <Link
-                variant="body2"
-                onClick={handleLegendsVisibility}
-                style={{height: '24px', width: '24px'}}>
-                {legends === 0 ? (
-                  <FormatListBulletedRoundedIcon />
-                ) : (
-                  <TrendingUpRoundedIcon />
-                )}
-              </Link>
-            </IconButton>
-          </div>
-
-
-
-          <div id="link-legend" className="legend-Link">
-            <IconButton
-              style={{padding: 3, color: '#263238'}}
-              onClick={handleShreButtons}>
-              <ShareRoundedIcon />
-            </IconButton>
-          </div> */}
           {openShareButtons ? <ShareBtns url={window.location.href} c="content" /> : null}
         </div>
       ) : null}

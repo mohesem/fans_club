@@ -7,7 +7,7 @@ import {useHistory} from '../../router';
 
 import Sidebar from 'react-sidebar';
 
-const sidebarStyle = {background: 'white', zIndex: 1000};
+const sidebarStyle = {background: 'white', zIndex: 999};
 const bodyStyle = {
   width: 180,
   height: '-webkit-fill-available',
@@ -83,7 +83,6 @@ export default props => {
       open={toggle}
       overlayId="webDrawerOverlay"
       pullRight
-      touchHandleWidth={0}
       //   onSetOpen={this.onSetSidebarOpen}
       styles={{sidebar: sidebarStyle}}
     />

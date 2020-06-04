@@ -154,11 +154,11 @@ export default props => {
       <>
         {Platform.OS !== 'web' ? (
           <Button transparent primary onPress={handleMenuToggle}>
-            {/* <Icon name="bars" type="FontAwesome" /> */}
-            <IconReact
+            <Icon name="bars" type="FontAwesome" />
+            {/* <IconReact
               icon={faBars}
               color={props.searchMode === 'team' ? colors.brandLight : '#263238'}
-            />
+            /> */}
           </Button>
         ) : (
           <Button transparent primary onClick={props.handleWebMenuOpen}>
