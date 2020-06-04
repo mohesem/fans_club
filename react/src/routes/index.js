@@ -10,12 +10,12 @@ import GetUserLocationScreen from '../screens/GetUserLocation';
 export default () => {
   return (
     <Switch>
-      <Route exact path="/">
+      {/* <Route exact path="/">
         <Redirect to="/map" />
-      </Route>
+      </Route> */}
       <Route
         exact
-        path={['/map', '/map/:likeOrDislike', '/map/:likeOrDislike/:id']}
+        path={['/', '/map', '/map/:likeOrDislike', '/map/:likeOrDislike/:id']}
         component={HomeScreen}
       />
       <Route exact path="/signup" component={SignupScreen} />
