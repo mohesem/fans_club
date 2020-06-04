@@ -202,12 +202,14 @@ export default () => {
     const [onHold, setOnHold] = useState(false);
     // test
     useEffect(() => {
-      searchClubsApi(value)
-        .then(res => {
-          console.log('**77^^^^', res);
-          setResults(res.data.clubs);
-        })
-        .catch(err => console.log(err));
+      if (value) {
+        searchClubsApi(value)
+          .then(res => {
+            console.log('**77^^^^', res);
+            setResults(res.data.clubs);
+          })
+          .catch(err => console.log(err));
+      }
     }, [value]);
 
     return (
