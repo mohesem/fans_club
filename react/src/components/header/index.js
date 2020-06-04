@@ -161,7 +161,7 @@ export default props => {
             />
           </Button>
         ) : (
-          <Button transparent primary onPress={props.handleWebMenuOpen}>
+          <Button transparent primary onClick={props.handleWebMenuOpen}>
             {/* <Icon name="bars" type="FontAwesome" /> */}
             <IconReact icon={faBars} color={colors.brandLight} />
           </Button>
