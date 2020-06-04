@@ -83,7 +83,7 @@ const Home = props => {
   useEffect(() => {
     const pathnameArray = pathname.split('/');
 
-    if (clubId !== '' && clubId !== pathnameArray[3]) {
+    if (clubId !== pathnameArray[3]) {
       console.log(':::::::::::::::::::::::::::::::::::::::::::::::::::::');
       axios
         .get(`https://www.fansclub.app/api/v1/GET/club/${pathnameArray[3]}`)

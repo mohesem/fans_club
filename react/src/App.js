@@ -34,14 +34,14 @@ export default () => {
     <>
       {isReady ? (
         <Provider store={store}>
-          <Root>
-            <MediaHlper />
-            <StyleProvider style={getTheme(material)}>
-              <Container>
+          <MediaHlper />
+          <StyleProvider style={getTheme(material)}>
+            <Container>
+              <Root>
                 <AppProvider />
-              </Container>
-            </StyleProvider>
-          </Root>
+              </Root>
+            </Container>
+          </StyleProvider>
         </Provider>
       ) : (
         <Text>wait</Text>
