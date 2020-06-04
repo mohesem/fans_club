@@ -1,0 +1,4 @@
+# Referenced at /home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:30
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:30
+-keep class com.fans_club_app.MainApplication { <init>(); }
