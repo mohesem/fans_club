@@ -1,12 +1,23 @@
 import React, {useState, useEffect} from 'react';
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
+import {Button, Text, View} from 'native-base';
+import {userAction, isUserAction} from '../../redux/actions';
+
+import {useHistory} from '../../router';
 
 import Sidebar from 'react-sidebar';
 
-const sidebarStyle = {background: 'white'};
-
+const sidebarStyle = {background: 'white', zIndex: 1000};
+const bodyStyle = {
+  width: 180,
+  height: '-webkit-fill-available',
+};
 export default props => {
+  const history = useHistory();
+  const dispatch = useDispatch();
   const Media = useSelector(global => global.media);
+  const isUserReducer = useSelector(global => global.isUser);
+
   const [toggle, setToggle] = useState(false);
   const [dummyNumber, setDummyNumber] = useState(0);
   useEffect(() => {
@@ -18,9 +29,9 @@ export default props => {
 
   useEffect(() => {
     const trackClick = e => {
-      if (e.target.id === 'webDrawerOverlay') {
-        setToggle(!toggle);
-      }
+      setToggle(!toggle);
+      // if (e.target.id !== 'webSidebar') {
+      // }
     };
     if (toggle) {
       window.addEventListener('click', trackClick);
@@ -33,11 +44,45 @@ export default props => {
     setToggle(false);
   }, [Media]);
 
+  const handleSignout = async () => {
+    dispatch(isUserAction(false));
+    dispatch(userAction({}));
+    localStorage.removeItem('fans-club');
+    history.push('/map');
+  };
+
+  const Body = () => {
+    return (
+      <View padder style={bodyStyle} id="webSidebar">
+        {isUserReducer ? (
+          <>
+            <Button transparent block onPress={handleSignout}>
+              <Text>SIGNOUT</Text>
+            </Button>
+            <Button transparent block onPress={() => history.push('/clubs')}>
+              <Text>CLUBS</Text>
+            </Button>
+          </>
+        ) : (
+          <>
+            <Button transparent block onPress={() => history.push('/signin')}>
+              <Text>SIGNIN</Text>
+            </Button>
+            <Button transparent block onPress={() => history.push('/signup')}>
+              <Text>SIGNUP</Text>
+            </Button>
+          </>
+        )}
+      </View>
+    );
+  };
+
   return (
     <Sidebar
-      sidebar={<b>Sidebar content</b>}
+      sidebar={<Body />}
       open={toggle}
       overlayId="webDrawerOverlay"
+      pullRight
       //   onSetOpen={this.onSetSidebarOpen}
       styles={{sidebar: sidebarStyle}}
     />
