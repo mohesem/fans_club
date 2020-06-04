@@ -163,10 +163,7 @@ export default props => {
         ) : (
           <Button transparent primary onPress={props.handleWebMenuOpen}>
             {/* <Icon name="bars" type="FontAwesome" /> */}
-            <IconReact
-              icon={faBars}
-              color={props.searchMode === 'team' ? colors.brandLight : '#263238'}
-            />
+            <IconReact icon={faBars} color={colors.brandLight} />
           </Button>
         )}
       </>
