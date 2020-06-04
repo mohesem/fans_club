@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     right: 0,
     alignItems: 'center',
     backgroundColor: colors.bws7,
+    zIndex: 10000000000000000000000000,
   },
   searchView: {
     flexDirection: 'row',
