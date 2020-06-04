@@ -451,8 +451,8 @@ export default props => {
 
   /* ------------------------------- fly to club ------------------------------ */
   useEffect(() => {
-    console.log('-----------_____________----------------', props.flyToClub.length);
-    if (props.flyToClub.length) {
+    // console.log('-----------_____________----------------', props.flyToClub.length);
+    if (props.flyToClub?.length) {
       map.flyTo({
         center: props.flyToClub,
         zoom: 5,
