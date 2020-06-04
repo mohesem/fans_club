@@ -1,7 +1,4 @@
 import axios from 'axios';
-import debug from 'debug';
-
-const log = debug('log:isUserValidAPI');
 
 export default token => {
   return new Promise((resolve, reject) => {
@@ -11,29 +8,31 @@ export default token => {
       axios
         .get(`https://www.fansclub.app/api/v1/GET/getUserInfo/${token}`)
         .then(res => {
-          log('is user valid response', res);
+          console.log('is user valid response', res);
           resolve({
             data: res.data,
             status: res.status.code,
           });
         })
         .catch(error => {
-          log('is user valid error', error);
+          console.log('is user valid error', error);
           if (typeof error.response !== 'object') {
             if (tries < 4) {
               tries += 1;
               setTimeout(() => {
                 loop();
               }, 100);
-            } else
+            } else {
               reject({
                 status: 503,
               });
-          } else
+            }
+          } else {
             reject({
               status: error.response.status,
               data: error.response.data,
             });
+          }
         });
     })();
   });

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "434006094164",
+    "firebase_url": "https://fansclub-9e200.firebaseio.com",
+    "project_id": "fansclub-9e200",
+    "storage_bucket": "fansclub-9e200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434006094164:android:3b7f07598edaeb8b4a18c1",
+        "android_client_info": {
+          "package_name": "com.fans_club_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434006094164-2a4aesk8ei0er5eb21t2pmfcffg4btid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fans_club_app",
+            "certificate_hash": "b507692c3820f75bca81c1f766317a701b3879fb"
+          }
+        },
+        {
+          "client_id": "434006094164-jsnovosa0adtmia7jlqhea3ctrti3ta0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-ENQdk4yN6mLy2473R2gwJhvIvRBUxIc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434006094164-jsnovosa0adtmia7jlqhea3ctrti3ta0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

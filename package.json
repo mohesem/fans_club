@@ -17,6 +17,8 @@
   "dependencies": {
     "@mapbox/mbtiles": "^0.11.0",
     "@turf/turf": "^5.1.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
@@ -36,14 +38,12 @@
     "supports-color": "^7.1.0",
     "swagger-jsdoc": "^3.4.0",
     "swagger-ui-express": "^4.1.2",
-    "webpack": "^4.41.5"
+    "webpack": "^4.42.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.6.3",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0",

@@ -98,7 +98,7 @@ app.get('/signin', (req, res) => {
   res.sendFile(path.resolve('react', 'build', 'index.html'));
 });
 
-app.get('/v/*', (req, res) => {
+app.get('/map/*', (req, res) => {
   console.log(__dirname);
   console.log('got the req address :: ', path.join(__dirname, 'react', 'build', 'index.html'));
   res.sendFile(path.resolve('react', 'build', 'index.html'));

@@ -2,60 +2,168 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Fans Club, a Club for Football Fans" />
-    <meta
-      name="viewport"
-      content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-
     <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "favicon.ico" will
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
-    <link
-      rel="stylesheet"
-      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css"
-      type="text/css"
-    />
-
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet" />
-    <title>Fans Club</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165915812-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+    <title>React App</title>
+    <style>
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+        direction: rtl;
       }
-      gtag('js', new Date());
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+      }
 
-      gtag('config', 'UA-165915812-1');
-    </script>
+      .flatpickr-calendar {
+        font-family: sans-serif;
+      }
+
+      .flatpickr-day {
+        border-radius: none;
+      }
+      .flatpickr-input.flatpickr-mobile {
+        padding: 12px;
+      }
+
+      /* >>>>>>>>>>>>>>>>>>>>> legends */
+      .legend {
+        background-color: rgb(33, 47, 58);
+        color: white;
+        border-radius: 3px;
+        bottom: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        padding: 10px;
+        position: absolute;
+        left: 10px;
+        z-index: -1 !important;
+      }
+
+      .legend-stop-virtualization {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 4px;
+        bottom: 45px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        right: 10px;
+        z-index: -1 !important;
+      }
+
+      .legend-Link {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 4px;
+        bottom: 117px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        right: 10px;
+        z-index: -1 !important;
+      }
+
+      .legend-show-chart {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 4px;
+        bottom: 81px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        position: absolute;
+        right: 10px;
+        z-index: -1 !important;
+      }
+
+      .legend h4 {
+        margin: 0 0 10px;
+      }
+
+      .legend div span {
+        border-radius: 50%;
+        display: inline-block;
+        height: 10px;
+        margin-right: 5px;
+        width: 10px;
+      }
+      /* <<<<<<<<<<<<<<<<<<<<< legends */
+
+      .Demo__container {
+        bottom: 7px;
+        position: absolute;
+        width: min-content;
+        right: 50px;
+        background: #ffffff;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      .Demo__some-network {
+        vertical-align: top;
+        display: inline-block;
+        /* margin-right: 10px; */
+        text-align: center;
+      }
+
+      .Demo__some-network__share-count {
+        display: inline-flex;
+        justify-content: center;
+        white-space: nowrap;
+        overflow: visible;
+        width: 0;
+        margin-top: 3px;
+        font-size: 12px;
+      }
+
+      .Demo__some-network__share-button {
+        cursor: pointer;
+      }
+
+      .Demo__some-network__share-button:hover:not(:active) {
+        opacity: 0.75;
+      }
+
+      .Demo__some-network__custom-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .css-view-1dbjc4n.r-backgroundColor-1ffj0ar {
+        display: none;
+      }
+      .css-view-1dbjc4n {
+        border: none;
+      }
+    </style>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.

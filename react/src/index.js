@@ -1,60 +1,15 @@
-// react
-import React from 'react';
-import ReactDOM from 'react-dom';
-// redux
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-// routers
-import { Route, BrowserRouter as Router } from 'react-router-dom';
-// snack
-import { SnackbarProvider } from 'notistack';
-// material-ui components
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { ThemeProvider } from '@material-ui/core/styles';
-// service workers && reducers && theme
-import * as serviceWorker from './serviceWorker';
-import reducers from './reducers';
-import theme from './themes/main';
-// CSS
-import './css/main.css';
-// components
-import Appbar from './components/appbar';
-import Map from './components/newMap2';
-// import Map from './components/newMap';
-import Signup from './components/signup';
-import Signin from './components/signin';
-import Clubs from './components/clubs';
-import Search from './components/search';
+import {AppRegistry, Platform} from 'react-native';
+import App from './App';
+import {name as appName} from './app.json';
 
-// creating store
-const store = createStore(
-  reducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+console.log(Platform.OS);
 
-ReactDOM.render(
-  <Provider store={store}>
-    <SnackbarProvider>
-      <Router>
-        <ThemeProvider theme={theme}>
-          <Route path="/" component={Map} />
-          <Route path="/" component={Appbar} />
-          <Route
-            exact
-            path={['/', '/v', '/v/:likeOrDislike/:id', '/signup/getUserLocation']}
-            component={Search}
-          />
-          <Route exact path="/signup" component={Signup} />
+if (Platform.OS === 'web') {
+  AppRegistry.registerComponent('App', () => App);
 
-          <Route exact path="/signin" component={Signin} />
-          <Route exact path="/clubs" component={Clubs} />
-
-          <CssBaseline />
-        </ThemeProvider>
-      </Router>
-    </SnackbarProvider>
-  </Provider>,
-  document.querySelector('#root')
-);
-
-serviceWorker.unregister();
+  AppRegistry.runApplication('App', {
+    rootTag: document.getElementById('root'),
+  });
+} else {
+  AppRegistry.registerComponent(appName, () => App);
+}
