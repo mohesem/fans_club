@@ -2,23 +2,9 @@ import React, {useState, useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {useHistory} from '../router';
 import {ImageBackground, StyleSheet, ScrollView, Platform, AsyncStorage} from 'react-native';
-import {
-  Grid,
-  Col,
-  H3,
-  ListItem,
-  View,
-  Form,
-  Text,
-  Spinner,
-  Button,
-  Input,
-  Badge,
-  List,
-} from 'native-base';
+import {Grid, Col, H3, ListItem, View, Form, Text, Spinner, Button, List} from 'native-base';
 import {FontAwesomeIcon as IconReact} from '@fortawesome/react-fontawesome';
 import {faTimesCircle} from '@fortawesome/free-solid-svg-icons';
-import MyModal from '../myTheme/components/modal';
 import MyInput from '../myTheme/components/input';
 import IconReactNative from 'react-native-vector-icons/FontAwesome';
 
