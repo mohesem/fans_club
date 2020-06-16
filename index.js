@@ -41,8 +41,8 @@ mongoose.connection.on('connected', () => {
   log('MongoDB connected');
 
   // const newAdmin = new Admin({
-  //   username: '1234',
-  //   password: '1234',
+  //   username: 'hani@pilevar',
+  //   password: 'h@ni_.|5*U0^5n5B^%|N',
   // });
 
   // newAdmin.save();

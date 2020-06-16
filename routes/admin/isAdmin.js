@@ -11,6 +11,7 @@ export default async function(username, password, cb) {
     if (!admin) return cb(200, { err: true, other: 'no uwer had been found' });
     jwt.sign({ username, password }, process.env.TOKEN, (error, token) => {
       if (error) return cb(200, { err: true, other: 'internal server error' });
+      console.log(token);
       return cb(200, { err: false, token });
     });
   });
