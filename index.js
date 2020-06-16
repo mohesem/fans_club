@@ -40,12 +40,12 @@ mongoose.connect('mongodb://localhost:27017/fansclub', {
 mongoose.connection.on('connected', () => {
   log('MongoDB connected');
 
-  const newAdmin = new Admin({
-    username: '1234',
-    password: '1234',
-  });
+  // const newAdmin = new Admin({
+  //   username: '1234',
+  //   password: '1234',
+  // });
 
-  newAdmin.save();
+  // newAdmin.save();
 });
 
 mongoose.connection.on('disconnected', () => {
