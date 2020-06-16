@@ -17,7 +17,7 @@ import getTiles from './getTiles';
 import getMembersFromPoly from './getMembersFromPoly';
 import getLikesForPolys from './getLikesForPolys';
 import deleteClub from './deleteClub';
-import admin from './admin';
+import isAdmin from './admin/isAdmin';
 
 const log = debug('log:v1');
 
@@ -142,6 +142,12 @@ router.post('/POST/deleteClub', (req, res) => {
   // });
 });
 
-router.use('/admin', admin);
+router.get('/admin/verify/:username/:password', (req, res) => {
+  isAdmin((req.params.username, req.params.password), (status, trace) => {
+    res.status(status).send(trace);
+  });
+});
+
+// router.use('/admin', admin);
 
 export default router;

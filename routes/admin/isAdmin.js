@@ -12,4 +12,5 @@ export default async function(username, password, cb) {
       return cb(200, { err: false, token });
     });
   });
+  return null;
 }
