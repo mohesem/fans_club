@@ -35,11 +35,5 @@ import React, {useState} from 'react';
 import DatePicker from 'react-date-picker';
 
 export default props => {
-  return (
-    <DatePicker
-      onChange={props.handleNewDate}
-      value={props.date}
-      style={{fontFamily: 'sans-serif', margin: 'auto', padding: 26}}
-    />
-  );
+  return <DatePicker onChange={props.handleNewDate} value={props.date} />;
 };

@@ -34,7 +34,7 @@ export default props => {
       left: 10,
       top: 65,
       zIndex: 200,
-      backgroundColor: '#ffffffbd',
+      backgroundColor: '#ffffffed',
       borderRadius: 20,
       padding: 5,
       maxWidth: Media !== 'sm' ? 'fit-content' : null,
@@ -47,7 +47,7 @@ export default props => {
       // zIndex: 200,
       flex: 1,
       // borderRadius: 20,
-      // backgroundColor: '#ffffffbd',
+      // backgroundColor: '#ffffffed',
       // position: 'absolute',
       // top: 125,
       // right: 10,
@@ -92,6 +92,13 @@ export default props => {
       flexGrow: 1,
       flexShrink: 1,
       flexBasis: 'auto',
+    },
+    listItemCountry: {
+      // flexGrow: 1,
+      // flexShrink: 1,
+      flexBasis: 'auto',
+      marginLeft: 10,
+      fontSize: 12,
     },
   });
 
@@ -223,9 +230,7 @@ export default props => {
                         setResults([]);
                         props.handleFlyTo(location.center);
                       }}>
-                      <Text style={styles.listItemText}>
-                        {location.name} // {location.center.length}
-                      </Text>
+                      <Text style={styles.listItemText}>{location.name}</Text>
                     </ListItem>
                   );
                 })
@@ -239,9 +244,8 @@ export default props => {
                         history.push(`/map/${props.likeOrDislike}/${club._id}`);
                         // props.handleFlyTo(location.center);
                       }}>
-                      <Text style={styles.listItemText}>
-                        {club.name} // {club.country}
-                      </Text>
+                      <Text style={styles.listItemCountry}>{club.country}</Text>
+                      <Text style={styles.listItemText}>{club.name}</Text>
                     </ListItem>
                   );
                 })}

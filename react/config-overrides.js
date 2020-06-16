@@ -32,9 +32,5 @@ module.exports = override(
     // path.resolve('node_modules/react-native-vector-icons'),
   ]),
   ...addBabelPlugins('@babel/plugin-proposal-class-properties'),
-  ...addBabelPresets(
-    '@babel/preset-env',
-    '@babel/preset-flow',
-    '@babel/preset-react',
-  ),
+  ...addBabelPresets('@babel/preset-env', '@babel/preset-flow', '@babel/preset-react'),
 );
