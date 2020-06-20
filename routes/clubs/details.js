@@ -24,8 +24,8 @@ export default async function(teamId, cb) {
       .limit(10)
       .exec();
 
-    console.log({ countDislikes, countLikes, latestLikes, latestDislikes });
+    return cb(200, header, { countDislikes, countLikes, latestDislikes, latestLikes });
   } catch (error) {
-    console.log(error);
+    return cb(200, headerErr, { err: true, other: 'internal server error' });
   }
 }
