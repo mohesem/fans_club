@@ -12,8 +12,8 @@ const headerErr = { 'Content-Type': 'text/plain' };
 
 export default async function(teamId, cb) {
   try {
-    const countLikes = await Likes.countDocuments({ team_id: teamId, fid: { $lt: 1000 } });
-    const countDislikes = await Dislikes.countDocuments({ team_id: teamId, fid: { $lt: 1000 } });
+    const countLikes = await Likes.countDocuments({ team_id: teamId });
+    const countDislikes = await Dislikes.countDocuments({ team_id: teamId });
 
     const latestLikes = await Likes.find({ fid: { $lt: 1000 } })
       .sort({ date: 1 })
