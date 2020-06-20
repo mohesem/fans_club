@@ -5,6 +5,7 @@ const headerErr = { 'Content-Type': 'text/plain' };
 
 export default async (req, res, next) => {
   const { token } = req.params;
+  console.log('-_________________', token);
   jwt.verify(token, process.env.TOKEN, (err, decoded) => {
     console.log(err, decoded);
     if (err)
