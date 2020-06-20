@@ -11,15 +11,17 @@ const header = {
 const headerErr = { 'Content-Type': 'text/plain' };
 
 export default async function(teamId, cb) {
-  try {
-    const countLikes = await Likes.countDocuments({ team_id: teamId });
-    const countDislikes = await Dislikes.countDocuments({ team_id: teamId });
+  console.log('--------------------', teamId);
 
-    const latestLikes = await Likes.find({ fid: { $lt: 1000 } })
+  try {
+    const countLikes = await Likes.countDocuments({ team_id: teamId, fid: { $lt: 1000 } });
+    const countDislikes = await Dislikes.countDocuments({ team_id: teamId, fid: { $lt: 1000 } });
+
+    const latestLikes = await Likes.find({ team_id: teamId, fid: { $lt: 1000 } })
       .sort({ date: 1 })
       .limit(10)
       .exec();
-    const latestDislikes = await Dislikes.find({ fid: { $lt: 1000 } })
+    const latestDislikes = await Dislikes.find({ team_id: teamId, fid: { $lt: 1000 } })
       .sort({ date: 1 })
       .limit(10)
       .exec();
