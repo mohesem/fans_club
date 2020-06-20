@@ -1,18 +1,28 @@
 import { Router } from 'express';
 
-import isAdmin from './isAdmin';
+import verify from './verify';
+import verifyByToken from './verifyByToken';
+
 // import Admin from '../../DB/models/admin';
 
 const router = Router();
-
-// router.get('/users/:token', (req, res) => {
-//   res.status(200).send({ msg: 'got the req bro' });
-// });
-
-router.get('/verify/:username/:password', (req, res, next) => {
-  isAdmin((req.params.username, req.params.password), (status, trace) => {
-    res.status(status).send(trace);
+router.get('/verify/:username/:password', (req, res) => {
+  verify(req.params.username, req.params.password, (status, header, trace) => {
+    res
+      .set(header)
+      .status(status)
+      .send({ trace });
   });
 });
 
+router.get('/verifyByToken/:token', (req, res) => {
+  console.log('got the req', req.params.token);
+
+  verifyByToken(req.params.token, (status, header, trace) => {
+    res
+      .set(header)
+      .status(status)
+      .send({ trace });
+  });
+});
 export default router;

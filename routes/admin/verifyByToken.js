@@ -15,7 +15,11 @@ export default async function(token, cb) {
   jwt.verify(token, process.env.TOKEN, (err, decoded) => {
     console.log(err, decoded);
     if (err) return cb(200, headerErr, { err: true, other: 'internal server error' });
-    return cb(200, header, { err: false, isAdmin: true });
+    Admin.findOne({ username: decoded.username }, (error, res) => {
+      if (error) return cb(200, headerErr, { err: true, other: 'internal server error' });
+      if (!res) return cb(200, headerErr, { err: true, other: 'no user had been fround' });
+      return cb(200, header, { err: false, isAdmin: true });
+    });
   });
   return null;
 }
