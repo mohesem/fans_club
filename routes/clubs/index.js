@@ -17,7 +17,7 @@ router.get('/count/:token', isAdmin, (req, res) => {
   });
 });
 
-router.get('/count/:teamId/:token', isAdmin, (req, res) => {
+router.get('/details/:teamId/:token', isAdmin, (req, res) => {
   console.log('got the req');
 
   details((status, header, trace) => {
