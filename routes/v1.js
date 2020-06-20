@@ -20,6 +20,7 @@ import deleteClub from './deleteClub';
 
 import admin from './admin';
 import clubs from './clubs';
+import users from './users';
 
 const log = debug('log:v1');
 
@@ -146,5 +147,6 @@ router.post('/POST/deleteClub', (req, res) => {
 
 router.use('/admin', admin);
 router.use('/clubs', clubs);
+router.use('/users', users);
 
 export default router;
