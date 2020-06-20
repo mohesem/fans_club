@@ -12,15 +12,20 @@ const headerErr = { 'Content-Type': 'text/plain' };
 
 export default async function(teamId, cb) {
   try {
-    const countLikes = await Likes.countDocuments({ team_id: teamId }).exec();
-    const countDislikes = await Dislikes.countDocuments({ team_id: teamId }).exec();
-    console.log({ countDislikes, countLikes });
+    const countLikes = await Likes.countDocuments({ team_id: teamId });
+    const countDislikes = await Dislikes.countDocuments({ team_id: teamId });
+
+    const latestLikes = await Likes.find({})
+      .sort({ date: 1 })
+      .limit(10)
+      .exec();
+    const latestDislikes = await Dislikes.find({})
+      .sort({ date: 1 })
+      .limit(10)
+      .exec();
+
+    console.log({ countDislikes, countLikes, latestLikes, latestDislikes });
   } catch (error) {
     console.log(error);
   }
-
-  Teams.countDocuments({}, (err, result) => {
-    if (err) return cb(200, headerErr, { err: true, other: 'internal server error' });
-    return cb(200, header, { err: false, count: result });
-  });
 }
