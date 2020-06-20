@@ -16,12 +16,12 @@ export default async function(username, password, cb) {
 
   Admin.findOne({ username, password }, (err, admin) => {
     console.log('************ ', err, admin);
-    if (err) return cb(200, { err: true, headerErr, other: 'server internal error' });
-    if (!admin) return cb(200, { err: true, headerErr, other: 'no uwer had been found' });
+    if (err) return cb(200, headerErr, { err: true, other: 'server internal error' });
+    if (!admin) return cb(200, headerErr, { err: true, other: 'no uwer had been found' });
     jwt.sign({ username, password }, process.env.TOKEN, (error, token) => {
-      if (error) return cb(200, { err: true, headerErr, other: 'internal server error' });
+      if (error) return cb(200, headerErr, { err: true, other: 'internal server error' });
       console.log(token);
-      return cb(200, { err: false, header, token });
+      return cb(200, header, { err: false, token });
     });
   });
   return null;
