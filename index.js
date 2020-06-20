@@ -63,13 +63,13 @@ mongoose.connection.on('error', err => {
 const app = express();
 app.use(express.static(path.resolve('react', 'build')));
 
-const whitelist = ['https://www.fansclub.app/', 'http://localhost:3000'];
+const whitelist = ['https://www.fansclub.app', 'http://localhost:3000'];
 const corsOptions = {
   origin(origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
       callback(null, true);
     } else {
-      console.log('not allowed by Cors', origin);
+      console.log('not allowed by Cors');
       callback(new Error('Not allowed by CORS'));
     }
   },
