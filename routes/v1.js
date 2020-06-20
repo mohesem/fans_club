@@ -143,13 +143,23 @@ router.post('/POST/deleteClub', (req, res) => {
 });
 
 router.get('/admin/verify/:username/:password', (req, res) => {
-  console.log('gggggggggggggggggggggggggggggggggggggggggg');
   isAdmin(req.params.username, req.params.password, (status, header, trace) => {
     res
       .set(header)
       .status(status)
       .send({ trace });
   });
+});
+
+router.get('/admin/verifyByToken/:token', (req, res) => {
+  console.log('got the req'.req.params.token);
+
+  // isAdmin(req.params.username, req.params.password, (status, header, trace) => {
+  //   res
+  //     .set(header)
+  //     .status(status)
+  //     .send({ trace });
+  // });
 });
 
 // router.use('/admin', admin);
