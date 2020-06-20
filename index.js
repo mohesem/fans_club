@@ -63,17 +63,17 @@ mongoose.connection.on('error', err => {
 const app = express();
 app.use(express.static(path.resolve('react', 'build')));
 
-const whitelist = ['https://www.fansclub.app', 'http://localhost:3000'];
-const corsOptions = {
-  origin(origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      console.log('not allowed by Cors');
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-};
+// const whitelist = ['https://www.fansclub.app', 'http://localhost:3000'];
+// const corsOptions = {
+//   origin(origin, callback) {
+//     if (whitelist.indexOf(origin) !== -1) {
+//       callback(null, true);
+//     } else {
+//       console.log('not allowed by Cors');
+//       callback(new Error('Not allowed by CORS'));
+//     }
+//   },
+// };
 
 // app.use(Cors());
 // app.use(logger('combined'));
@@ -82,7 +82,7 @@ const corsOptions = {
 // app.use(cookieParser());
 // app.use(logger('dev'));
 
-// app.use(Cors());
+app.use(Cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
