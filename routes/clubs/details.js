@@ -12,8 +12,8 @@ const headerErr = { 'Content-Type': 'text/plain' };
 
 export default async function(teamId, cb) {
   try {
-    const countLikes = await Likes.count({ team_id: teamId });
-    const countDislikes = await Dislikes.count({ team_id: teamId });
+    const countLikes = await Likes.countDocuments({ team_id: teamId });
+    const countDislikes = await Dislikes.countDocuments({ team_id: teamId });
     console.log({ countDislikes, countLikes });
   } catch (error) {
     console.log(error);
