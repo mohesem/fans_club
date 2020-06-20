@@ -144,8 +144,11 @@ router.post('/POST/deleteClub', (req, res) => {
 
 router.get('/admin/verify/:username/:password', (req, res) => {
   console.log('gggggggggggggggggggggggggggggggggggggggggg');
-  isAdmin(req.params.username, req.params.password, (status, trace) => {
-    res.status(status).send({ trace });
+  isAdmin(req.params.username, req.params.password, (status, header, trace) => {
+    res
+      .set(header)
+      .status(status)
+      .send({ trace });
   });
 });
 
