@@ -152,7 +152,7 @@ router.get('/admin/verify/:username/:password', (req, res) => {
 });
 
 router.get('/admin/verifyByToken/:token', (req, res) => {
-  console.log('got the req'.req.params.token);
+  console.log('got the req', req.params.token);
 
   // isAdmin(req.params.username, req.params.password, (status, header, trace) => {
   //   res
