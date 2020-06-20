@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "clean:metro:cache": "rm -rf /tmp/metro-*",
     "clean:watchman": "watchman watch-del-all",
-    "android:fresh": "cd android && ./gradlew clean && ./gradlew --stop && cd .. && rm -rf /tmp/metro-* && watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && npm cache clean --force --reset-cache"
+    "android:fresh": "cd android && ./gradlew --stop && ./gradlew --stop && cd .. && rm -rf /tmp/metro-* && watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && npm cache clean --force --reset-cache"
   },
   "dependencies": {
     "@babel/cli": "^7.8.4",

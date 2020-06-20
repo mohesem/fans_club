@@ -15,8 +15,8 @@
 12-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:3:3-65
 12-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:3:20-62
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->[com.facebook.flipper:flipper:0.33.1] /home/emad/.gradle/caches/transforms-2/files-2.1/aa7f255b4898ba17c9da5eefb125deda/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-13-->[com.facebook.flipper:flipper:0.33.1] /home/emad/.gradle/caches/transforms-2/files-2.1/aa7f255b4898ba17c9da5eefb125deda/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+13-->[com.facebook.flipper:flipper:0.33.1] /home/emad/.gradle/caches/transforms-2/files-2.1/319e451f110034567eb59bcf32a80e51/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.33.1] /home/emad/.gradle/caches/transforms-2/files-2.1/319e451f110034567eb59bcf32a80e51/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
 14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 14-->[:react-native-mapbox-gl_maps] /home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/node_modules/@react-native-mapbox-gl/maps/android/rctmgl/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-79
 14-->[:react-native-mapbox-gl_maps] /home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/node_modules/@react-native-mapbox-gl/maps/android/rctmgl/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-76
@@ -31,27 +31,27 @@
 17-->[:expo-file-system] /home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
 18
 19    <uses-feature
-19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:9:5-11:35
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:9:5-11:35
 20        android:glEsVersion="0x00020000"
-20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:10:9-41
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:10:9-41
 21        android:required="true" />
-21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:11:9-32
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:11:9-32
 22    <uses-feature
-22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:12:5-14:36
+22-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:12:5-14:36
 23        android:name="android.hardware.wifi"
-23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:13:9-45
+23-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:13:9-45
 24        android:required="false" />
-24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:14:9-33
+24-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:14:9-33
 25
 26    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
-26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:17:5-79
-26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:17:22-76
+26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:17:5-79
+26-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/AndroidManifest.xml:17:22-76
 27    <uses-permission android:name="android.permission.WAKE_LOCK" />
-27-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:12:5-68
-27-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:12:22-65
+27-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:12:5-68
+27-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:12:22-65
 28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-28-->[com.android.installreferrer:installreferrer:1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d1b362f0cdeafbabfc14475057cf4849/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
-28-->[com.android.installreferrer:installreferrer:1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d1b362f0cdeafbabfc14475057cf4849/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+28-->[com.android.installreferrer:installreferrer:1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/e817a036d381462e37e2ab9238243cd1/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+28-->[com.android.installreferrer:installreferrer:1.0] /home/emad/.gradle/caches/transforms-2/files-2.1/e817a036d381462e37e2ab9238243cd1/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
 29
 30    <application
 30-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:5:3-26:17
@@ -90,7 +90,7 @@
 48            android:label="@string/app_name"
 48-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:9:79-111
 49            android:theme="@style/com_facebook_activity_theme" />
-49-->[com.facebook.android:facebook-common:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/AndroidManifest.xml:33:13-63
+49-->[com.facebook.android:facebook-common:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/AndroidManifest.xml:33:13-63
 50        <activity
 50-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:10:5-17:16
 51            android:name="com.facebook.CustomTabActivity"
@@ -115,7 +115,7 @@
 59-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:15:15-64
 60            </intent-filter>
 61            <intent-filter>
-61-->[com.facebook.android:facebook-common:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/AndroidManifest.xml:39:13-48:29
+61-->[com.facebook.android:facebook-common:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/AndroidManifest.xml:39:13-48:29
 62                <action android:name="android.intent.action.VIEW" />
 62-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:12:9-61
 62-->/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/src/main/AndroidManifest.xml:12:17-58
@@ -180,47 +180,47 @@
 94        </provider>
 95
 96        <activity
-96-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+96-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
 97            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-97-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+97-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
 98            android:excludeFromRecents="true"
-98-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+98-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
 99            android:exported="false"
-99-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+99-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
 100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+100-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
 101        <!--
 102            Service handling Google Sign-In user revocation. For apps that do not integrate with
 103            Google Sign-In, this service will never be started.
 104        -->
 105        <service
-105-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+105-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
 106            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-106-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+106-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
 107            android:exported="true"
-107-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+107-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
 108            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-108-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+108-->[com.google.android.gms:play-services-auth:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
 109
 110        <activity
-110-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+110-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
 111            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-111-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+111-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
 112            android:exported="false"
-112-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+112-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
 113            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-113-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+113-->[com.google.android.gms:play-services-base:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
 114
 115        <meta-data
-115-->[com.google.android.gms:play-services-basement:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c921f39daffbdf5031728491c16eae96/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+115-->[com.google.android.gms:play-services-basement:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/8e310438f7e84febd8bd902f08a02748/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
 116            android:name="com.google.android.gms.version"
-116-->[com.google.android.gms:play-services-basement:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c921f39daffbdf5031728491c16eae96/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+116-->[com.google.android.gms:play-services-basement:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/8e310438f7e84febd8bd902f08a02748/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
 117            android:value="@integer/google_play_services_version" />
-117-->[com.google.android.gms:play-services-basement:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c921f39daffbdf5031728491c16eae96/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+117-->[com.google.android.gms:play-services-basement:16.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/8e310438f7e84febd8bd902f08a02748/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
 118
 119        <activity android:name="com.facebook.CustomTabMainActivity" />
-119-->[com.facebook.android:facebook-common:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/AndroidManifest.xml:34:9-71
-119-->[com.facebook.android:facebook-common:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/AndroidManifest.xml:34:19-68
+119-->[com.facebook.android:facebook-common:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/AndroidManifest.xml:34:9-71
+119-->[com.facebook.android:facebook-common:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/AndroidManifest.xml:34:19-68
 120        <!--
 121         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
 122         with the application context. This config is merged in with the host app's manifest,
@@ -231,45 +231,45 @@
 127         a completely different provider.
 128        -->
 129        <provider
-129-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:39:9-42:40
+129-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:39:9-42:40
 130            android:name="com.facebook.internal.FacebookInitProvider"
-130-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:40:13-70
+130-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:40:13-70
 131            android:authorities="com.fans_club_app.FacebookInitProvider"
-131-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:41:13-72
+131-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:41:13-72
 132            android:exported="false" />
-132-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:42:13-37
+132-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:42:13-37
 133
 134        <receiver
-134-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:44:9-50:20
+134-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:44:9-50:20
 135            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
-135-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:45:13-86
+135-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:45:13-86
 136            android:exported="false" >
-136-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:46:13-37
+136-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:46:13-37
 137            <intent-filter>
-137-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:47:13-49:29
+137-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:47:13-49:29
 138                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
-138-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:48:17-95
-138-->[com.facebook.android:facebook-core:7.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/852d60e25f2599618ee2b9082b11b35b/jetified-facebook-core-7.0.0/AndroidManifest.xml:48:25-92
+138-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:48:17-95
+138-->[com.facebook.android:facebook-core:7.0.1] /home/emad/.gradle/caches/transforms-2/files-2.1/d9999c44dfe47af9e3bc73877188c37d/jetified-facebook-core-7.0.1/AndroidManifest.xml:48:25-92
 139            </intent-filter>
 140        </receiver>
 141
 142        <provider
-142-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:18:9-22:39
+142-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:18:9-22:39
 143            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
-143-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:19:13-93
+143-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:19:13-93
 144            android:authorities="com.fans_club_app.mapboxtelemetryinitprovider"
-144-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:20:13-79
+144-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:20:13-79
 145            android:exported="false"
-145-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:21:13-37
+145-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:21:13-37
 146            android:initOrder="100" />
-146-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:22:13-36
+146-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:22:13-36
 147
 148        <service
-148-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:24:9-26:72
+148-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:24:9-26:72
 149            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
-149-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:25:13-92
+149-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:25:13-92
 150            android:permission="android.permission.BIND_JOB_SERVICE" />
-150-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/d290b03a5ec4fd26e676eb19f3cc2e1a/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:26:13-69
+150-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:5.0.0] /home/emad/.gradle/caches/transforms-2/files-2.1/a1506ec92118b00f80fbc2a785833191/jetified-mapbox-android-telemetry-5.0.0/AndroidManifest.xml:26:13-69
 151    </application>
 152
 153</manifest>

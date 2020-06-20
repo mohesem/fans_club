@@ -4,7 +4,7 @@
             "outputFile": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

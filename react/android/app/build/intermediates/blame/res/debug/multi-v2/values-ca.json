@@ -4,7 +4,24 @@
             "outputFile": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/values-ca/values.xml",
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/values-ca/values-ca.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,211,287,365,437,526,604,738,868,1029,1147",
+                        "endColumns": "155,75,77,71,88,77,133,129,160,117,153",
+                        "endOffsets": "206,282,360,432,521,599,733,863,1024,1142,1296"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53,54,55,56,57",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "5562,5718,5794,5872,5944,6033,6111,6245,6375,6536,6654",
+                        "endColumns": "155,75,77,71,88,77,133,129,160,117,153",
+                        "endOffsets": "5713,5789,5867,5939,6028,6106,6240,6370,6531,6649,6803"
+                    }
+                },
+                {
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/values-ca/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c921f39daffbdf5031728491c16eae96/jetified-play-services-basement-16.0.1/res/values-ca/values.xml",
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8e310438f7e84febd8bd902f08a02748/jetified-play-services-basement-16.0.1/res/values-ca/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,23 +69,6 @@
                         "startOffsets": "3984",
                         "endColumns": "193",
                         "endOffsets": "4173"
-                    }
-                },
-                {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/values-ca/values-ca.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,211,287,365,437,526,604,738,868,1029,1147",
-                        "endColumns": "155,75,77,71,88,77,133,129,160,117,153",
-                        "endOffsets": "206,282,360,432,521,599,733,863,1024,1142,1296"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,50,51,52,53,54,55,56,57",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "5562,5718,5794,5872,5944,6033,6111,6245,6375,6536,6654",
-                        "endColumns": "155,75,77,71,88,77,133,129,160,117,153",
-                        "endOffsets": "5713,5789,5867,5939,6028,6106,6240,6370,6531,6649,6803"
                     }
                 },
                 {

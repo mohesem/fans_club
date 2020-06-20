@@ -5,7 +5,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -13,15 +13,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_mylocation_icon_bearing.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_mylocation_icon_bearing.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -29,11 +29,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_mapbox_info_bg_selector.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_info_bg_selector.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_info_bg_selector.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_info_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_info_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -49,7 +49,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_mapbox_user_icon_shadow.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_user_icon_shadow.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_user_icon_shadow.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_btn_radio_on_mtrl.xml.flat",
@@ -73,11 +73,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_compass_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_compass_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_compass_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_mylocation_icon_bearing.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -93,7 +93,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_markerview_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_markerview_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_markerview_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_header_item_layout.xml.flat",
@@ -101,11 +101,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_com_facebook_login_fragment.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/layout/com_facebook_login_fragment.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_icon.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_button_icon.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_button_icon.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_default_mtrl_shape.xml.flat",
@@ -113,7 +113,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_user_bearing_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_bearing_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_bearing_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_white.png.flat",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_icon_stale.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_icon_stale.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
@@ -145,7 +145,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_info_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_info_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -157,7 +157,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
@@ -177,7 +177,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_stroke_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_light.xml.flat",
@@ -189,7 +189,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -201,7 +201,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -209,7 +209,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_icon_stale.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_icon_stale.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
@@ -233,15 +233,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_markerview_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_markerview_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_markerview_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_logo_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_logo_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_marker_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_marker_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_marker_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -249,7 +249,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -261,11 +261,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_normal.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_down.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/anim/catalyst_slide_down.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_light.xml.flat",
@@ -285,7 +285,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_light_normal.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -297,7 +297,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -309,7 +309,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_com_facebook_device_auth_dialog_fragment.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -333,11 +333,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_user_bearing_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_bearing_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_bearing_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_icon_stale.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_icon_stale.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -385,7 +385,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_in.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/anim/catalyst_fade_in.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -393,7 +393,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_info_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_info_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_info_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -405,7 +405,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_user_icon_stale.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_icon_stale.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_icon_stale.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -421,7 +421,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_mapbox_rounded_corner.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_rounded_corner.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_rounded_corner.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -429,7 +429,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_logo_helmet.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_logo_helmet.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_logo_helmet.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_tint_edittext.xml.flat",
@@ -449,7 +449,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-hdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -465,11 +465,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_mapbox_view_image_marker.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/layout/mapbox_view_image_marker.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/layout/mapbox_view_image_marker.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -485,7 +485,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_out.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/anim/catalyst_push_up_out.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -497,7 +497,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_stroke_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -505,7 +505,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_messenger_button_blue_bg_selector.xml.flat",
@@ -549,19 +549,19 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/layout/redbox_view.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/layout/redbox_view.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_portrait.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_portrait.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -569,7 +569,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_com_facebook_button_text_color.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/color/com_facebook_button_text_color.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -597,7 +597,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_info_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_info_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
@@ -625,7 +625,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -637,7 +637,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_logo_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_logo_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
@@ -649,11 +649,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_info_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_info_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_info_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_track_material.xml.flat",
@@ -665,7 +665,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -681,11 +681,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_tint.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_tint.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_tint.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_large_blue.png.flat",
@@ -697,7 +697,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_mylocation_icon_bearing.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -729,7 +729,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -737,11 +737,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -749,11 +749,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_dark_normal.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_btn_radio_on_to_off_mtrl_animation.xml.flat",
@@ -777,7 +777,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_logo_helmet.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_logo_helmet.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_logo_helmet.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -797,7 +797,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_com_facebook_send_button_text_color.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/color/com_facebook_send_button_text_color.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/color/com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_notification_template_media_custom.xml.flat",
@@ -809,11 +809,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_marker_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_marker_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_marker_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
@@ -837,7 +837,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_info_icon_default.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_info_icon_default.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_info_icon_default.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -845,7 +845,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -861,7 +861,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -889,7 +889,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -901,7 +901,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -909,7 +909,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-xxhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
@@ -917,7 +917,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_com_facebook_tooltip_bubble.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_cascading_menu_item_layout.xml.flat",
@@ -925,11 +925,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_compass_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_compass_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_compass_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_disabled.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
@@ -941,7 +941,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-xxhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -977,11 +977,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_focused.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1017,11 +1017,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-watch-v20_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9518d51b352ab941d4bb3dc60ad31f79/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/65ae4d597876f495a33b2e1dfd9cf226/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_compass_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_compass_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_compass_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -1049,7 +1049,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_user_puck_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_puck_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_puck_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1065,7 +1065,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_logo_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_logo_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1089,11 +1089,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_light_normal.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_user_puck_icon.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_puck_icon.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_puck_icon.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1101,7 +1101,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1129,7 +1129,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_marker_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_marker_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_marker_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1153,11 +1153,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_user_bearing_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_bearing_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_bearing_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-mdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
@@ -1165,7 +1165,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_compass_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_compass_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_compass_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
@@ -1173,19 +1173,19 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_info_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_info_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_info_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_info_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_info_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat",
@@ -1209,7 +1209,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_markerview_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_markerview_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_markerview_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout-v21_notification_template_icon_group.xml.flat",
@@ -1217,7 +1217,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_stroke_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media_narrow_custom.xml.flat",
@@ -1241,7 +1241,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat",
@@ -1253,7 +1253,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_icon_stale.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_icon_stale.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -1269,7 +1269,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-xhdpi-v4/com_facebook_close.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-xhdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
@@ -1277,7 +1277,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_mylocation_icon_bearing.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_mylocation_icon_bearing.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_light.xml.flat",
@@ -1297,19 +1297,19 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_mapbox_mylocation_bg_shape.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_mylocation_bg_shape.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_mylocation_bg_shape.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_user_icon.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_icon.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_icon.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-xhdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1321,7 +1321,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_mylocation_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_mylocation_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_mylocation_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1337,7 +1337,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1349,7 +1349,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_profile_picture_blank_square.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_profile_picture_blank_square.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1361,7 +1361,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/xml_rn_dev_preferences.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/xml/rn_dev_preferences.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/xml/rn_dev_preferences.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -1373,15 +1373,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_send_icon_blue.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-mdpi-v4/com_facebook_button_send_icon_blue.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat",
@@ -1397,15 +1397,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_icon_stale.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_icon_stale.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_cancel_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light_focused.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1441,7 +1441,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_info_icon_selected.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_info_icon_selected.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_info_icon_selected.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1449,7 +1449,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_markerview_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_markerview_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_markerview_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
@@ -1473,11 +1473,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_logo_helmet.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_logo_helmet.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_logo_helmet.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_up.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/anim/catalyst_slide_up.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/anim/catalyst_slide_up.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -1485,7 +1485,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_disabled.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -1497,7 +1497,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_compass_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_compass_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_compass_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_messenger_bubble_large_blue.png.flat",
@@ -1505,11 +1505,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_dark.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_dark.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_user_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -1521,11 +1521,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_user_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_in.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/anim/catalyst_push_up_in.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1545,7 +1545,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
@@ -1557,7 +1557,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-xxhdpi-v4/com_facebook_close.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-xxhdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1577,7 +1577,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_stroke_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_dot_group_animation.xml.flat",
@@ -1617,7 +1617,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_marker_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_marker_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_marker_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
@@ -1625,15 +1625,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-hdpi-v4/com_facebook_close.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-hdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_mylocation_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_mylocation_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_mylocation_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1653,7 +1653,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_mapbox_attribution_list_item.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/layout/mapbox_attribution_list_item.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/layout/mapbox_attribution_list_item.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1673,7 +1673,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1685,7 +1685,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_button_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_button_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_tooltip.xml.flat",
@@ -1693,7 +1693,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_close.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-mdpi-v4/com_facebook_close.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-mdpi-v4/com_facebook_close.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_search_dropdown_item_icons_2line.xml.flat",
@@ -1713,7 +1713,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_send_button_icon.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable/com_facebook_send_button_icon.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable/com_facebook_send_button_icon.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
@@ -1733,11 +1733,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_user_bearing_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_bearing_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_bearing_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_dev_loading_view.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/layout/dev_loading_view.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/layout/dev_loading_view.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1757,7 +1757,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_mylocation_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_mylocation_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_mylocation_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1765,11 +1765,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_bearing_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_bearing_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_bearing_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_user_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1793,11 +1793,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_mylocation_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_mylocation_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_mylocation_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat",
@@ -1805,11 +1805,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_user_puck_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_puck_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_puck_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-mdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1817,11 +1817,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_com_facebook_activity_layout.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/layout/com_facebook_activity_layout.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat",
@@ -1829,7 +1829,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_auth_dialog_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_action_bar_up_container.xml.flat",
@@ -1837,7 +1837,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -1865,15 +1865,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_favicon_blue.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_favicon_blue.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_light.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
@@ -1901,7 +1901,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/googleg_standard_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-hdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
@@ -1917,7 +1917,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-xhdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
@@ -1925,7 +1925,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_redbox_top_border_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/drawable/redbox_top_border_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/drawable/redbox_top_border_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -1957,7 +1957,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_mylocation_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_mylocation_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_mylocation_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -1969,11 +1969,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_marker_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_marker_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_marker_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_like_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_button_like_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_button_like_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1997,7 +1997,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2005,7 +2005,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_puck_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_puck_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_puck_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat",
@@ -2021,7 +2021,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_info_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_info_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_info_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -2029,11 +2029,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_user_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_user_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_empty_drawable.png.flat",
@@ -2041,15 +2041,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/googleg_standard_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-xhdpi-v4/googleg_standard_color_18.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_button_send_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable/com_facebook_button_send_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable/com_facebook_button_send_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -2069,11 +2069,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_com_facebook_smart_device_dialog_fragment.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/layout/com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-xhdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -2089,7 +2089,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
@@ -2109,7 +2109,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_user_puck_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_puck_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_puck_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_checked_box_outer_merged_animation.xml.flat",
@@ -2145,7 +2145,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
@@ -2169,19 +2169,19 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_icon_stale.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_icon_stale.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_topnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_info_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_info_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_info_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
@@ -2201,7 +2201,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_xout.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_xout.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -2209,7 +2209,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_com_facebook_tooltip_blue_xout.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-xhdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_btn_checkbox_to_unchecked_check_path_merged_animation.xml.flat",
@@ -2217,7 +2217,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_blue_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -2233,7 +2233,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_user_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -2265,7 +2265,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_stroke_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxxhdpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -2277,7 +2277,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
@@ -2285,11 +2285,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_user_stroke_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_stroke_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_user_stroke_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_logo_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_logo_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -2313,7 +2313,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_user_bearing_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_bearing_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_user_bearing_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_select_dialog_item_material.xml.flat",
@@ -2329,7 +2329,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_redbox_item_title.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/layout/redbox_item_title.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/layout/redbox_item_title.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_messenger_bubble_small_white.png.flat",
@@ -2353,7 +2353,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_markerview_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_markerview_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_markerview_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
@@ -2373,7 +2373,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_mapbox_popup_window_transparent.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_popup_window_transparent.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable/mapbox_popup_window_transparent.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
@@ -2389,7 +2389,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_logo_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_logo_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_logo_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -2405,7 +2405,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -2417,7 +2417,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_normal.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -2453,11 +2453,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_info_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_info_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_like_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable-hdpi-v4/com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
@@ -2481,7 +2481,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_user_stroke_icon.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_stroke_icon.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_stroke_icon.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
@@ -2489,19 +2489,19 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_mapbox_info_icon_default.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_info_icon_default.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xhdpi-v4/mapbox_info_icon_default.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_info_icon_selected.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_info_icon_selected.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_out.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/anim/catalyst_fade_out.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/anim/catalyst_fade_out.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_mapbox_logo_helmet.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_logo_helmet.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-hdpi-v4/mapbox_logo_helmet.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -2529,7 +2529,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_fps_view.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/layout/fps_view.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/layout/fps_view.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -2541,7 +2541,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_mapbox_user_puck_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_puck_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-ldpi-v4/mapbox_user_puck_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_btn_checkbox_checked_mtrl.xml.flat",
@@ -2561,15 +2561,15 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/drawable-mdpi-v4/common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
@@ -2577,7 +2577,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_mapbox_logo_helmet.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_logo_helmet.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-xxhdpi-v4/mapbox_logo_helmet.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
@@ -2597,7 +2597,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable_com_facebook_auth_dialog_header_background.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/9681ef823f2e53d270608ec63c8b39f0/facebook-common-7.0.0/res/drawable/com_facebook_auth_dialog_header_background.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c34837afd26c215d6059320f7b8652b6/facebook-common-7.0.1/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
@@ -2609,7 +2609,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_mapbox_user_bearing_icon.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_bearing_icon.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-anydpi-v21/mapbox_user_bearing_icon.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
@@ -2625,7 +2625,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_redbox_item_frame.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/d3646060ca34a05def9919eafc041d29/jetified-react-native-0.62.2/res/layout/redbox_item_frame.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/a78f0b6d37b77926472dda420d2ab88b/jetified-react-native-0.62.2/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -2633,7 +2633,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/layout_mapbox_infowindow_content.xml.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/layout/mapbox_infowindow_content.xml"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/layout/mapbox_infowindow_content.xml"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_bubble_large_white.png.flat",
@@ -2653,11 +2653,11 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_tooltip_black_bottomnub.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/0357f52b518fd45d98f3bb68a45830a5/facebook-login-7.0.0/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/e96c09c46505d859155dfa5724671188/facebook-login-7.0.1/res/drawable-hdpi-v4/com_facebook_tooltip_black_bottomnub.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_com_facebook_button_send_icon_white.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c599d1373025fec2e066ddd191cb1d70/facebook-share-7.0.0/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8eaefc2f2d2509f9797140b98661e898/facebook-share-7.0.1/res/drawable-hdpi-v4/com_facebook_button_send_icon_white.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -2673,7 +2673,7 @@
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_mapbox_user_puck_icon.png.flat",
-        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/2919f742f0fdea906a86c9b8de88b557/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_puck_icon.png"
+        "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/78191ebbb93a1fbfe18cc03d14fcdf69/jetified-mapbox-android-sdk-9.1.0/res/drawable-mdpi-v4/mapbox_user_puck_icon.png"
     },
     {
         "merged": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",

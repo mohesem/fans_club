@@ -4,24 +4,24 @@
             "outputFile": "/home/emad/Documents/projects/FANS_CLUB_LAST/fans_club_front_github/react/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml",
             "map": [
                 {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/c921f39daffbdf5031728491c16eae96/jetified-play-services-basement-16.0.1/res/values-sw/values.xml",
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/f0d5be975fec9a07834c10edd6b2cb66/core-1.1.0/res/values-sw/values-sw.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "204",
-                        "endOffsets": "451"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "37",
+                        "startLines": "48",
                         "startColumns": "4",
-                        "startOffsets": "3974",
-                        "endColumns": "204",
-                        "endOffsets": "4174"
+                        "startOffsets": "5633",
+                        "endColumns": "100",
+                        "endOffsets": "5729"
                     }
                 },
                 {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/b626f581cfe17f6149d0ff3caeec6492/jetified-play-services-base-16.0.1/res/values-sw/values.xml",
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/13e44d429f615a93247ec7dcdaebc31f/jetified-play-services-base-16.0.1/res/values-sw/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/f0d5be975fec9a07834c10edd6b2cb66/core-1.1.0/res/values-sw/values-sw.xml",
+                    "source": "/home/emad/.gradle/caches/transforms-2/files-2.1/8e310438f7e84febd8bd902f08a02748/jetified-play-services-basement-16.0.1/res/values-sw/values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "204",
+                        "endOffsets": "451"
                     },
                     "to": {
-                        "startLines": "48",
+                        "startLines": "37",
                         "startColumns": "4",
-                        "startOffsets": "5633",
-                        "endColumns": "100",
-                        "endOffsets": "5729"
+                        "startOffsets": "3974",
+                        "endColumns": "204",
+                        "endOffsets": "4174"
                     }
                 },
                 {
