@@ -20,7 +20,7 @@ router.get('/count/:token', isAdmin, (req, res) => {
 router.get('/details/:teamId/:token', isAdmin, (req, res) => {
   console.log('got the req');
 
-  details((status, header, trace) => {
+  details(req.params.teamID, (status, header, trace) => {
     res
       .set(header)
       .status(status)
