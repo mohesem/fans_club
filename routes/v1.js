@@ -60,7 +60,7 @@ router.get('/GET/getUserInfo/:token', (req, res) => {
 });
 
 router.post('/POST/searchClubs', (req, res) => {
-  log(req.body);
+  console.log(req.body);
   searchClubs(req.body, (status, trace) => {
     res.status(status).send(trace);
   });
