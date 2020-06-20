@@ -14,17 +14,8 @@ export default async function(token, cb) {
 
   jwt.verify(token, process.env.TOKEN, (err, decoded) => {
     console.log(err, decoded);
+    if (err) return cb(200, headerErr, { err: true, other: 'internal server error' });
+    return cb(200, header, { err: false, isAdmin: true });
   });
-
-  // Admin.findOne({ username, password }, (err, admin) => {
-  //   console.log('************ ', err, admin);
-  //   if (err) return cb(200, headerErr, { err: true, other: 'server internal error' });
-  //   if (!admin) return cb(200, headerErr, { err: true, other: 'no uwer had been found' });
-  //   jwt.sign({ username, password }, process.env.TOKEN, (error, token) => {
-  //     if (error) return cb(200, headerErr, { err: true, other: 'internal server error' });
-  //     console.log(token);
-  //     return cb(200, header, { err: false, token });
-  //   });
-  // });
   return null;
 }
