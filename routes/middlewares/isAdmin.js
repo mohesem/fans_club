@@ -4,7 +4,7 @@ import Admin from '../../DB/models/admin';
 const headerErr = { 'Content-Type': 'text/plain' };
 
 export default async (req, res, next) => {
-  const { token } = req.params;
+  const { token } = req.params || req.body;
   console.log('-_________________', token);
   jwt.verify(token, process.env.TOKEN, (err, decoded) => {
     console.log(err, decoded);

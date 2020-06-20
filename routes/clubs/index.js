@@ -5,7 +5,7 @@ import isAdmin from '../middlewares/isAdmin';
 import count from './count';
 
 const router = Router();
-router.get('/count', isAdmin, (req, res) => {
+router.get('/count/:token', isAdmin, (req, res) => {
   console.log('got the req');
 
   count((status, header, trace) => {
