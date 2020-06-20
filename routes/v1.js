@@ -1,8 +1,8 @@
 import debug from 'debug';
 import { Router } from 'express';
-import path, { dirname } from 'path';
+// import path, { dirname } from 'path';
 
-import { stat } from 'fs';
+// import { stat } from 'fs';
 import makeNewUser from './makeNewUser';
 import isUserNew from './isUserNew';
 import isUserNewFb from './isUserNewFb';
@@ -18,6 +18,7 @@ import getMembersFromPoly from './getMembersFromPoly';
 import getLikesForPolys from './getLikesForPolys';
 import deleteClub from './deleteClub';
 import isAdmin from './admin/isAdmin';
+import isAdminByToken from './admin/isAdminByToken';
 
 const log = debug('log:v1');
 
@@ -154,12 +155,12 @@ router.get('/admin/verify/:username/:password', (req, res) => {
 router.get('/admin/verifyByToken/:token', (req, res) => {
   console.log('got the req', req.params.token);
 
-  // isAdmin(req.params.username, req.params.password, (status, header, trace) => {
-  //   res
-  //     .set(header)
-  //     .status(status)
-  //     .send({ trace });
-  // });
+  isAdminByToken(req.params.token, (status, header, trace) => {
+    res
+      .set(header)
+      .status(status)
+      .send({ trace });
+  });
 });
 
 // router.use('/admin', admin);
