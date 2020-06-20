@@ -8,7 +8,7 @@ export default async function(username, password, cb) {
   const header = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-    'Content-Type': 'application/x-protobuf',
+    'Content-Type': 'application/json',
     // "Content-Encoding": "gzip"
   };
 
