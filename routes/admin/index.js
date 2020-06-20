@@ -10,6 +10,7 @@ const router = Router();
 // });
 
 router.get('/verify/:username/:password', (req, res) => {
+  console.log('gooooooooooooooooooooooooooooooooooot it ');
   isAdmin((req.params.username, req.params.password), (status, trace) => {
     const header = {
       'Access-Control-Allow-Origin': '*',
