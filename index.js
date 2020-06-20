@@ -129,7 +129,7 @@ app.get('/auth/*', (req, res) => {
   res.sendFile(path.resolve('react', 'build', 'index.html'));
 });
 
-app.use('/api/v1', Cors(corsOptions), routes.v1);
+app.use('/api/v1', routes.v1);
 
 // app.use('/user', routes.user);
 // app.use('/club', routes.club);
