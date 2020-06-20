@@ -22,6 +22,7 @@ import admin from './admin';
 import clubs from './clubs';
 import users from './users';
 import likes from './likes';
+import dislikes from './dislikes';
 
 const log = debug('log:v1');
 
@@ -150,5 +151,6 @@ router.use('/admin', admin);
 router.use('/clubs', clubs);
 router.use('/users', users);
 router.use('/likes', likes);
+router.use('/dislikes', dislikes);
 
 export default router;
