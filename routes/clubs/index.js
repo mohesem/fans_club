@@ -24,7 +24,7 @@ router.get('/details/:teamId/:token', isAdmin, (req, res) => {
     res
       .set(header)
       .status(status)
-      .send({ trace });
+      .send({ ...trace });
   });
 });
 
