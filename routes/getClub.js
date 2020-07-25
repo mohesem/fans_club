@@ -6,7 +6,29 @@ import City from '../DB/models/cityModel';
 const log = debug('log:v1');
 
 // 5e6aa5e6075d200d2a9d7530
-
+const findImg = (country, city, name) => {
+  return new Promise(resolve => {
+    fs.readFile(
+      `/root/repos/fans_club/routes/logo/${country + city + name}.png`,
+      (errRead, img) => {
+        if (img) {
+          resolve(img);
+        } else {
+          fs.readFile(
+            `/root/repos/fans_club/routes/logo/${country + city + name}.jpg`,
+            (errRead, img) => {
+              if (img) {
+                resolve(img);
+              } else {
+                resolve();
+              }
+            }
+          );
+        }
+      }
+    );
+  });
+};
 export default function getClub(teamId, cb) {
   Teams.findById(teamId, async (err, club) => {
     if (err) {
@@ -22,21 +44,12 @@ export default function getClub(teamId, cb) {
     // name.trim();
 
     // log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
-    if (country && city) {
-      const image = await fs.promises.readFile(
-        `/root/repos/fans_club/routes/logo/${country + city + name}.png`,
-        (err, img) => (image = img)
-      );
-      if (!image) {
-        await fs.promises.readFile(
-          `/root/repos/fans_club/routes/logo/${country + city + name}.jpg`,
-          (err, img) => (image = img)
-        );
-      }
+    const img = await findImg(country, city, name);
 
-      if (!image) {
+    if (!img) {
+      if (errRead) {
         console.log('---------------------', errRead);
-        return cb(200, { club, errRead: 'no image has been found' });
+        return cb(200, { club, errRead });
       }
       City.findOne(
         {
@@ -66,7 +79,8 @@ export default function getClub(teamId, cb) {
           // TODO: send new json with club, city and buffer
         }
       );
+    } else {
+      return cb(200, club);
     }
-    return cb(200, club);
   });
 }
