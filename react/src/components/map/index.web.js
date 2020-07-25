@@ -483,6 +483,7 @@ export default props => {
   /* -------------------------- add and remove layers ------------------------- */
   useEffect(() => {
     console.log('club id is ::::', props.clubId);
+    localDataRef = {};
     if (props.clubId && !map.getSource('boundary-source')) {
       (function loop() {
         if (map.isStyleLoaded()) {
