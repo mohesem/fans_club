@@ -8,13 +8,13 @@ const log = debug('log:v1');
 // 5e6aa5e6075d200d2a9d7530
 const findImg = (country, city, name) => {
   return new Promise(resolve => {
-    fs.readFile(
+    fs.promises.readFile(
       `/root/repos/fans_club/routes/logo/${country + city + name}.png`,
       (errRead, img) => {
         if (img) {
           resolve(img);
         } else {
-          fs.readFile(
+          fs.promises.readFile(
             `/root/repos/fans_club/routes/logo/${country + city + name}.jpg`,
             (errRead, img) => {
               if (img) {
@@ -29,6 +29,7 @@ const findImg = (country, city, name) => {
     );
   });
 };
+
 export default function getClub(teamId, cb) {
   Teams.findById(teamId, async (err, club) => {
     if (err) {
@@ -44,12 +45,12 @@ export default function getClub(teamId, cb) {
     // name.trim();
 
     // log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
-    const img = await findImg(country, city, name);
 
-    if (!img) {
-      if (errRead) {
-        console.log('---------------------', errRead);
-        return cb(200, { club, errRead });
+    if ((country && city, name)) {
+      const img = await findImg(country, city, name);
+      if (!img) {
+        // console.log('---------------------', errRead);
+        return cb(200, { club, errRead: 'not found logo' });
       }
       City.findOne(
         {
