@@ -130,6 +130,7 @@ router.post('/POST/getLikesForPolys', (req, res) => {
 // });
 
 router.get('/GET/club/:clubId', (req, res) => {
+  console.log('_____', req.params);
   getClub(req.params.clubId, (status, trace) => {
     res.status(status).send(trace);
   });
