@@ -58,7 +58,7 @@ export default function getClub(teamId, cb) {
       }
       City.findOne(
         {
-          country: country.trim(),
+          // country: country.trim(),
           name: city.trim(),
         },
         async (errCity, cityObj) => {
