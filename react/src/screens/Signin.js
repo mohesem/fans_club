@@ -85,7 +85,7 @@ export default () => {
   const SigninForm = () => {
     return (
       <Form style={styles.form}>
-        <H3 style={styles.title}>step one</H3>
+        <H3 style={styles.title}>Signin</H3>
         {!wait ? (
           <>
             <GoogleLoginBtn handleOtherErrors={handleOtherErrors} handleWait={handleWait} />
