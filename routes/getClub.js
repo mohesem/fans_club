@@ -37,7 +37,7 @@ export default function getClub(teamId, cb) {
       console.log(`error on finding club \n ${err}`);
       return cb(500, 'error on finding club');
     }
-    // console.log('club ==> ', club);
+    console.log('club ==> ', club);
 
     // log('club ==> ', club);
     const { city, group, country, name } = club;
@@ -47,7 +47,7 @@ export default function getClub(teamId, cb) {
 
     // log('@@@@@@@@@@@@@@@@@@@@@@@@', country, city);
 
-    if ((country && city, name)) {
+    if (country && city && name) {
       const img = await findImg(country, city, name);
       console.log('img :::: ', img);
       if (!img) {
