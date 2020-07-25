@@ -8,19 +8,21 @@ const log = debug('log:v1');
 // 5e6aa5e6075d200d2a9d7530
 const findImg = (country, city, name) => {
   return new Promise(resolve => {
-    fs.promises.readFile(
+    fs.readFile(
       `/root/repos/fans_club/routes/logo/${country + city + name}.png`,
       (errRead, img) => {
         if (img) {
+          console.log('imaaaaaaaaaaage found');
           resolve(img);
         } else {
-          fs.promises.readFile(
+          fs.readFile(
             `/root/repos/fans_club/routes/logo/${country + city + name}.jpg`,
-            (errRead, img) => {
-              if (img) {
-                resolve(img);
+            (errRead2, img2) => {
+              if (img2) {
+                console.log('imaaaaaaaaaaage found');
+                resolve(img2);
               } else {
-                resolve();
+                resolve('');
               }
             }
           );
