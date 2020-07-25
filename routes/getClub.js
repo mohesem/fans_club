@@ -31,6 +31,7 @@ const findImg = (country, city, name) => {
 };
 
 export default function getClub(teamId, cb) {
+  console.log(teamId);
   Teams.findById(teamId, async (err, club) => {
     if (err) {
       console.log(`error on finding club \n ${err}`);
