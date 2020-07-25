@@ -89,7 +89,7 @@ router.get('/GET/tiles/:z/:x/:y', (req, res) => {
   // log(z, x, y);
   getTiles(z, x, y, (status, header, tile) => {
     // res.;
-    console.log('sending tile');
+    // console.log('sending tile');
     if (status === 200) {
       res
         .set(header)
@@ -103,7 +103,7 @@ router.get('/GET/tiles/:z/:x/:y', (req, res) => {
 
 router.get('/GET/membersFromPoly/:swlng/:swlat/:nelng/:nelat/:val/:teamId', (req, res) => {
   const { swlng, swlat, nelng, nelat, val, teamId } = req.params;
-  console.log(swlng, swlat, nelng, nelat, val, teamId);
+  // console.log(swlng, swlat, nelng, nelat, val, teamId);
   getMembersFromPoly(swlng, swlat, nelng, nelat, val, teamId, (status, trace) => {
     res.status(status).send(trace);
   });
@@ -112,7 +112,7 @@ router.get('/GET/membersFromPoly/:swlng/:swlat/:nelng/:nelat/:val/:teamId', (req
 
 router.post('/POST/getLikesForPolys', (req, res) => {
   getLikesForPolys(req.body, (status, trace) => {
-    console.log('getLikesForPolys ......', trace);
+    // console.log('getLikesForPolys ......', trace);
     res.status(status).send(trace);
   });
 });
@@ -137,7 +137,7 @@ router.get('/GET/club/:clubId', (req, res) => {
 
 router.post('/POST/deleteClub', (req, res) => {
   deleteClub(req.body, (status, trace) => {
-    log(status, trace);
+    // log(status, trace);
     res.status(status).send(trace);
   });
 

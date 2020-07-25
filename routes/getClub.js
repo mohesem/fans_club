@@ -48,6 +48,7 @@ export default function getClub(teamId, cb) {
 
     if ((country && city, name)) {
       const img = await findImg(country, city, name);
+      console.log('img :::: ', img);
       if (!img) {
         // console.log('---------------------', errRead);
         return cb(200, { club, errRead: 'not found logo' });
