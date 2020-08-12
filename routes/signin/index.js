@@ -26,6 +26,7 @@ export default async function(body, cb) {
         return cb(500, { other: 'Server Internal Error' });
       }
       log('user is : ', { user });
+      console.log('user is : ', { user });
       return cb(200, {
         token,
         snackMsg: `hello ${user.firstname}, you signed in with ${user.email}`,
