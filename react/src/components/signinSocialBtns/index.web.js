@@ -117,7 +117,7 @@ export const GoogleLoginBtn = props => {
           }}
           disabled={renderProps.disabled}
           style={styles.google}>
-          <Text style={styles.googleText}>SIGNUP WITH GOOGLE</Text>
+          <Text style={styles.googleText}>LOG IN WITH GOOGLE</Text>
         </Button>
       )}
       clientId="951334179095-359plh303nv4b6oi184594gi11jmpvfk.apps.googleusercontent.com"
@@ -180,7 +180,7 @@ export const FacebookLoginBtn = props => {
           }}
           disabled={renderProps.disabled}
           style={styles.facebook}>
-          <Text style={styles.facebookText}>SIGNUP WITH FACEBOOK</Text>
+          <Text style={styles.facebookText}>LOG IN WITH FACEBOOK</Text>
         </Button>
       )}
     />

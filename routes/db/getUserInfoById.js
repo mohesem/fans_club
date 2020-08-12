@@ -12,6 +12,7 @@ export default function getUserById(id, cb) {
     .exec((execError, result) => {
       if (execError) return cb(execError, null);
       // log(`populate result ${result}`);
+      console.log({ result });
       return cb(null, result);
       // resolve({
       //   likes: result ? result.likes : null,
