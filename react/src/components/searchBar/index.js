@@ -18,10 +18,11 @@ import {
 import mapboxLocationSearch from '../../api/mapboxLocationSearch';
 import searchClubsApi from '../../api/searchClubs';
 
-export default props => {
-  const Media = useSelector(global => global.media);
-  const Center = useSelector(global => global.center);
+export default (props) => {
+  const Media = useSelector((global) => global.media);
+  const Center = useSelector((global) => global.center);
   const history = useHistory();
+  const [inputValue, setInputValue] = useState('');
   const [results, setResults] = useState([]);
 
   /* -------------------------------------------------------------------------- */
@@ -105,15 +106,16 @@ export default props => {
   /* -------------------------------------------------------------------------- */
   /*                                  handlers                                  */
   /* -------------------------------------------------------------------------- */
-  const handleSearchInputChange = string => {
-    if (string) {
+  const handleSearchInputChange = (string, mute) => {
+    setInputValue(string);
+    if (string && !mute) {
       if (props.searchMode === 'loc') {
         mapboxLocationSearch(string, Center)
-          .then(res => {
+          .then((res) => {
             const {features} = res.data;
             // console.log('new options are :: ', fs);
 
-            const newOptions = features.map(f => {
+            const newOptions = features.map((f) => {
               // console.log(f);
               if (f.bbox) {
                 return {name: f.place_name, center: f.bbox};
@@ -122,11 +124,11 @@ export default props => {
             });
             setResults(newOptions);
           })
-          .catch(err => {
+          .catch((err) => {
             console.log(err);
           });
       } else {
-        searchClubsApi(string).then(res => {
+        searchClubsApi(string).then((res) => {
           setResults(res.data.clubs);
         });
       }
@@ -204,17 +206,27 @@ export default props => {
     <View style={styles.parentView}>
       <View style={styles.searcBar}>
         {props.searchMode === 'team' ? LikeOrDislikeBtn : null}
-        <TextInput style={styles.input} onChangeText={handleSearchInputChange} />
+        <TextInput
+          style={styles.input}
+          value={inputValue}
+          onChangeText={(t) => handleSearchInputChange(t, false)}
+        />
         <Button
           iconCenter
           style={props.searchMode === 'team' ? styles.activeButton : styles.incativeButton}
-          onPress={() => props.handleSearchMode('team')}>
+          onPress={() => {
+            setInputValue('', false);
+            props.handleSearchMode('team');
+          }}>
           <BallIcon />
         </Button>
         <Button
           iconCenter
           style={props.searchMode === 'loc' ? styles.activeButton : styles.incativeButton}
-          onPress={() => props.handleSearchMode('loc')}>
+          onPress={() => {
+            setInputValue('', false);
+            props.handleSearchMode('loc');
+          }}>
           <MapMarkerIcon />
         </Button>
       </View>
@@ -222,11 +234,12 @@ export default props => {
         <View style={styles.locationSearchView}>
           <List>
             {props.searchMode === 'loc'
-              ? results.map(location => {
+              ? results.map((location) => {
                   return (
                     <ListItem
                       key={location.name}
                       onPress={() => {
+                        handleSearchInputChange(location.name, true);
                         setResults([]);
                         props.handleFlyTo(location.center);
                       }}>
@@ -234,13 +247,14 @@ export default props => {
                     </ListItem>
                   );
                 })
-              : results.map(club => {
+              : results.map((club) => {
                   return (
                     <ListItem
                       key={club._id}
                       onPress={() => {
+                        handleSearchInputChange(club.name, true);
                         setResults([]);
-                        console.log(club);
+                        console.log({club});
                         history.push(`/map/${props.likeOrDislike}/${club._id}`);
                         // props.handleFlyTo(location.center);
                       }}>
