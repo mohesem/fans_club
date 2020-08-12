@@ -25,7 +25,7 @@ export default function signin(obj, cb) {
       getUserInfoById(result.id, (error, user) => {
         if (error) return cb(500, { other: 'Server Internal Error' });
         if (!user) return cb(400, 'User doesnt exist');
-        return cb(200, {
+        return cb(null, {
           snackMsg: `hello ${user.firstname}`,
           firstname: user.firstname,
           lastname: user.lastname,
