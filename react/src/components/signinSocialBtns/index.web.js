@@ -77,6 +77,7 @@ export const GoogleLoginBtn = props => {
     console.log(userObject);
     signinApi(userObject.googleId)
       .then(res => {
+        console.log('server res : ', res);
         localStorage.setItem('fans-club', res.data.token);
         const user = {
           firstname: res.data.first_name,
@@ -86,6 +87,7 @@ export const GoogleLoginBtn = props => {
           likes: res.data.likes,
           dislikes: res.data.dislikes,
         };
+        console.log(user);
         dispatch(userAction(user));
         dispatch(isUserAction(true));
         history.push('/');
