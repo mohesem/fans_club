@@ -13,8 +13,8 @@ export default function signin(obj, cb) {
   }
 
   User.findOne(query)
-    // .populate('likes')
-    // .populate('dislikes')
+    .populate('likes')
+    .populate('dislikes')
     // .populate('suggests')
 
     .exec((execError, result) => {
