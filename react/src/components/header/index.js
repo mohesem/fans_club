@@ -120,7 +120,7 @@ export default props => {
   const SigninButton = () => (
     <Button transparent primary onPress={() => history.push('/Signin')}>
       <IconReact icon={faSignInAlt} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>CREATE AN ACCOUNT</Text>
+      <Text style={styles.btnTxt}>SIGN IN</Text>
     </Button>
   );
 
