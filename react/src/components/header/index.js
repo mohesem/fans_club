@@ -113,21 +113,21 @@ export default props => {
   const SignupButton = () => (
     <Button transparent primary onPress={() => history.push('/Signup')}>
       <IconReact icon={faUserPlus} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>SIGNUP</Text>
+      <Text style={styles.btnTxt}>CREATE AN ACCOUNT</Text>
     </Button>
   );
 
   const SigninButton = () => (
     <Button transparent primary onPress={() => history.push('/Signin')}>
       <IconReact icon={faSignInAlt} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>SIGNIN</Text>
+      <Text style={styles.btnTxt}>CREATE AN ACCOUNT</Text>
     </Button>
   );
 
   const ClubsButton = () => (
     <Button transparent primary onPress={() => history.push('/clubs')}>
       <IconReact icon={faTshirt} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>CLUBS</Text>
+      <Text style={styles.btnTxt}>PROFILE</Text>
     </Button>
   );
 
@@ -140,7 +140,7 @@ export default props => {
         history.push('/');
       }}>
       <IconReact icon={faSignOutAlt} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>SIGNOUT</Text>
+      <Text style={styles.btnTxt}>SIGN OUT</Text>
     </Button>
   );
 

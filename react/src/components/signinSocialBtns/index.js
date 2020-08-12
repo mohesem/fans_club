@@ -130,7 +130,7 @@ export const GoogleLoginBtn = props => {
         signInGoogle();
       }}
       style={styles.google}>
-      <Text style={styles.googleText}>SIGNIN WITH GOOGLE</Text>
+      <Text style={styles.googleText}>SIGN IN WITH GOOGLE</Text>
     </Button>
   );
 };
@@ -207,7 +207,7 @@ export const FacebookLoginBtn = props => {
         login();
       }}
       style={styles.facebook}>
-      <Text style={styles.facebookText}>SIGNIN WITH FACEBOOK</Text>
+      <Text style={styles.facebookText}>SIGN IN WITH FACEBOOK</Text>
     </Button>
   );
 };
