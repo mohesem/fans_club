@@ -1,5 +1,6 @@
 import debug from 'debug';
 import User from '../../DB/models/userModel';
+import getUserInfoById from './getUserInfoById';
 
 const log = debug('log:db');
 
@@ -13,14 +14,31 @@ export default function signin(obj, cb) {
   }
 
   User.findOne(query)
-    .populate('likes')
-    .populate('dislikes')
+    // .populate('likes')
+    // .populate('dislikes')
     // .populate('suggests')
 
     .exec((execError, result) => {
       if (execError) return cb(execError, null);
       // log(`populate result ${result}`);
-      return cb(null, result);
+
+      getUserInfoById(result.id, (error, user) => {
+        if (error) return cb(500, { other: 'Server Internal Error' });
+        if (!user) return cb(400, 'User doesnt exist');
+        return cb(200, {
+          snackMsg: `hello ${user.firstname}`,
+          firstname: user.firstname,
+          lastname: user.lastname,
+          likes: user.likes || null,
+          dislikes: user.dislikes || null,
+          suggests: user.suggests || null,
+          location: user.geo,
+          thumbnail: user.thumbnail,
+          // from: user.googleId ? 'google' : 'facebook',
+        });
+      });
+
+      // return cb(null, result);
       // resolve({
       //   likes: result ? result.likes : null,
       //   dislikes: result ? result.dislikes : null,
