@@ -386,7 +386,7 @@ export default props => {
     map = new mapboxgl.Map({
       container: mapContainer,
       //   center: userReducer.location || [0, 0],
-      zoom: 2,
+      zoom: 1,
       attributionControl: false,
       maxZoom: 14,
     });
