@@ -321,14 +321,14 @@ export default () => {
             <Text>Female</Text>
           </Right>
         </ListItem>
-        <ListItem selected={sex === 'other'} onPress={() => setSex('other')}>
+        {/* <ListItem selected={sex === 'other'} onPress={() => setSex('other')}>
           <Left>
             <RadioIcon selected={sex === 'other'} />
           </Left>
           <Right>
             <Text>Other</Text>
           </Right>
-        </ListItem>
+        </ListItem> */}
       </View>
     );
   };

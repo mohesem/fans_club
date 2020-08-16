@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
   imageBackParent: {
     height: 500,
     flex: 1,
-
     backgroundColor: 'red',
   },
   imageBack: {

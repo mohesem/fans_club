@@ -120,7 +120,7 @@ export default props => {
   const SigninButton = () => (
     <Button transparent primary onPress={() => history.push('/Signin')}>
       <IconReact icon={faSignInAlt} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>SIGN IN</Text>
+      <Text style={styles.btnTxt}>LOG IN</Text>
     </Button>
   );
 
@@ -140,7 +140,7 @@ export default props => {
         history.push('/');
       }}>
       <IconReact icon={faSignOutAlt} color={colors.brandLight} />
-      <Text style={styles.btnTxt}>SIGN OUT</Text>
+      <Text style={styles.btnTxt}>LOG OUT</Text>
     </Button>
   );
 

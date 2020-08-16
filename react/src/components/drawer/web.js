@@ -57,7 +57,7 @@ export default props => {
         {isUserReducer ? (
           <>
             <Button transparent block onPress={handleSignout}>
-              <Text>SIGN OUT</Text>
+              <Text>LOG OUT</Text>
             </Button>
             <Button transparent block onPress={() => history.push('/clubs')}>
               <Text>POFILE</Text>
@@ -66,7 +66,7 @@ export default props => {
         ) : (
           <>
             <Button transparent block onPress={() => history.push('/signin')}>
-              <Text>SIGN IN</Text>
+              <Text>LOG IN</Text>
             </Button>
             <Button transparent block onPress={() => history.push('/signup')}>
               <Text>CREATE NEW ACCOUNT</Text>

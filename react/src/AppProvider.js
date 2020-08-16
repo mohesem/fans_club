@@ -32,7 +32,7 @@ export default () => {
     console.log(token);
     getUserInfoApi(token)
       .then(res => {
-        console.log('------------------***--------------', res);
+        // console.log('------------------***--------------', res);
         dispatch(isUserAction(true));
         const user = {
           firstname: res.data.firstname,
@@ -42,7 +42,7 @@ export default () => {
           likes: res.data.likes,
           dislikes: res.data.dislikes,
         };
-        console.log('*****&&&', user);
+        // console.log('*****&&&', user);
         dispatch(userAction(user));
       })
       .catch(err => {
@@ -69,7 +69,7 @@ export default () => {
     }
   }
 
-  console.log('isUser ::::: ', isUserReducer);
+  // console.log('isUser ::::: ', isUserReducer);
 
   return (
     <Router>
