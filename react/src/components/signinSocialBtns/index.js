@@ -97,7 +97,7 @@ export const GoogleLoginBtn = props => {
             likes: res.data.likes,
             dislikes: res.data.dislikes,
           };
-          await signOut();
+          // await signOut();
           dispatch(userAction(user));
           dispatch(isUserAction(true));
           history.push('/');
