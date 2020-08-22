@@ -286,6 +286,7 @@ export default props => {
       if (fsLength !== length) {
         fsLength = length;
         const array = fs.map(f => f.id);
+        console.log(array);
         const uniqueArray = [...new Set(array)];
         const reducedDuplicates = [];
         uniqueArray.forEach((u, i) => {

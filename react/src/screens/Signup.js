@@ -401,12 +401,12 @@ export default () => {
         <SexRadioButtons />
         <Text style={styles.error}>{genderError}</Text>
 
-        <H3 style={styles.title}>Birth</H3>
+        <H3 style={styles.title}>Date of birth</H3>
         <Text style={styles.secondaryText}>click on date to change the value</Text>
         <DatePicker handleNewDate={handleNewDate} date={date} />
 
         <H3 style={styles.title}>Submit</H3>
-        <Text style={styles.secondaryText}>Thank you for joining fans club</Text>
+        <Text style={styles.secondaryText}>Thank you for joining FansClub</Text>
         <View>
           <Button success block style={styles.submitBtn} onPress={handleSubmit}>
             <Text style={styles.submitBtnTxt}>Ok</Text>
