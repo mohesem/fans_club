@@ -38,6 +38,7 @@ export default async function(body, cb) {
         location: user.geo,
         from: user.googleId ? 'google' : 'facebook',
         thumbnail: user.thumbnail,
+        address: user.address,
       });
     });
     return null;

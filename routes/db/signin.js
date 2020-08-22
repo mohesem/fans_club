@@ -34,6 +34,7 @@ export default function signin(obj, cb) {
           suggests: user.suggests || null,
           location: user.geo,
           thumbnail: user.thumbnail,
+          address: user.address,
           // eslint-disable-next-line no-underscore-dangle
           _id: user._id,
           email: user.email,

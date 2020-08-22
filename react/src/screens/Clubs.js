@@ -167,6 +167,18 @@ const styles = StyleSheet.create({
   addressText: {
     alignSelf: 'center',
   },
+  locationBtn: {
+    marginTop: 15,
+    marginBottom: 15,
+    shadowColor: colors.brandDark,
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
 });
 
 const searchInputStyle = {
@@ -363,6 +375,13 @@ export default () => {
         <View style={styles.addressContainer}>
           <Text style={styles.addressText}>Address : {userReducer.address}</Text>
         </View>
+        <Button
+          block
+          onPress={() => history.push('/getUserLocation')}
+          style={styles.locationBtn}
+          danger>
+          <Text>Change your location</Text>
+        </Button>
         <H3 style={styles.title}>LIKES</H3>
         {!userReducer.likes?.length ? (
           <Text>you added no clubs yet</Text>
