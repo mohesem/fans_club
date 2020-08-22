@@ -6,6 +6,7 @@ import SignupScreen from '../screens/Signup';
 import SigninScreen from '../screens/Signin';
 import ClubsScreen from '../screens/Clubs';
 import GetUserLocationScreen from '../screens/GetUserLocation';
+import ChangeUserLocationScreen from '../screens/ChangeUserLocation';
 
 export default () => {
   return (
@@ -22,6 +23,7 @@ export default () => {
       <Route exact path="/signin" component={SigninScreen} />
       <Route exact path="/clubs" component={ClubsScreen} />
       <Route exact path="/getUserLocation" component={GetUserLocationScreen} />
+      <Route exact path="/changeUserLocation" component={ChangeUserLocationScreen} />
     </Switch>
   );
 };

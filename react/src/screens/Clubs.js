@@ -377,7 +377,7 @@ export default () => {
         </View>
         <Button
           block
-          onPress={() => history.push('/getUserLocation')}
+          onPress={() => history.push('/changeUserLocation')}
           style={styles.locationBtn}
           danger>
           <Text>Change your location</Text>
