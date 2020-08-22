@@ -86,6 +86,7 @@ export const GoogleLoginBtn = props => {
           location: res.data.location,
           likes: res.data.likes,
           dislikes: res.data.dislikes,
+          address: res.data.address,
         };
         console.log(user);
         dispatch(userAction(user));
@@ -149,6 +150,7 @@ export const FacebookLoginBtn = props => {
           location: res.data.location,
           likes: res.data.likes,
           dislikes: res.data.dislikes,
+          address: res.data.address,
         };
         dispatch(userAction(user));
         dispatch(isUserAction(true));

@@ -154,6 +154,19 @@ const styles = StyleSheet.create({
     right: 10,
   },
   likeANewClubBtn: {marginTop: 20},
+  addressContainer: {
+    backgroundColor: 'white',
+    padding: 20,
+    marginTop: 15,
+    marginBottom: 15,
+    flexGrow: 1,
+    borderWidth: 2,
+    borderColor: 'lightgray',
+    borderRadius: 20,
+  },
+  addressText: {
+    alignSelf: 'center',
+  },
 });
 
 const searchInputStyle = {
@@ -251,6 +264,7 @@ export default () => {
                               dislikes: res.data.dislikes,
                               suggests: res.data.suggests,
                               location: res.data.location,
+                              address: res.data.address,
                             }),
                           );
                         });
@@ -266,6 +280,7 @@ export default () => {
                               dislikes: res.data.dislikes,
                               suggests: res.data.suggests,
                               location: res.data.location,
+                              address: res.data.address,
                             }),
                           );
                         });
@@ -345,6 +360,9 @@ export default () => {
   const ClubsForm = () => {
     return (
       <Form style={styles.form}>
+        <View style={styles.addressContainer}>
+          <Text style={styles.addressText}>Address : {userReducer.address}</Text>
+        </View>
         <H3 style={styles.title}>LIKES</H3>
         {!userReducer.likes?.length ? (
           <Text>you added no clubs yet</Text>

@@ -41,6 +41,7 @@ export default () => {
           location: res.data.location,
           likes: res.data.likes,
           dislikes: res.data.dislikes,
+          address: res.data.address,
         };
         // console.log('*****&&&', user);
         dispatch(userAction(user));

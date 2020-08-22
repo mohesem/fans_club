@@ -21,6 +21,7 @@ export default function getUserInfo(token, cb) {
         suggests: user.suggests || null,
         location: user.geo,
         thumbnail: user.thumbnail,
+        address: user.address,
         // from: user.googleId ? 'google' : 'facebook',
       });
     });
