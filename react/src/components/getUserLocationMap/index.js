@@ -1,10 +1,4 @@
-import React, {
-  createRef,
-  useEffect,
-  useCallback,
-  useState,
-  useRef,
-} from 'react';
+import React, {createRef, useEffect, useCallback, useState, useRef} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {StyleSheet, TouchableOpacity, Keyboard} from 'react-native';
 import MapboxGL from '@react-native-mapbox-gl/maps';
