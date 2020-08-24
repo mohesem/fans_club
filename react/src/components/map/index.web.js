@@ -591,6 +591,7 @@ export default props => {
             'interpolate',
             ['linear'],
             ['feature-state', 'fans'],
+            0,
             'rgba(236, 225, 203, 1)',
             1,
             mainColor,
