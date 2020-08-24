@@ -28,8 +28,8 @@ export default () => {
 
   return (
     <>
-      <Map {...mapProps} />
       <SearchBar {...searchBarProps} />
+      <Map {...mapProps} />
       {/* <Footer /> */}
     </>
   );
