@@ -73,7 +73,7 @@ export default props => {
             small
             style={styles.btn}
             onPress={() => {
-              changeLocationApi({UserLocation, User});
+              changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')});
             }}>
             <Text style={styles.btnTxt}>submit</Text>
           </Button>
