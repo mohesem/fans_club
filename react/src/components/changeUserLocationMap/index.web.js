@@ -13,8 +13,6 @@ import getAddress from '../../api/getUserAddress';
 
 import colors from '../../native-base-theme/colors';
 
-import changeUserLicaion from '../../api/changeUserLocation';
-
 mapboxgl.accessToken =
   'pk.eyJ1IjoibW9oZXNlbSIsImEiOiJjanR3amhqcWcxZm05NDVtcG03Nm44Ynk4In0.YUdlvT5fABnW8BReNMSuPg';
 
@@ -68,13 +66,7 @@ export default props => {
           <Text style={styles.txt}>...</Text>
         )}
         {UserLocation ? (
-          <Button
-            small
-            style={styles.btn}
-            onPress={() => {
-              //todo: change user location on server
-              changeUserLicaion({sth: 'sth'});
-            }}>
+          <Button small style={styles.btn} onPress={() => history.push('/signup')}>
             <Text style={styles.btnTxt}>submit</Text>
           </Button>
         ) : null}
@@ -137,7 +129,7 @@ export default props => {
 
       popup.addTo(map);
 
-      console.log(e.lngLat.wrap());
+      console.log('*&^*&^*&&^*&^', e.lngLat.wrap());
 
       getAddress(e.lngLat.wrap())
         .then(res => {
