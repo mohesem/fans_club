@@ -97,100 +97,98 @@ export default props => {
     map.setStyle('mapbox://styles/mohesem/ck59dnl2k1ij41co38c3zy6ib');
   }, []);
 
-  // useEffect(() => {
-  //   const handleUpdateCenter = () => {
-  //     const center = map.getCenter();
-  //     dispatch(centerAction({lng: center.lng, lat: center.lat}));
-  //   };
-  //   handleUpdateCenter();
+  useEffect(() => {
+    const handleUpdateCenter = () => {
+      const center = map.getCenter();
+      dispatch(centerAction({lng: center.lng, lat: center.lat}));
+    };
+    handleUpdateCenter();
 
-  //   map.on('moveend', handleUpdateCenter);
-  // }, [dispatch]);
+    map.on('moveend', handleUpdateCenter);
+  }, [dispatch]);
 
-  // useEffect(() => {
-  //   const handleUserLocation = e => {
-  //     console.log('clicked', UserLocation);
+  useEffect(() => {
+    const handleUserLocation = e => {
+      console.log('clicked', UserLocation);
 
-  //     if (UserLocation) {
-  //       dispatch(userLocationAction(null));
-  //     }
+      if (UserLocation) {
+        dispatch(userLocationAction(null));
+      }
 
-  //     if (popup) {
-  //       popup.remove();
-  //     }
+      if (popup) {
+        popup.remove();
+      }
 
-  //     map.flyTo({
-  //       center: e.lngLat.wrap(),
-  //       // zoom: 5,
-  //       essential: true, // this animation is considered essential with respect to prefers-reduced-motion
-  //     });
+      map.flyTo({
+        center: e.lngLat.wrap(),
+        // zoom: 5,
+        essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+      });
 
-  //     popup = new mapboxgl.Popup()
-  //       .setLngLat(e.lngLat.wrap())
-  //       .setDOMContent(placeholder);
+      popup = new mapboxgl.Popup().setLngLat(e.lngLat.wrap()).setDOMContent(placeholder);
 
-  //     popup.addTo(map);
+      popup.addTo(map);
 
-  //     console.log('*&^*&^*&&^*&^', e.lngLat.wrap());
+      console.log('*&^*&^*&&^*&^', e.lngLat.wrap());
 
-  //     getAddress(e.lngLat.wrap())
-  //       .then(res => {
-  //         dispatch(
-  //           userLocationAction({
-  //             location: e.lngLat.wrap(),
-  //             address: res.data.features[0].place_name,
-  //           }),
-  //         );
-  //       })
-  //       .catch(err => {
-  //         console.log(err);
-  //       });
-  //   };
+      getAddress(e.lngLat.wrap())
+        .then(res => {
+          dispatch(
+            userLocationAction({
+              location: e.lngLat.wrap(),
+              address: res.data.features[0].place_name,
+            }),
+          );
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    };
 
-  //   map.on('click', handleUserLocation);
-  //   return () => map.off('click', handleUserLocation);
-  // });
+    map.on('click', handleUserLocation);
+    return () => map.off('click', handleUserLocation);
+  });
 
-  // useEffect(() => {
-  //   if (props.flyTo.length === 2) {
-  //     if (searchMarker !== null) {
-  //       searchMarker.remove();
-  //     }
-  //     map.flyTo({
-  //       center: props.flyTo,
-  //       zoom: 5,
-  //       essential: true, // this animation is considered essential with respect to prefers-reduced-motion
-  //     });
-  //     searchMarker = new mapboxgl.Marker({
-  //       draggable: false,
-  //     });
-  //     searchMarker.setLngLat(props.flyTo);
-  //     searchMarker.addTo(map);
-  //     // props.handleFlyTo([]);
-  //   } else if (props.flyTo.length === 4) {
-  //     if (searchMarker !== null) {
-  //       searchMarker.remove();
-  //     }
-  //     const c = props.flyTo;
-  //     map.fitBounds(
-  //       [
-  //         [c[0], c[1]],
-  //         [c[2], c[3]],
-  //       ],
-  //       {padding: 50, animate: true, essential: true, duration: 3000},
-  //     );
+  useEffect(() => {
+    if (props.flyTo.length === 2) {
+      if (searchMarker !== null) {
+        searchMarker.remove();
+      }
+      map.flyTo({
+        center: props.flyTo,
+        zoom: 5,
+        essential: true, // this animation is considered essential with respect to prefers-reduced-motion
+      });
+      searchMarker = new mapboxgl.Marker({
+        draggable: false,
+      });
+      searchMarker.setLngLat(props.flyTo);
+      searchMarker.addTo(map);
+      // props.handleFlyTo([]);
+    } else if (props.flyTo.length === 4) {
+      if (searchMarker !== null) {
+        searchMarker.remove();
+      }
+      const c = props.flyTo;
+      map.fitBounds(
+        [
+          [c[0], c[1]],
+          [c[2], c[3]],
+        ],
+        {padding: 50, animate: true, essential: true, duration: 3000},
+      );
 
-  //     const poly = turf.bboxPolygon(c);
-  //     const centerOfPoly = turf.centroid(poly);
-  //     searchMarker = new mapboxgl.Marker({
-  //       draggable: false,
-  //     });
+      const poly = turf.bboxPolygon(c);
+      const centerOfPoly = turf.centroid(poly);
+      searchMarker = new mapboxgl.Marker({
+        draggable: false,
+      });
 
-  //     searchMarker.setLngLat(centerOfPoly.geometry.coordinates);
-  //     searchMarker.addTo(map);
-  //     // props.handleFlyTo([]);
-  //   }
-  // }, [props, props.flyTo]);
+      searchMarker.setLngLat(centerOfPoly.geometry.coordinates);
+      searchMarker.addTo(map);
+      // props.handleFlyTo([]);
+    }
+  }, [props, props.flyTo]);
 
   /* -------------------------------------------------------------------------- */
   /*                                 components                                 */
