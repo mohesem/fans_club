@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import Map from '../components/getUserLocationMap';
+import Map from '../components/changeUserLocationMap';
 import SearchBar from '../components/searchBarLocation';
 
 import {Platform} from 'react-native';

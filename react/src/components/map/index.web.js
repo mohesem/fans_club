@@ -583,7 +583,7 @@ export default props => {
     // const zoom = map.getZoom();
     (function loop() {
       if (props.clubId && map.isStyleLoaded() && mainColor && map.getSource('boundary-source')) {
-        console.log('mainColor $$$$$$$$$$$$$$$$$$$$$', {mainColor});
+        console.log('mainColor ', {mainColor});
         map.setPaintProperty('boundry', 'fill-color', [
           'case',
           ['!=', ['feature-state', 'fans'], null],
@@ -591,7 +591,6 @@ export default props => {
             'interpolate',
             ['linear'],
             ['feature-state', 'fans'],
-            0,
             'rgba(236, 225, 203, 1)',
             1,
             mainColor,

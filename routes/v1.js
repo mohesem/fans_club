@@ -148,6 +148,11 @@ router.post('/POST/deleteClub', (req, res) => {
   // });
 });
 
+router.post('/POST/changeUserLocation', (req, res) => {
+  console.log('got the req', req.body);
+  res.send('done');
+});
+
 router.use('/admin', admin);
 router.use('/clubs', clubs);
 router.use('/users', users);
