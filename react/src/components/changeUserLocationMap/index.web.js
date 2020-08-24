@@ -13,6 +13,8 @@ import getAddress from '../../api/getUserAddress';
 
 import colors from '../../native-base-theme/colors';
 
+import changeLocationApi from '../../api/changeUserLocation';
+
 mapboxgl.accessToken =
   'pk.eyJ1IjoibW9oZXNlbSIsImEiOiJjanR3amhqcWcxZm05NDVtcG03Nm44Ynk4In0.YUdlvT5fABnW8BReNMSuPg';
 
@@ -71,7 +73,7 @@ export default props => {
             small
             style={styles.btn}
             onPress={() => {
-              console.log(UserLocation, User);
+              changeLocationApi({UserLocation, User});
             }}>
             <Text style={styles.btnTxt}>submit</Text>
           </Button>
