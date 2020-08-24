@@ -28,6 +28,7 @@ export default props => {
   const history = useHistory();
 
   const UserLocation = useSelector(global => global.userLocation);
+  const User = useSelector(global => global.user);
 
   /* -------------------------------------------------------------------------- */
   /*                                   styles                                   */
@@ -66,7 +67,12 @@ export default props => {
           <Text style={styles.txt}>...</Text>
         )}
         {UserLocation ? (
-          <Button small style={styles.btn} onPress={() => history.push('/signup')}>
+          <Button
+            small
+            style={styles.btn}
+            onPress={() => {
+              console.log(UserLocation, User);
+            }}>
             <Text style={styles.btnTxt}>submit</Text>
           </Button>
         ) : null}
