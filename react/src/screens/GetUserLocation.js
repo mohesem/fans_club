@@ -29,7 +29,7 @@ export default () => {
   return (
     <>
       <Map {...mapProps} />
-      <SearchBar {...searchBarProps} />
+      {/* <SearchBar {...searchBarProps} /> */}
       {/* <Footer /> */}
     </>
   );
