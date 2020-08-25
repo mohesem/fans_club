@@ -2,8 +2,10 @@ import mongoose from 'mongoose';
 import jwt from 'jsonwebtoken';
 import User from '../DB/models/userModel';
 import * as turf from '@turf/turf';
+import Geo from '../DB/models/geoModel';
 
 const main = body => {
+  console.log(body);
   return new Promise((resolve, reject) => {
     (async () => {
       const session = await mongoose.startSession();
@@ -23,6 +25,18 @@ const main = body => {
           // save user
 
           // get new geos
+
+          //  const boundries = await Geo.find(
+          //     {
+          //       geo: {
+          //         $geoIntersects: {
+          //           $geometry: {
+          //             type: userLoc.type,
+          //             coordinates: userLoc.coordinates,
+          //           },
+          //         },
+          //       },
+          //     }).exec()
           // populate likes and dislike
         });
         //  const user = await User.findOne({_id === body.User.})
