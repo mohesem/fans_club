@@ -17,6 +17,7 @@ import getTiles from './getTiles';
 import getMembersFromPoly from './getMembersFromPoly';
 import getLikesForPolys from './getLikesForPolys';
 import deleteClub from './deleteClub';
+import changeUserLocation from './changeUserLocation';
 
 import admin from './admin';
 import clubs from './clubs';
