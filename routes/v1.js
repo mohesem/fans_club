@@ -153,6 +153,7 @@ router.post('/POST/changeUserLocation', async (req, res) => {
   // console.log('got the req', req.body);
   try {
     const user = await changeUserLocation(req.body);
+    console.log(')()()()(', user);
     res.status(200).send({ user });
   } catch (error) {
     res.status(200).send({ error: 'problem on changing location' });

@@ -108,7 +108,7 @@ const main = body => {
             .populate('likes')
             .populate('dislikes')
             .exec();
-          console.log(finalUser);
+          // console.log(finalUser);
           resolve(finalUser);
         });
         //  const user = await User.findOne({_id === body.User.})
