@@ -32,8 +32,8 @@ const main = body => {
             geo: {
               $geoIntersects: {
                 $geometry: {
-                  type: point.type,
-                  coordinates: point.coordinates,
+                  type: point.geometry.type,
+                  coordinates: point.geometry.coordinates,
                 },
               },
             },
