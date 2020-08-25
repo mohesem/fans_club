@@ -32,7 +32,7 @@ const main = body => {
             geo: {
               $geoIntersects: {
                 $geometry: {
-                  type: point.geometry,
+                  type: point.type,
                   coordinates: point.coordinates,
                 },
               },
