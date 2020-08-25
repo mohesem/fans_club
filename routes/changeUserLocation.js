@@ -5,8 +5,8 @@ import User from '../DB/models/userModel';
 import Geo from '../DB/models/geoModel';
 import Likes from '../DB/models/likeModel';
 import Dislike from '../DB/models/dislikeModel';
-import e from 'express';
-
+// import e from 'express';
+//
 const main = body => {
   //   console.log('body ---- ', body);
   return new Promise((resolve, reject) => {
@@ -49,7 +49,7 @@ const main = body => {
 
           const likes = await Likes.find({ user_id: decoded.id }).exec();
 
-          console.log('==============', likes);
+          // console.log('==============', likes);
           const lv1Likes = likes.filter(l => !l.name1 && !l.name2);
           const lv2Likes = likes.filter(l => l.name1 && !l.name2);
           const lv3Likes = likes.filter(l => l.name1 && l.name2);
@@ -57,14 +57,14 @@ const main = body => {
           await lv1Likes.forEach(async l => {
             l.fid = lv1Boundry.fid;
             l.name0 = lv1Boundry.name0;
-            console.log('-------------------------', l);
+            // console.log('-------------------------', l);
             await l.save();
           });
           await lv2Likes.forEach(async l => {
             l.fid = lv2Boundry.fid;
             l.name0 = lv2Boundry.name0;
             l.name1 = lv2Boundry.name1;
-            console.log('-------------------------', l);
+            // console.log('-------------------------', l);
             await l.save();
           });
           await lv3Likes.forEach(async l => {
@@ -72,7 +72,7 @@ const main = body => {
             l.name0 = lv3Boundry.name0;
             l.name1 = lv3Boundry.name1;
             l.name2 = lv3Boundry.name2;
-            console.log('-------------------------', l);
+            // console.log('-------------------------', l);
             await l.save();
           });
 
@@ -81,18 +81,18 @@ const main = body => {
           const lv1Dislike = dislikes.filter(l => !l.name1 && !l.name2);
           const lv2Dislike = dislikes.filter(l => l.name1 && !l.name2);
           const lv3Dislike = dislikes.filter(l => l.name1 && l.name2);
-          console.log('++++++++++++++++', lv1Likes);
+          // console.log('++++++++++++++++', lv1Likes);
           await lv1Dislike.forEach(async l => {
             l.fid = lv1Boundry.fid;
             l.name0 = lv1Boundry.name0;
-            console.log('-------------------------', l);
+            // console.log('-------------------------', l);
             await l.save();
           });
           await lv2Dislike.forEach(async l => {
             l.fid = lv2Boundry.fid;
             l.name0 = lv2Boundry.name0;
             l.name1 = lv2Boundry.name1;
-            console.log('-------------------------', l);
+            // console.log('-------------------------', l);
             await l.save();
           });
           await lv3Dislike.forEach(async l => {
@@ -100,7 +100,7 @@ const main = body => {
             l.name0 = lv3Boundry.name0;
             l.name1 = lv3Boundry.name1;
             l.name2 = lv3Boundry.name2;
-            console.log('-------------------------', l);
+            // console.log('-------------------------', l);
             await l.save();
           });
 
