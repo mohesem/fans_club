@@ -5,6 +5,7 @@ import User from '../DB/models/userModel';
 import Geo from '../DB/models/geoModel';
 import Likes from '../DB/models/likeModel';
 import Dislike from '../DB/models/dislikeModel';
+import e from 'express';
 
 const main = body => {
   //   console.log('body ---- ', body);
@@ -107,6 +108,7 @@ const main = body => {
             .populate('likes')
             .populate('dislikes')
             .exec();
+          console.log(finalUser);
           resolve(finalUser);
         });
         //  const user = await User.findOne({_id === body.User.})
