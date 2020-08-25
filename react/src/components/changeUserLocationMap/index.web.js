@@ -80,10 +80,6 @@ export default props => {
                 .catch(() => {
                   // todo: show error message and redirect to profile page
                 });
-
-              searchClubsApi(string).then(res => {
-                setResults(res.data.clubs);
-              });
             }}>
             <Text style={styles.btnTxt}>submit</Text>
           </Button>
