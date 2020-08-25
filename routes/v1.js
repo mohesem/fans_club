@@ -152,8 +152,8 @@ router.post('/POST/deleteClub', (req, res) => {
 router.post('/POST/changeUserLocation', async (req, res) => {
   // console.log('got the req', req.body);
   try {
-    await changeUserLocation(req.body);
-    res.status(200).send();
+    const user = await changeUserLocation(req.body);
+    res.status(200).send({ user });
   } catch (error) {
     res.status(200).send({ error: 'problem on changing location' });
   }

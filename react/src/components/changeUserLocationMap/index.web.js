@@ -76,23 +76,24 @@ export default props => {
             onPress={() => {
               changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')})
                 .then(res => {
-                  console.log(localStorage.get('fans-club'));
-                  getUserInfoApi(localStorage.get('fans-club')).then(res => {
-                    console.log('------------------***--------------', res);
-                    // dispatch(isUserAction(true));
-                    const user = {
-                      firstname: res.data.firstname,
-                      lastname: res.data.lastname,
-                      thumbnail: res.data.thumbnail,
-                      location: res.data.location,
-                      likes: res.data.likes,
-                      dislikes: res.data.dislikes,
-                      address: res.data.address,
-                    };
-                    // console.log('*****&&&', user);
-                    dispatch(userAction(user));
-                    history.push('/clubs');
-                  });
+                  // console.log(localStorage.get('fans-club'));
+                  // getUserInfoApi(localStorage.get('fans-club')).then(res => {
+                  //   console.log('------------------***--------------', res);
+                  //   // dispatch(isUserAction(true));
+                  //   const user = {
+                  //     firstname: res.data.firstname,
+                  //     lastname: res.data.lastname,
+                  //     thumbnail: res.data.thumbnail,
+                  //     location: res.data.location,
+                  //     likes: res.data.likes,
+                  //     dislikes: res.data.dislikes,
+                  //     address: res.data.address,
+                  //   };
+                  //   // console.log('*****&&&', user);
+                  //   dispatch(userAction(user));
+                  //   history.push('/clubs');
+                  // });
+                  console.log(res);
                 })
                 .catch(() => {
                   // todo: show error message and redirect to profile page

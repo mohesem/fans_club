@@ -103,7 +103,11 @@ const main = body => {
             await l.save();
           });
 
-          resolve();
+          const finalUser = await User.findById(decoded.id)
+            .populate('likes')
+            .populate('dislikes')
+            .exec();
+          resolve(finalUser);
         });
         //  const user = await User.findOne({_id === body.User.})
       } catch (error) {
