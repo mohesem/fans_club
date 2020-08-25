@@ -65,7 +65,7 @@ const main = body => {
             console.log('-------------------------', l);
             await l.save();
           });
-          await lv1Likes.forEach(async l => {
+          await lv3Likes.forEach(async l => {
             l.fid = lv3Boundry.fid;
             l.name0 = lv3Boundry.name0;
             l.name1 = lv3Boundry.name1;
