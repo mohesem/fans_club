@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 import * as turf from '@turf/turf';
 import User from '../DB/models/userModel';
 import Geo from '../DB/models/geoModel';
+import Likes from '../DB/models/likeModel';
 
 const main = body => {
   console.log('body ---- ', body);
@@ -41,6 +42,11 @@ const main = body => {
 
           console.log('boundries --- ', boundries);
           // populate likes and dislike
+          const lv1Boundry = boundries.filter(b => {
+            return !b.NAME_1 && !b.NAME_2;
+          });
+          console.log(lv1Boundry);
+          // const likes = await Likes.find({ user_id: decoded.id }).exec;
         });
         //  const user = await User.findOne({_id === body.User.})
       } catch (error) {
