@@ -49,7 +49,7 @@ const main = body => {
           //   console.log('00000000', lv1Boundry);
           const likes = await Likes.find({ user_id: decoded.id }).exec();
           //   console.log('llllllllllllllllll', likes);
-          const lv1Likes = likes.filter(l => !l.name0 && !l.name1);
+          const lv1Likes = likes.filter(l => !l.name1 && !l.name2);
           console.log('++++++++++++++++', lv1Likes);
           await lv1Likes.forEach(l => {
             l.fid = lv1Boundry.fid;
