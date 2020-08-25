@@ -6,7 +6,7 @@ import {Text, View, Button} from 'native-base';
 import ReactDOM from 'react-dom';
 import {useHistory} from '../../router';
 // actions
-import {centerAction, userLocationAction} from '../../redux/actions';
+import {centerAction, userLocationAction, userAction} from '../../redux/actions';
 
 // api
 import getAddress from '../../api/getUserAddress';
@@ -14,6 +14,7 @@ import getAddress from '../../api/getUserAddress';
 import colors from '../../native-base-theme/colors';
 
 import changeLocationApi from '../../api/changeUserLocation';
+import getUserInfoApi from '../../api/getUserInfo';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibW9oZXNlbSIsImEiOiJjanR3amhqcWcxZm05NDVtcG03Nm44Ynk4In0.YUdlvT5fABnW8BReNMSuPg';
@@ -75,9 +76,9 @@ export default props => {
             onPress={() => {
               changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')})
                 .then(res => {
-                  getUserInfoApi(token).then(res => {
+                  getUserInfoApi(localStorage.get('fans-club')).then(res => {
                     // console.log('------------------***--------------', res);
-                    dispatch(isUserAction(true));
+                    // dispatch(isUserAction(true));
                     const user = {
                       firstname: res.data.firstname,
                       lastname: res.data.lastname,
