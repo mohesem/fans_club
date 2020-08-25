@@ -41,25 +41,25 @@ const main = body => {
             },
           }).exec();
 
-          console.log('boundries --- ', boundries);
+          //   console.log('boundries --- ', boundries);
           // populate likes and dislike
-          const lv1Boundry = await boundries.filter(b => !b.name1 && !b.name2)[0];
-          const lv2Boundry = await boundries.filter(b => b.name1 && !b.name2)[0];
-          const lv3Boundry = await boundries.filter(b => b.name1 && b.name2)[0];
+          //   const lv1Boundry = await boundries.filter(b => !b.name1 && !b.name2)[0];
+          //   const lv2Boundry = await boundries.filter(b => b.name1 && !b.name2)[0];
+          //   const lv3Boundry = await boundries.filter(b => b.name1 && b.name2)[0];
 
           const likes = await Likes.find({ user_id: decoded.id }).exec();
 
           console.log('==============', likes);
-          const lv1Likes = likes.filter(l => !l.name1 && !l.name2);
-          const lv2Likes = likes.filter(l => l.name1 && !l.name2);
-          const lv3Likes = likes.filter(l => l.name1 && l.name2);
-          console.log('++++++++++++++++', lv1Likes);
-          await lv1Likes.forEach(async l => {
-            l.fid = lv1Boundry.fid;
-            l.name0 = lv1Boundry.name0;
-            console.log('-------------------------', l);
-            await l.save();
-          });
+          //   const lv1Likes = likes.filter(l => !l.name1 && !l.name2);
+          //   const lv2Likes = likes.filter(l => l.name1 && !l.name2);
+          //   const lv3Likes = likes.filter(l => l.name1 && l.name2);
+          //   console.log('++++++++++++++++', lv1Likes);
+          //   await lv1Likes.forEach(async l => {
+          //     l.fid = lv1Boundry.fid;
+          //     l.name0 = lv1Boundry.name0;
+          //     console.log('-------------------------', l);
+          //     await l.save();
+          //   });
           //   await lv2Likes.forEach(async l => {
           //     l.fid = lv2Boundry.fid;
           //     l.name0 = lv2Boundry.name0;
