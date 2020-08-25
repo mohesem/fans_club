@@ -22,6 +22,7 @@ const main = body => {
           ]);
           user.geo = point.geometry;
           user.address = body.UserLocation.address;
+          await user.save();
           //   console.log('user ---- ', user);
           // save user
 
@@ -46,15 +47,31 @@ const main = body => {
           const lv2Boundry = await boundries.filter(b => b.name1 && !b.name2)[0];
           const lv3Boundry = await boundries.filter(b => b.name1 && b.name2)[0];
 
-          //   console.log('00000000', lv1Boundry);
           const likes = await Likes.find({ user_id: decoded.id }).exec();
-          //   console.log('llllllllllllllllll', likes);
           const lv1Likes = likes.filter(l => !l.name1 && !l.name2);
+          const lv2Likes = likes.filter(l => l.name1 && !l.name2);
+          const lv3Likes = likes.filter(l => l.name1 && l.name2);
           console.log('++++++++++++++++', lv1Likes);
-          await lv1Likes.forEach(l => {
+          await lv1Likes.forEach(async l => {
             l.fid = lv1Boundry.fid;
             l.name0 = lv1Boundry.name0;
             console.log('-------------------------', l);
+            await l.save();
+          });
+          await lv2Likes.forEach(async l => {
+            l.fid = lv2Boundry.fid;
+            l.name0 = lv2Boundry.name0;
+            l.name1 = lv2Boundry.name1;
+            console.log('-------------------------', l);
+            await l.save();
+          });
+          await lv1Likes.forEach(async l => {
+            l.fid = lv3Boundry.fid;
+            l.name0 = lv3Boundry.name0;
+            l.name1 = lv3Boundry.name1;
+            l.name2 = lv3Boundry.name2;
+            console.log('-------------------------', l);
+            await l.save();
           });
         });
         //  const user = await User.findOne({_id === body.User.})
