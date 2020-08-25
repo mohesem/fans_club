@@ -42,9 +42,18 @@ const main = body => {
 
           console.log('boundries --- ', boundries);
           // populate likes and dislike
-          const lv1Boundry = boundries.filter(b => !b.name1 && !b.name2);
+          const lv1Boundry = boundries.filter(b => !b.name1 && !b.name2)[0];
+          const lv2Boundry = boundries.filter(b => b.name1 && !b.name2)[0];
+          const lv3Boundry = boundries.filter(b => b.name1 && b.name2)[0];
+
           console.log('00000000', lv1Boundry);
-          // const likes = await Likes.find({ user_id: decoded.id }).exec;
+          const likes = await Likes.find({ user_id: decoded.id }).exec();
+          const lv1Likes = likes.filter(l => !l.name0 && !l.name1);
+          await lv1Likes.forEach(l => {
+            l.fid = lv1Boundry.fid;
+            l.name0 = lv1Boundry.name0;
+            console.log(l);
+          });
         });
         //  const user = await User.findOne({_id === body.User.})
       } catch (error) {
