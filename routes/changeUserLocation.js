@@ -48,6 +48,8 @@ const main = body => {
           const lv3Boundry = await boundries.filter(b => b.name1 && b.name2)[0];
 
           const likes = await Likes.find({ user_id: decoded.id }).exec();
+
+          console.log('==============', likes);
           const lv1Likes = likes.filter(l => !l.name1 && !l.name2);
           const lv2Likes = likes.filter(l => l.name1 && !l.name2);
           const lv3Likes = likes.filter(l => l.name1 && l.name2);
