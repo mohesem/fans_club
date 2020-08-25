@@ -58,21 +58,21 @@ const main = body => {
             console.log('-------------------------', l);
             await l.save();
           });
-          await lv2Likes.forEach(async l => {
-            l.fid = lv2Boundry.fid;
-            l.name0 = lv2Boundry.name0;
-            l.name1 = lv2Boundry.name1;
-            console.log('-------------------------', l);
-            await l.save();
-          });
-          await lv3Likes.forEach(async l => {
-            l.fid = lv3Boundry.fid;
-            l.name0 = lv3Boundry.name0;
-            l.name1 = lv3Boundry.name1;
-            l.name2 = lv3Boundry.name2;
-            console.log('-------------------------', l);
-            await l.save();
-          });
+          //   await lv2Likes.forEach(async l => {
+          //     l.fid = lv2Boundry.fid;
+          //     l.name0 = lv2Boundry.name0;
+          //     l.name1 = lv2Boundry.name1;
+          //     console.log('-------------------------', l);
+          //     await l.save();
+          //   });
+          //   await lv3Likes.forEach(async l => {
+          //     l.fid = lv3Boundry.fid;
+          //     l.name0 = lv3Boundry.name0;
+          //     l.name1 = lv3Boundry.name1;
+          //     l.name2 = lv3Boundry.name2;
+          //     console.log('-------------------------', l);
+          //     await l.save();
+          //   });
         });
         //  const user = await User.findOne({_id === body.User.})
       } catch (error) {
