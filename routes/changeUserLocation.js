@@ -42,10 +42,8 @@ const main = body => {
 
           console.log('boundries --- ', boundries);
           // populate likes and dislike
-          const lv1Boundry = boundries.filter(b => {
-            return !b.NAME_1 && !b.NAME_2;
-          });
-          console.log(lv1Boundry);
+          const lv1Boundry = boundries.filter(b => !b.NAME_1 && !b.NAME_2);
+          console.log('00000000', lv1Boundry);
           // const likes = await Likes.find({ user_id: decoded.id }).exec;
         });
         //  const user = await User.findOne({_id === body.User.})
