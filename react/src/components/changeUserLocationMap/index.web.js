@@ -75,7 +75,22 @@ export default props => {
             onPress={() => {
               changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')})
                 .then(res => {
-                  history.push('/clubs');
+                  getUserInfoApi(token).then(res => {
+                    // console.log('------------------***--------------', res);
+                    dispatch(isUserAction(true));
+                    const user = {
+                      firstname: res.data.firstname,
+                      lastname: res.data.lastname,
+                      thumbnail: res.data.thumbnail,
+                      location: res.data.location,
+                      likes: res.data.likes,
+                      dislikes: res.data.dislikes,
+                      address: res.data.address,
+                    };
+                    // console.log('*****&&&', user);
+                    dispatch(userAction(user));
+                    history.push('/clubs');
+                  });
                 })
                 .catch(() => {
                   // todo: show error message and redirect to profile page
