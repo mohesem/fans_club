@@ -80,18 +80,18 @@ export default props => {
                   // getUserInfoApi(localStorage.get('fans-club')).then(res => {
                   //   console.log('------------------***--------------', res);
                   //   // dispatch(isUserAction(true));
-                  //   const user = {
-                  //     firstname: res.data.firstname,
-                  //     lastname: res.data.lastname,
-                  //     thumbnail: res.data.thumbnail,
-                  //     location: res.data.location,
-                  //     likes: res.data.likes,
-                  //     dislikes: res.data.dislikes,
-                  //     address: res.data.address,
-                  //   };
+                  const user = {
+                    firstname: res.data.user.firstname,
+                    lastname: res.data.user.lastname,
+                    thumbnail: res.data.user.thumbnail,
+                    location: res.data.user.location,
+                    likes: res.data.user.likes,
+                    dislikes: res.data.user.dislikes,
+                    address: res.data.user.address,
+                  };
                   //   // console.log('*****&&&', user);
-                  //   dispatch(userAction(user));
-                  //   history.push('/clubs');
+                  dispatch(userAction(user));
+                  history.push('/clubs');
                   // });
                   console.log(res);
                 })
