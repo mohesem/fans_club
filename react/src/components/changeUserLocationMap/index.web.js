@@ -76,6 +76,7 @@ export default props => {
             onPress={() => {
               changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')})
                 .then(res => {
+                  console.log(localStorage.get('fans-club'));
                   getUserInfoApi(localStorage.get('fans-club')).then(res => {
                     console.log('------------------***--------------', res);
                     // dispatch(isUserAction(true));
