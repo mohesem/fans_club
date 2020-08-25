@@ -4,6 +4,7 @@ import * as turf from '@turf/turf';
 import User from '../DB/models/userModel';
 import Geo from '../DB/models/geoModel';
 import Likes from '../DB/models/likeModel';
+import Dislike from '../DB/models/dislikeModel';
 
 const main = body => {
   //   console.log('body ---- ', body);
@@ -73,10 +74,40 @@ const main = body => {
             console.log('-------------------------', l);
             await l.save();
           });
+
+          const dislikes = await Dislike.find({ user_id: decoded.id });
+
+          const lv1Dislike = dislikes.filter(l => !l.name1 && !l.name2);
+          const lv2Dislike = dislikes.filter(l => l.name1 && !l.name2);
+          const lv3Dislike = dislikes.filter(l => l.name1 && l.name2);
+          console.log('++++++++++++++++', lv1Likes);
+          await lv1Dislike.forEach(async l => {
+            l.fid = lv1Boundry.fid;
+            l.name0 = lv1Boundry.name0;
+            console.log('-------------------------', l);
+            await l.save();
+          });
+          await lv2Dislike.forEach(async l => {
+            l.fid = lv2Boundry.fid;
+            l.name0 = lv2Boundry.name0;
+            l.name1 = lv2Boundry.name1;
+            console.log('-------------------------', l);
+            await l.save();
+          });
+          await lv3Dislike.forEach(async l => {
+            l.fid = lv3Boundry.fid;
+            l.name0 = lv3Boundry.name0;
+            l.name1 = lv3Boundry.name1;
+            l.name2 = lv3Boundry.name2;
+            console.log('-------------------------', l);
+            await l.save();
+          });
+
+          resolve();
         });
         //  const user = await User.findOne({_id === body.User.})
       } catch (error) {
-        console.log(error);
+        reject(error);
       }
     })();
   });

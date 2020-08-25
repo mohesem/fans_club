@@ -73,7 +73,17 @@ export default props => {
             small
             style={styles.btn}
             onPress={() => {
-              changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')});
+              changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')})
+                .then(res => {
+                  history.push('/clubs');
+                })
+                .catch(() => {
+                  // todo: show error message and redirect to profile page
+                });
+
+              searchClubsApi(string).then(res => {
+                setResults(res.data.clubs);
+              });
             }}>
             <Text style={styles.btnTxt}>submit</Text>
           </Button>

@@ -149,10 +149,14 @@ router.post('/POST/deleteClub', (req, res) => {
   // });
 });
 
-router.post('/POST/changeUserLocation', (req, res) => {
+router.post('/POST/changeUserLocation', async (req, res) => {
   // console.log('got the req', req.body);
-  changeUserLocation(req.body);
-  res.send('done');
+  try {
+    await changeUserLocation(req.body);
+    res.status(200).send();
+  } catch (error) {
+    res.status(200).send({ error: 'problem on changing location' });
+  }
 });
 
 router.use('/admin', admin);
