@@ -5,6 +5,7 @@ export default function signin(newLoc) {
     axios
       .post('https://www.fansclub.app/api/v1/POST/changeUserLocation', newLoc)
       .then(res => {
+        console.log(res);
         resolve({
           data: res.data,
           status: res.status.code,
