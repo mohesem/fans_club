@@ -77,7 +77,7 @@ export default props => {
               changeLocationApi({UserLocation, token: localStorage.getItem('fans-club')})
                 .then(res => {
                   getUserInfoApi(localStorage.get('fans-club')).then(res => {
-                    // console.log('------------------***--------------', res);
+                    console.log('------------------***--------------', res);
                     // dispatch(isUserAction(true));
                     const user = {
                       firstname: res.data.firstname,
